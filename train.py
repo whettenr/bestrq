@@ -93,7 +93,7 @@ class BestRQBrain(sb.core.Brain):
         # print('after cnn: ', src.shape)
 
         ##### transformer
-        enc_out = self.modules.enc(src, wav_lens) # only use encoder
+        enc_out = self.modules.wrapper(src, wav_lens) # only use encoder
         # print('enc out: ', enc_out.shape)
 
         ##### linear

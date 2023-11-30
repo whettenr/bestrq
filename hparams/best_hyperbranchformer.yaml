@@ -26,7 +26,6 @@ train_stage_log: !ref <output_folder>/train_stage_log.txt
 train_splits: ["train-clean-100", "train-clean-360", "train-other-500"]
 dev_splits: ["dev-clean"]
 test_splits: ["test-clean"]
-
 train_csv: results/bestrq/csv/train.csv
 valid_csv: results/bestrq/csv/dev-clean.csv
 skip_prep: True
