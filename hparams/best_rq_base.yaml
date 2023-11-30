@@ -11,7 +11,7 @@ __set_seed: !apply:torch.manual_seed [!ref <seed>]
 
 project_name: bestrq
 experiment_name: base
-data_folder: /gpfsscratch/rech/nkp/uaj64gk/corpus
+data_folder: /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/
 output_folder: !ref results/bestrq/<seed>
 
 ckpt_interval_min: 15
