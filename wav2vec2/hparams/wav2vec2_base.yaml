@@ -35,7 +35,7 @@ max_grad_norm: 100.
 
 # The training will either stops at number_of_epochs or optimizer_step_limit
 # I.e. the first that is reached.
-number_of_epochs: 25
+number_of_epochs: 21
 optimizer_step_limit: 400000
 
 # # Dynamic Batching parameters
