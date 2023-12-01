@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=brqb   # nom du job
+#SBATCH --job-name=brqbf   # nom du job
 #SBATCH --account=nkp@v100
 #SBATCH --constraint v100-32g
 #SBATCH --gres=gpu:1
@@ -15,5 +15,5 @@ cd /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq
 
 python /gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/train_brq.py /gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/hparams/ssl_brq_hyperbranchformer.yaml \
     --data_folder /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/ \
-    --ssl_hub /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqhb/CKPT+2023-12-01+16-26-37+00
+    --ssl_hub /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqhb/CKPT+2023-12-01+16-26-37+00 \
 

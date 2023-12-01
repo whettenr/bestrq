@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=brqb   # nom du job
+#SBATCH --job-name=wvbra   # nom du job
 #SBATCH --account=nkp@v100
 #SBATCH --constraint v100-32g
 #SBATCH --gres=gpu:1
