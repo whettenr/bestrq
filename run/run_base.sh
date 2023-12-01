@@ -14,4 +14,4 @@ conda activate bestrqenv
 
 cd /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq
 
-python -m torch.distributed.run --nproc_per_node=8 --rdzv_backend c10d --rdzv-endpoint=localhost:0 train.py hparams/best_rq_base.yaml --find_unused_parameters
+python -m torch.distributed.run --nproc_per_node=8 --rdzv_backend c10d --rdzv-endpoint=localhost:0 train.py hparams/best_rq_base.yaml --find_unused_parameters --bfloat16_mix_prec
