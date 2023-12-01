@@ -13,7 +13,7 @@ __set_seed: !apply:torch.manual_seed [!ref <seed>]
 project_name: bestrq
 experiment_name: hyper-branchformer-base
 data_folder: /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/
-output_folder: !ref results/best_hyperconformer/<seed>
+output_folder: !ref results/best_hyperbranchconformer/<seed>
 output_wer_folder: !ref <output_folder>/
 
 ckpt_interval_min: 15
