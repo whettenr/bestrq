@@ -28,7 +28,8 @@ skip_prep: True
 avoid_if_longer_than: 60.0
 avoid_if_shorter_than: 2.0
 log_interval: 500 # Logging every N optimizer steps
-auto_mix_prec: True
+auto_mix_prec: false
+bfloat16_mix_prec: true
 max_grad_norm: 100.
 # grad_accumulation_factor: 4
 
