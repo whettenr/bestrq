@@ -886,3 +886,7 @@ WARNING: cannot determine version of editable source in /gpfsdswork/projects/rec
 2023-12-02 15:43:44,686 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+15-43-43+00
 2023-12-02 15:43:44,754 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+15-23-08+00
 2023-12-02 15:43:44,754 - speechbrain.utils.epoch_loop - INFO - Going into epoch 19
+2023-12-02 16:04:17,367 - speechbrain.utils.train_logger - INFO - epoch: 19, lr_model: 5.24e-05 - train loss: 1.90e-01 - valid loss: 4.79e-01, valid CER: 10.30, valid WER: 33.94
+2023-12-02 16:04:18,421 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+16-04-17+00
+2023-12-02 16:04:18,488 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+15-43-43+00
+2023-12-02 16:04:18,488 - speechbrain.utils.epoch_loop - INFO - Going into epoch 20

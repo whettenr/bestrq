@@ -1386,3 +1386,10 @@ KeyboardInterrupt
 2023-12-02 15:33:28,404 - speechbrain.utils.train_logger - INFO - epoch: 17, lr_model: 2.68e-05 - train loss: 2.81e-02 - valid loss: 3.54e-01, valid CER: 5.85, valid WER: 19.50
 2023-12-02 15:33:29,480 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+15-33-28+00
 2023-12-02 15:33:29,524 - speechbrain.utils.epoch_loop - INFO - Going into epoch 18
+2023-12-02 15:55:15,679 - speechbrain.nnet.schedulers - INFO - Changing lr from 2.1e-05 to 1.7e-05
+2023-12-02 15:55:15,697 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0035 to 0.0031
+2023-12-02 15:55:15,707 - speechbrain.utils.train_logger - INFO - epoch: 18, lr_model: 2.15e-05 - train loss: 2.51e-02 - valid loss: 3.60e-01, valid CER: 5.80, valid WER: 19.30
+2023-12-02 15:55:16,860 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+15-55-15+00
+2023-12-02 15:55:16,932 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+15-33-28+00
+2023-12-02 15:55:16,934 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+15-11-39+00
+2023-12-02 15:55:16,935 - speechbrain.utils.epoch_loop - INFO - Going into epoch 19
