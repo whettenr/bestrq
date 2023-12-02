@@ -1,0 +1,584 @@
+2023-12-01 09:54:30,603 - speechbrain.core - INFO - Beginning experiment!
+2023-12-01 09:54:30,604 - speechbrain.core - INFO - Experiment folder: results/wav2vec2-base
+2023-12-01 09:54:33,957 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==23.1.0
+black==19.10b0
+certifi==2023.11.17
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+cmake==3.27.7
+distlib==0.3.7
+entrypoints==0.3
+filelock==3.13.1
+flake8==3.7.9
+fsspec==2023.10.0
+huggingface-hub==0.19.4
+HyperPyYAML==1.2.2
+identify==2.5.32
+idna==3.6
+iniconfig==2.0.0
+Jinja2==3.1.2
+joblib==1.3.2
+lit==17.0.6
+MarkupSafe==2.1.3
+mccabe==0.6.1
+mpmath==1.3.0
+networkx==3.2.1
+nodeenv==1.8.0
+numpy==1.26.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu11==10.9.0.58
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu11==10.2.10.91
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu11==2.14.3
+nvidia-nccl-cu12==2.18.1
+nvidia-nvjitlink-cu12==12.3.101
+nvidia-nvtx-cu11==11.7.91
+nvidia-nvtx-cu12==12.1.105
+packaging==23.2
+pandas==2.1.3
+pathspec==0.11.2
+platformdirs==4.0.0
+pluggy==1.3.0
+pre-commit==3.5.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+pytest==7.4.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+regex==2023.10.3
+requests==2.31.0
+ruamel.yaml==0.18.5
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.1
+scipy==1.11.4
+sentencepiece==0.1.99
+six==1.16.0
+-e /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain
+sympy==1.12
+tokenizers==0.15.0
+toml==0.10.2
+torch==2.0.1
+torchaudio==2.0.2
+tqdm==4.66.1
+transformers==4.35.2
+triton==2.0.0
+typed-ast==1.5.5
+typing_extensions==4.8.0
+tzdata==2023.3
+urllib3==2.1.0
+virtualenv==20.24.7
+yamllint==1.23.0
+
+ERROR: Error [Errno 2] No such file or directory: 'git' while executing command git config --get-regexp 'remote\..*\.url'
+WARNING: cannot determine version of editable source in /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain (git command not found in path)
+
+2023-12-01 09:54:35,702 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/bestrq/wav2vec2/train_sb_wav2vec2.py", line 385, in <module>
+    main()
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/bestrq/wav2vec2/train_sb_wav2vec2.py", line 348, in main
+    from librispeech_prepare import prepare_librispeech
+ModuleNotFoundError: No module named 'librispeech_prepare'
+2023-12-01 10:03:47,900 - speechbrain.core - INFO - Beginning experiment!
+2023-12-01 10:03:47,903 - speechbrain.core - INFO - Experiment folder: results/wav2vec2-base
+2023-12-01 10:03:51,092 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==23.1.0
+black==19.10b0
+certifi==2023.11.17
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+cmake==3.27.7
+distlib==0.3.7
+entrypoints==0.3
+filelock==3.13.1
+flake8==3.7.9
+fsspec==2023.10.0
+huggingface-hub==0.19.4
+HyperPyYAML==1.2.2
+identify==2.5.32
+idna==3.6
+iniconfig==2.0.0
+Jinja2==3.1.2
+joblib==1.3.2
+lit==17.0.6
+MarkupSafe==2.1.3
+mccabe==0.6.1
+mpmath==1.3.0
+networkx==3.2.1
+nodeenv==1.8.0
+numpy==1.26.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu11==10.9.0.58
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu11==10.2.10.91
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu11==2.14.3
+nvidia-nccl-cu12==2.18.1
+nvidia-nvjitlink-cu12==12.3.101
+nvidia-nvtx-cu11==11.7.91
+nvidia-nvtx-cu12==12.1.105
+packaging==23.2
+pandas==2.1.3
+pathspec==0.11.2
+platformdirs==4.0.0
+pluggy==1.3.0
+pre-commit==3.5.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+pytest==7.4.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+regex==2023.10.3
+requests==2.31.0
+ruamel.yaml==0.18.5
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.1
+scipy==1.11.4
+sentencepiece==0.1.99
+six==1.16.0
+-e /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain
+sympy==1.12
+tokenizers==0.15.0
+toml==0.10.2
+torch==2.0.1
+torchaudio==2.0.2
+tqdm==4.66.1
+transformers==4.35.2
+triton==2.0.0
+typed-ast==1.5.5
+typing_extensions==4.8.0
+tzdata==2023.3
+urllib3==2.1.0
+virtualenv==20.24.7
+yamllint==1.23.0
+
+ERROR: Error [Errno 2] No such file or directory: 'git' while executing command git config --get-regexp 'remote\..*\.url'
+WARNING: cannot determine version of editable source in /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain (git command not found in path)
+
+2023-12-01 10:03:55,908 - speechbrain.dataio.sampler - INFO - Batch quantisation in latent space
+2023-12-01 10:03:55,912 - speechbrain.dataio.sampler - DEBUG - Latent bucket boundary - buckets: ['1.62', '2.19', '2.66', '3.09', '3.49', '3.88', '4.27', '4.65', '5.02', '5.41', '5.79', '6.18', '6.58', '6.99', '7.40', '7.83', '8.27', '8.72', '9.19', '9.68', '10.18', '10.70', '11.25', '11.82', '12.41', '13.04', '13.70', '14.39', '15.12', '15.90', '16.73', '17.61', '18.55', '19.57', '20.67', '21.86', '23.16', '24.59', '26.17', '27.94', '29.93', '32.21', '34.84', '37.94', '41.68', '46.34', '52.40', '60.82', '73.93', '100.00'] - length multipliers: ['1.35', '1.22', '1.16', '1.13', '1.11', '1.10', '1.09', '1.08', '1.08', '1.07', '1.07', '1.06', '1.06', '1.06', '1.06', '1.06', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.05', '1.06', '1.06', '1.06', '1.06', '1.06', '1.07', '1.07', '1.08', '1.08', '1.09', '1.10', '1.11', '1.13', '1.16', '1.22', '1.35']
+2023-12-01 10:03:55,912 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 0 with boundary 0.0-1.6 and batch_size 61: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 1 with boundary 1.6-2.2 and batch_size 45: Num Examples 906.0, Num Full Batches 19.000, Pad Factor 8.810.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 2 with boundary 2.2-2.7 and batch_size 37: Num Examples 3456.0, Num Full Batches 84.000, Pad Factor 19.315.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 3 with boundary 2.7-3.1 and batch_size 32: Num Examples 3364.0, Num Full Batches 96.000, Pad Factor 14.604.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 4 with boundary 3.1-3.5 and batch_size 28: Num Examples 3292.0, Num Full Batches 108.000, Pad Factor 12.168.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 5 with boundary 3.5-3.9 and batch_size 25: Num Examples 3156.0, Num Full Batches 116.000, Pad Factor 10.443.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 6 with boundary 3.9-4.3 and batch_size 23: Num Examples 3158.0, Num Full Batches 128.000, Pad Factor 9.328.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 7 with boundary 4.3-4.6 and batch_size 21: Num Examples 3035.0, Num Full Batches 135.000, Pad Factor 8.411.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 8 with boundary 4.6-5.0 and batch_size 19: Num Examples 3010.0, Num Full Batches 145.000, Pad Factor 7.650.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 9 with boundary 5.0-5.4 and batch_size 18: Num Examples 3119.0, Num Full Batches 162.000, Pad Factor 7.284.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 10 with boundary 5.4-5.8 and batch_size 17: Num Examples 3126.0, Num Full Batches 175.000, Pad Factor 6.786.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 11 with boundary 5.8-6.2 and batch_size 16: Num Examples 3051.0, Num Full Batches 182.000, Pad Factor 6.432.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 12 with boundary 6.2-6.6 and batch_size 15: Num Examples 3091.0, Num Full Batches 197.000, Pad Factor 6.192.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 13 with boundary 6.6-7.0 and batch_size 14: Num Examples 3048.0, Num Full Batches 206.000, Pad Factor 5.893.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 14 with boundary 7.0-7.4 and batch_size 13: Num Examples 3288.0, Num Full Batches 236.000, Pad Factor 5.700.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 15 with boundary 7.4-7.8 and batch_size 12: Num Examples 3300.0, Num Full Batches 251.000, Pad Factor 5.514.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 16 with boundary 7.8-8.3 and batch_size 12: Num Examples 3438.0, Num Full Batches 276.000, Pad Factor 5.406.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 17 with boundary 8.3-8.7 and batch_size 11: Num Examples 3599.0, Num Full Batches 305.000, Pad Factor 5.299.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 18 with boundary 8.7-9.2 and batch_size 10: Num Examples 3901.0, Num Full Batches 349.000, Pad Factor 5.189.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 19 with boundary 9.2-9.7 and batch_size 10: Num Examples 4113.0, Num Full Batches 388.000, Pad Factor 5.087.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 20 with boundary 9.7-10.2 and batch_size 9: Num Examples 4692.0, Num Full Batches 465.000, Pad Factor 4.987.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 21 with boundary 10.2-10.7 and batch_size 9: Num Examples 5324.0, Num Full Batches 556.000, Pad Factor 4.978.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 22 with boundary 10.7-11.2 and batch_size 8: Num Examples 6379.0, Num Full Batches 700.000, Pad Factor 4.917.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 23 with boundary 11.2-11.8 and batch_size 8: Num Examples 8176.0, Num Full Batches 943.000, Pad Factor 4.894.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 24 with boundary 11.8-12.4 and batch_size 8: Num Examples 11428.0, Num Full Batches 1386.000, Pad Factor 4.865.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 25 with boundary 12.4-13.0 and batch_size 7: Num Examples 16056.0, Num Full Batches 2045.000, Pad Factor 4.866.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 26 with boundary 13.0-13.7 and batch_size 7: Num Examples 23408.0, Num Full Batches 3133.000, Pad Factor 4.893.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 27 with boundary 13.7-14.4 and batch_size 6: Num Examples 33287.0, Num Full Batches 4679.000, Pad Factor 4.874.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 28 with boundary 14.4-15.1 and batch_size 6: Num Examples 43150.0, Num Full Batches 6370.000, Pad Factor 4.946.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 29 with boundary 15.1-15.9 and batch_size 6: Num Examples 46934.0, Num Full Batches 7275.000, Pad Factor 4.968.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 30 with boundary 15.9-16.7 and batch_size 5: Num Examples 18846.0, Num Full Batches 3051.000, Pad Factor 5.095.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 31 with boundary 16.7-17.6 and batch_size 5: Num Examples 2283.0, Num Full Batches 385.000, Pad Factor 5.001.
+2023-12-01 10:03:56,598 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 32 with boundary 17.6-18.6 and batch_size 5: Num Examples 24.0, Num Full Batches 4.000, Pad Factor 4.747.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 33 with boundary 18.6-19.6 and batch_size 5: Num Examples 23.0, Num Full Batches 4.000, Pad Factor 4.870.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 34 with boundary 19.6-20.7 and batch_size 4: Num Examples 26.0, Num Full Batches 5.000, Pad Factor 5.180.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 35 with boundary 20.7-21.9 and batch_size 4: Num Examples 15.0, Num Full Batches 3.000, Pad Factor 4.735.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 36 with boundary 21.9-23.2 and batch_size 4: Num Examples 11.0, Num Full Batches 2.000, Pad Factor 4.155.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 37 with boundary 23.2-24.6 and batch_size 4: Num Examples 7.0, Num Full Batches 1.000, Pad Factor 4.739.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 38 with boundary 24.6-26.2 and batch_size 3: Num Examples 6.0, Num Full Batches 1.000, Pad Factor 4.438.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 39 with boundary 26.2-27.9 and batch_size 3: Num Examples 4.0, Num Full Batches 1.000, Pad Factor 6.346.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 40 with boundary 27.9-29.9 and batch_size 3: Num Examples 1.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 41 with boundary 29.9-32.2 and batch_size 3: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 42 with boundary 32.2-34.8 and batch_size 2: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 43 with boundary 34.8-37.9 and batch_size 2: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 44 with boundary 37.9-41.7 and batch_size 2: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 45 with boundary 41.7-46.3 and batch_size 2: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 46 with boundary 46.3-52.4 and batch_size 1: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 47 with boundary 52.4-60.8 and batch_size 1: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 48 with boundary 60.8-73.9 and batch_size 1: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,599 - speechbrain.dataio.sampler - DEBUG - DynamicBatchSampler: Bucket 49 with boundary 73.9-100.0 and batch_size 1: Num Examples 0.0, Num Full Batches 0.000, Pad Factor 0.000.
+2023-12-01 10:03:56,600 - speechbrain.core - INFO - Info: test_only arg overridden by command line input to: False
+2023-12-01 10:03:56,603 - speechbrain.core - INFO - Info: debug arg overridden by command line input to: False
+2023-12-01 10:03:56,603 - speechbrain.core - INFO - Info: debug_batches arg overridden by command line input to: 2
+2023-12-01 10:03:56,603 - speechbrain.core - INFO - Info: debug_epochs arg overridden by command line input to: 2
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: debug_persistently arg overridden by command line input to: False
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: device arg overridden by command line input to: cuda:0
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: data_parallel_backend arg overridden by command line input to: False
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: distributed_backend arg overridden by command line input to: nccl
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: find_unused_parameters arg overridden by command line input to: True
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: jit arg overridden by command line input to: False
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: compile arg overridden by command line input to: False
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: auto_mix_prec arg from hparam file is used
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: bfloat16_mix_prec arg from hparam file is used
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: max_grad_norm arg from hparam file is used
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: optimizer_step_limit arg from hparam file is used
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: tqdm_colored_bar arg overridden by command line input to: False
+2023-12-01 10:03:56,604 - speechbrain.core - INFO - Info: remove_vector_weight_decay arg overridden by command line input to: False
+2023-12-01 10:03:56,690 - speechbrain.core - INFO - 90.9M trainable parameters in W2V2Brain
+2023-12-01 10:03:56,870 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2023-12-01 10:03:56,870 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2023-12-01 10:03:56,871 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 10:03:57,667 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 10:08:41,021 - speechbrain.utils.train_logger - INFO - loss: 1.33e+04, accuracy: 1.04e-02, num_masked: 2880, ratio_masked: 6.38e-01, diversity_loss: 6.78e-02, prob_perplex: 5.97e+02, code_perplex: 5.93e+02, num_vars: 640, temp: 2.00, backprop_loss: 1.33e+04, total_loss: 1.33e+04, steps: 500, lr: 8.33e-06, avg_loss: 1.36e+04
+2023-12-01 10:13:21,699 - speechbrain.utils.train_logger - INFO - loss: 1.27e+04, accuracy: 1.20e-02, num_masked: 2760, ratio_masked: 6.44e-01, diversity_loss: 5.32e-02, prob_perplex: 6.06e+02, code_perplex: 6.02e+02, num_vars: 640, temp: 1.99, backprop_loss: 1.27e+04, total_loss: 1.27e+04, steps: 1000, lr: 1.67e-05, avg_loss: 1.35e+04, run_time: 2.81e+02
+2023-12-01 10:18:02,836 - speechbrain.utils.train_logger - INFO - loss: 1.36e+04, accuracy: 3.52e-02, num_masked: 3040, ratio_masked: 6.45e-01, diversity_loss: 1.45e-01, prob_perplex: 5.47e+02, code_perplex: 5.41e+02, num_vars: 640, temp: 1.99, backprop_loss: 1.36e+04, total_loss: 1.36e+04, steps: 1500, lr: 2.50e-05, avg_loss: 1.35e+04, run_time: 2.81e+02
+2023-12-01 10:22:43,330 - speechbrain.utils.train_logger - INFO - loss: 1.29e+04, accuracy: 4.64e-02, num_masked: 3060, ratio_masked: 6.54e-01, diversity_loss: 5.11e-01, prob_perplex: 3.13e+02, code_perplex: 3.01e+02, num_vars: 640, temp: 1.98, backprop_loss: 1.30e+04, total_loss: 1.30e+04, steps: 2000, lr: 3.33e-05, avg_loss: 1.33e+04, run_time: 2.80e+02
+2023-12-01 10:27:23,684 - speechbrain.utils.train_logger - INFO - loss: 1.20e+04, accuracy: 1.08e-01, num_masked: 3120, ratio_masked: 6.33e-01, diversity_loss: 6.72e-01, prob_perplex: 2.10e+02, code_perplex: 1.93e+02, num_vars: 640, temp: 1.98, backprop_loss: 1.23e+04, total_loss: 1.23e+04, steps: 2500, lr: 4.17e-05, avg_loss: 1.31e+04, run_time: 2.80e+02
+2023-12-01 10:32:03,510 - speechbrain.utils.train_logger - INFO - loss: 1.09e+04, accuracy: 1.25e-01, num_masked: 2880, ratio_masked: 6.38e-01, diversity_loss: 6.41e-01, prob_perplex: 2.30e+02, code_perplex: 2.11e+02, num_vars: 640, temp: 1.97, backprop_loss: 1.11e+04, total_loss: 1.11e+04, steps: 3000, lr: 5.00e-05, avg_loss: 1.28e+04, run_time: 2.80e+02
+2023-12-01 10:36:44,268 - speechbrain.utils.train_logger - INFO - loss: 1.08e+04, accuracy: 1.66e-01, num_masked: 2940, ratio_masked: 6.46e-01, diversity_loss: 6.64e-01, prob_perplex: 2.15e+02, code_perplex: 2.02e+02, num_vars: 640, temp: 1.97, backprop_loss: 1.10e+04, total_loss: 1.10e+04, steps: 3500, lr: 5.83e-05, avg_loss: 1.25e+04, run_time: 2.81e+02
+2023-12-01 10:41:24,962 - speechbrain.utils.train_logger - INFO - loss: 1.35e+04, accuracy: 8.16e-02, num_masked: 3200, ratio_masked: 6.57e-01, diversity_loss: 7.32e-01, prob_perplex: 1.72e+02, code_perplex: 1.63e+02, num_vars: 640, temp: 1.96, backprop_loss: 1.37e+04, total_loss: 1.37e+04, steps: 4000, lr: 6.67e-05, avg_loss: 1.23e+04, run_time: 2.81e+02
+2023-12-01 10:46:05,323 - speechbrain.utils.train_logger - INFO - loss: 9.78e+03, accuracy: 2.02e-01, num_masked: 2880, ratio_masked: 6.37e-01, diversity_loss: 6.83e-01, prob_perplex: 2.03e+02, code_perplex: 1.94e+02, num_vars: 640, temp: 1.96, backprop_loss: 9.98e+03, total_loss: 9.98e+03, steps: 4500, lr: 7.50e-05, avg_loss: 1.21e+04, run_time: 2.80e+02
+2023-12-01 10:50:18,046 - speechbrain.utils.train_logger - INFO - epoch: 1, steps: 4832, lr: 8.05e-05 - train loss: 1.19e+04 - valid loss: 2.77e+03, valid accuracy: 0.2743617594242096
+2023-12-01 10:50:19,310 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+10-50-18+00
+2023-12-01 10:50:20,351 - speechbrain.utils.epoch_loop - INFO - Going into epoch 2
+2023-12-01 10:50:20,352 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 10:50:21,248 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 10:51:57,009 - speechbrain.utils.train_logger - INFO - loss: 1.01e+04, accuracy: 2.41e-01, num_masked: 3150, ratio_masked: 6.58e-01, diversity_loss: 6.54e-01, prob_perplex: 2.21e+02, code_perplex: 2.15e+02, num_vars: 640, temp: 1.95, backprop_loss: 1.03e+04, total_loss: 1.03e+04, steps: 5000, lr: 8.33e-05, avg_loss: 9.81e+03, run_time: 3.52e+02
+2023-12-01 10:56:37,495 - speechbrain.utils.train_logger - INFO - loss: 8.95e+03, accuracy: 2.40e-01, num_masked: 2800, ratio_masked: 6.35e-01, diversity_loss: 6.59e-01, prob_perplex: 2.19e+02, code_perplex: 2.12e+02, num_vars: 640, temp: 1.95, backprop_loss: 9.13e+03, total_loss: 9.13e+03, steps: 5500, lr: 9.17e-05, avg_loss: 9.73e+03, run_time: 2.80e+02
+2023-12-01 11:01:18,105 - speechbrain.utils.train_logger - INFO - loss: 8.99e+03, accuracy: 2.33e-01, num_masked: 2760, ratio_masked: 6.49e-01, diversity_loss: 6.59e-01, prob_perplex: 2.18e+02, code_perplex: 2.11e+02, num_vars: 640, temp: 1.94, backprop_loss: 9.17e+03, total_loss: 9.17e+03, steps: 6000, lr: 1.00e-04, avg_loss: 9.60e+03, run_time: 2.81e+02
+2023-12-01 11:05:58,842 - speechbrain.utils.train_logger - INFO - loss: 9.01e+03, accuracy: 2.70e-01, num_masked: 3000, ratio_masked: 6.32e-01, diversity_loss: 6.62e-01, prob_perplex: 2.17e+02, code_perplex: 2.12e+02, num_vars: 640, temp: 1.94, backprop_loss: 9.21e+03, total_loss: 9.21e+03, steps: 6500, lr: 1.08e-04, avg_loss: 9.53e+03, run_time: 2.81e+02
+2023-12-01 11:10:39,734 - speechbrain.utils.train_logger - INFO - loss: 9.01e+03, accuracy: 2.50e-01, num_masked: 2880, ratio_masked: 6.41e-01, diversity_loss: 6.20e-01, prob_perplex: 2.43e+02, code_perplex: 2.38e+02, num_vars: 640, temp: 1.93, backprop_loss: 9.19e+03, total_loss: 9.19e+03, steps: 7000, lr: 1.17e-04, avg_loss: 9.45e+03, run_time: 2.81e+02
+2023-12-01 11:15:20,565 - speechbrain.utils.train_logger - INFO - loss: 8.98e+03, accuracy: 2.88e-01, num_masked: 3000, ratio_masked: 6.22e-01, diversity_loss: 6.07e-01, prob_perplex: 2.51e+02, code_perplex: 2.46e+02, num_vars: 640, temp: 1.93, backprop_loss: 9.16e+03, total_loss: 9.16e+03, steps: 7500, lr: 1.25e-04, avg_loss: 9.38e+03, run_time: 2.81e+02
+2023-12-01 11:20:01,253 - speechbrain.utils.train_logger - INFO - loss: 7.88e+03, accuracy: 2.77e-01, num_masked: 2650, ratio_masked: 6.45e-01, diversity_loss: 6.20e-01, prob_perplex: 2.43e+02, code_perplex: 2.38e+02, num_vars: 640, temp: 1.92, backprop_loss: 8.04e+03, total_loss: 8.04e+03, steps: 8000, lr: 1.33e-04, avg_loss: 9.31e+03, run_time: 2.81e+02
+2023-12-01 11:24:42,035 - speechbrain.utils.train_logger - INFO - loss: 8.87e+03, accuracy: 3.09e-01, num_masked: 3060, ratio_masked: 6.51e-01, diversity_loss: 6.10e-01, prob_perplex: 2.49e+02, code_perplex: 2.43e+02, num_vars: 640, temp: 1.92, backprop_loss: 9.05e+03, total_loss: 9.05e+03, steps: 8500, lr: 1.42e-04, avg_loss: 9.24e+03, run_time: 2.81e+02
+2023-12-01 11:29:22,706 - speechbrain.utils.train_logger - INFO - loss: 8.03e+03, accuracy: 3.32e-01, num_masked: 2880, ratio_masked: 6.44e-01, diversity_loss: 6.04e-01, prob_perplex: 2.54e+02, code_perplex: 2.48e+02, num_vars: 640, temp: 1.91, backprop_loss: 8.20e+03, total_loss: 8.20e+03, steps: 9000, lr: 1.50e-04, avg_loss: 9.18e+03, run_time: 2.81e+02
+2023-12-01 11:34:02,962 - speechbrain.utils.train_logger - INFO - loss: 7.46e+03, accuracy: 3.30e-01, num_masked: 2650, ratio_masked: 6.46e-01, diversity_loss: 6.03e-01, prob_perplex: 2.54e+02, code_perplex: 2.49e+02, num_vars: 640, temp: 1.91, backprop_loss: 7.62e+03, total_loss: 7.62e+03, steps: 9500, lr: 1.58e-04, avg_loss: 9.12e+03, run_time: 2.80e+02
+2023-12-01 11:36:40,817 - speechbrain.utils.train_logger - INFO - epoch: 2, steps: 9664, lr: 1.61e-04 - train loss: 9.10e+03 - valid loss: 2.40e+03, valid accuracy: 0.34293559193611145
+2023-12-01 11:36:41,870 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+11-36-40+00
+2023-12-01 11:36:42,911 - speechbrain.utils.epoch_loop - INFO - Going into epoch 3
+2023-12-01 11:36:42,912 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 11:36:43,742 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 11:39:53,973 - speechbrain.utils.train_logger - INFO - loss: 7.54e+03, accuracy: 3.25e-01, num_masked: 2700, ratio_masked: 6.28e-01, diversity_loss: 5.99e-01, prob_perplex: 2.56e+02, code_perplex: 2.51e+02, num_vars: 640, temp: 1.90, backprop_loss: 7.71e+03, total_loss: 7.71e+03, steps: 10000, lr: 1.67e-04, avg_loss: 8.52e+03, run_time: 3.51e+02
+2023-12-01 11:44:34,212 - speechbrain.utils.train_logger - INFO - loss: 8.67e+03, accuracy: 3.04e-01, num_masked: 3000, ratio_masked: 6.35e-01, diversity_loss: 6.27e-01, prob_perplex: 2.39e+02, code_perplex: 2.33e+02, num_vars: 640, temp: 1.90, backprop_loss: 8.86e+03, total_loss: 8.86e+03, steps: 10500, lr: 1.75e-04, avg_loss: 8.49e+03, run_time: 2.80e+02
+2023-12-01 11:49:14,617 - speechbrain.utils.train_logger - INFO - loss: 8.08e+03, accuracy: 3.11e-01, num_masked: 2880, ratio_masked: 6.43e-01, diversity_loss: 6.04e-01, prob_perplex: 2.54e+02, code_perplex: 2.47e+02, num_vars: 640, temp: 1.89, backprop_loss: 8.26e+03, total_loss: 8.26e+03, steps: 11000, lr: 1.83e-04, avg_loss: 8.43e+03, run_time: 2.80e+02
+2023-12-01 11:53:54,873 - speechbrain.utils.train_logger - INFO - loss: 8.31e+03, accuracy: 3.37e-01, num_masked: 3040, ratio_masked: 6.46e-01, diversity_loss: 5.88e-01, prob_perplex: 2.64e+02, code_perplex: 2.58e+02, num_vars: 640, temp: 1.89, backprop_loss: 8.49e+03, total_loss: 8.49e+03, steps: 11500, lr: 1.92e-04, avg_loss: 8.40e+03, run_time: 2.80e+02
+2023-12-01 11:58:35,079 - speechbrain.utils.train_logger - INFO - loss: 7.65e+03, accuracy: 3.25e-01, num_masked: 2760, ratio_masked: 6.52e-01, diversity_loss: 5.83e-01, prob_perplex: 2.67e+02, code_perplex: 2.63e+02, num_vars: 640, temp: 1.88, backprop_loss: 7.81e+03, total_loss: 7.81e+03, steps: 12000, lr: 2.00e-04, avg_loss: 8.36e+03, run_time: 2.80e+02
+2023-12-01 12:03:15,934 - speechbrain.utils.train_logger - INFO - loss: 8.45e+03, accuracy: 3.08e-01, num_masked: 3040, ratio_masked: 6.46e-01, diversity_loss: 5.76e-01, prob_perplex: 2.72e+02, code_perplex: 2.67e+02, num_vars: 640, temp: 1.88, backprop_loss: 8.62e+03, total_loss: 8.62e+03, steps: 12500, lr: 2.08e-04, avg_loss: 8.33e+03, run_time: 2.81e+02
+2023-12-01 12:07:56,490 - speechbrain.utils.train_logger - INFO - loss: 7.55e+03, accuracy: 3.12e-01, num_masked: 2650, ratio_masked: 6.54e-01, diversity_loss: 6.14e-01, prob_perplex: 2.47e+02, code_perplex: 2.41e+02, num_vars: 640, temp: 1.87, backprop_loss: 7.71e+03, total_loss: 7.71e+03, steps: 13000, lr: 2.17e-04, avg_loss: 8.30e+03, run_time: 2.81e+02
+2023-12-01 12:12:36,962 - speechbrain.utils.train_logger - INFO - loss: 7.24e+03, accuracy: 3.03e-01, num_masked: 2600, ratio_masked: 6.33e-01, diversity_loss: 5.85e-01, prob_perplex: 2.66e+02, code_perplex: 2.61e+02, num_vars: 640, temp: 1.87, backprop_loss: 7.40e+03, total_loss: 7.40e+03, steps: 13500, lr: 2.25e-04, avg_loss: 8.27e+03, run_time: 2.80e+02
+2023-12-01 12:17:17,618 - speechbrain.utils.train_logger - INFO - loss: 7.58e+03, accuracy: 3.49e-01, num_masked: 2940, ratio_masked: 6.47e-01, diversity_loss: 6.00e-01, prob_perplex: 2.56e+02, code_perplex: 2.50e+02, num_vars: 640, temp: 1.86, backprop_loss: 7.75e+03, total_loss: 7.75e+03, steps: 14000, lr: 2.33e-04, avg_loss: 8.24e+03, run_time: 2.81e+02
+2023-12-01 12:23:01,242 - speechbrain.utils.train_logger - INFO - epoch: 3, steps: 14496, lr: 2.42e-04 - train loss: 8.21e+03 - valid loss: 2.17e+03, valid accuracy: 0.3932616710662842
+2023-12-01 12:23:02,391 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+12-23-01+00
+2023-12-01 12:23:03,434 - speechbrain.utils.epoch_loop - INFO - Going into epoch 4
+2023-12-01 12:23:03,436 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 12:23:04,384 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 12:23:08,021 - speechbrain.utils.train_logger - INFO - loss: 6.96e+03, accuracy: 3.74e-01, num_masked: 2760, ratio_masked: 6.41e-01, diversity_loss: 5.84e-01, prob_perplex: 2.66e+02, code_perplex: 2.59e+02, num_vars: 640, temp: 1.86, backprop_loss: 7.12e+03, total_loss: 7.12e+03, steps: 14500, lr: 2.42e-04, avg_loss: 7.69e+03, run_time: 3.50e+02
+2023-12-01 12:27:49,351 - speechbrain.utils.train_logger - INFO - loss: 7.14e+03, accuracy: 3.67e-01, num_masked: 2760, ratio_masked: 6.44e-01, diversity_loss: 6.12e-01, prob_perplex: 2.48e+02, code_perplex: 2.43e+02, num_vars: 640, temp: 1.86, backprop_loss: 7.31e+03, total_loss: 7.31e+03, steps: 15000, lr: 2.50e-04, avg_loss: 7.94e+03, run_time: 2.81e+02
+2023-12-01 12:32:29,840 - speechbrain.utils.train_logger - INFO - loss: 7.60e+03, accuracy: 3.66e-01, num_masked: 3010, ratio_masked: 6.30e-01, diversity_loss: 5.88e-01, prob_perplex: 2.64e+02, code_perplex: 2.57e+02, num_vars: 640, temp: 1.85, backprop_loss: 7.78e+03, total_loss: 7.78e+03, steps: 15500, lr: 2.58e-04, avg_loss: 7.87e+03, run_time: 2.81e+02
+2023-12-01 12:37:10,505 - speechbrain.utils.train_logger - INFO - loss: 7.89e+03, accuracy: 3.47e-01, num_masked: 3000, ratio_masked: 6.33e-01, diversity_loss: 6.01e-01, prob_perplex: 2.56e+02, code_perplex: 2.50e+02, num_vars: 640, temp: 1.85, backprop_loss: 8.07e+03, total_loss: 8.07e+03, steps: 16000, lr: 2.67e-04, avg_loss: 7.85e+03, run_time: 2.81e+02
+2023-12-01 12:41:50,918 - speechbrain.utils.train_logger - INFO - loss: 7.47e+03, accuracy: 3.55e-01, num_masked: 2880, ratio_masked: 6.39e-01, diversity_loss: 5.90e-01, prob_perplex: 2.62e+02, code_perplex: 2.57e+02, num_vars: 640, temp: 1.84, backprop_loss: 7.64e+03, total_loss: 7.64e+03, steps: 16500, lr: 2.75e-04, avg_loss: 7.83e+03, run_time: 2.80e+02
+2023-12-01 12:46:31,773 - speechbrain.utils.train_logger - INFO - loss: 7.98e+03, accuracy: 3.44e-01, num_masked: 3010, ratio_masked: 6.30e-01, diversity_loss: 5.92e-01, prob_perplex: 2.61e+02, code_perplex: 2.53e+02, num_vars: 640, temp: 1.84, backprop_loss: 8.16e+03, total_loss: 8.16e+03, steps: 17000, lr: 2.83e-04, avg_loss: 7.82e+03, run_time: 2.81e+02
+2023-12-01 12:51:12,471 - speechbrain.utils.train_logger - INFO - loss: 7.91e+03, accuracy: 3.66e-01, num_masked: 3060, ratio_masked: 6.40e-01, diversity_loss: 5.64e-01, prob_perplex: 2.79e+02, code_perplex: 2.73e+02, num_vars: 640, temp: 1.83, backprop_loss: 8.08e+03, total_loss: 8.08e+03, steps: 17500, lr: 2.92e-04, avg_loss: 7.80e+03, run_time: 2.81e+02
+2023-12-01 12:55:52,935 - speechbrain.utils.train_logger - INFO - loss: 7.45e+03, accuracy: 3.72e-01, num_masked: 2880, ratio_masked: 6.37e-01, diversity_loss: 5.97e-01, prob_perplex: 2.58e+02, code_perplex: 2.51e+02, num_vars: 640, temp: 1.83, backprop_loss: 7.62e+03, total_loss: 7.62e+03, steps: 18000, lr: 3.00e-04, avg_loss: 7.78e+03, run_time: 2.80e+02
+2023-12-01 13:00:33,874 - speechbrain.utils.train_logger - INFO - loss: 7.65e+03, accuracy: 3.70e-01, num_masked: 2940, ratio_masked: 6.58e-01, diversity_loss: 5.67e-01, prob_perplex: 2.77e+02, code_perplex: 2.71e+02, num_vars: 640, temp: 1.82, backprop_loss: 7.81e+03, total_loss: 7.81e+03, steps: 18500, lr: 3.08e-04, avg_loss: 7.76e+03, run_time: 2.81e+02
+2023-12-01 13:05:14,721 - speechbrain.utils.train_logger - INFO - loss: 6.68e+03, accuracy: 3.90e-01, num_masked: 2700, ratio_masked: 6.41e-01, diversity_loss: 5.81e-01, prob_perplex: 2.68e+02, code_perplex: 2.62e+02, num_vars: 640, temp: 1.82, backprop_loss: 6.84e+03, total_loss: 6.84e+03, steps: 19000, lr: 3.17e-04, avg_loss: 7.74e+03, run_time: 2.81e+02
+2023-12-01 13:09:24,773 - speechbrain.utils.train_logger - INFO - epoch: 4, steps: 19328, lr: 3.22e-04 - train loss: 7.73e+03 - valid loss: 2.05e+03, valid accuracy: 0.4202210605144501
+2023-12-01 13:09:26,052 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+13-09-24+00
+2023-12-01 13:09:26,919 - speechbrain.utils.epoch_loop - INFO - Going into epoch 5
+2023-12-01 13:09:26,921 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 13:09:27,839 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 13:11:06,240 - speechbrain.utils.train_logger - INFO - loss: 7.32e+03, accuracy: 4.02e-01, num_masked: 3060, ratio_masked: 6.46e-01, diversity_loss: 5.66e-01, prob_perplex: 2.78e+02, code_perplex: 2.73e+02, num_vars: 640, temp: 1.81, backprop_loss: 7.49e+03, total_loss: 7.49e+03, steps: 19500, lr: 3.25e-04, avg_loss: 7.52e+03, run_time: 3.52e+02
+2023-12-01 13:15:47,054 - speechbrain.utils.train_logger - INFO - loss: 7.41e+03, accuracy: 3.60e-01, num_masked: 2880, ratio_masked: 6.44e-01, diversity_loss: 5.56e-01, prob_perplex: 2.84e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.81, backprop_loss: 7.57e+03, total_loss: 7.57e+03, steps: 20000, lr: 3.33e-04, avg_loss: 7.53e+03, run_time: 2.81e+02
+2023-12-01 13:20:27,681 - speechbrain.utils.train_logger - INFO - loss: 7.57e+03, accuracy: 3.78e-01, num_masked: 3060, ratio_masked: 6.53e-01, diversity_loss: 5.58e-01, prob_perplex: 2.83e+02, code_perplex: 2.76e+02, num_vars: 640, temp: 1.81, backprop_loss: 7.74e+03, total_loss: 7.74e+03, steps: 20500, lr: 3.42e-04, avg_loss: 7.53e+03, run_time: 2.81e+02
+2023-12-01 13:25:08,757 - speechbrain.utils.train_logger - INFO - loss: 7.20e+03, accuracy: 3.81e-01, num_masked: 2900, ratio_masked: 6.35e-01, diversity_loss: 5.74e-01, prob_perplex: 2.73e+02, code_perplex: 2.67e+02, num_vars: 640, temp: 1.80, backprop_loss: 7.36e+03, total_loss: 7.36e+03, steps: 21000, lr: 3.50e-04, avg_loss: 7.52e+03, run_time: 2.81e+02
+2023-12-01 13:29:49,196 - speechbrain.utils.train_logger - INFO - loss: 6.33e+03, accuracy: 4.13e-01, num_masked: 2700, ratio_masked: 6.33e-01, diversity_loss: 5.62e-01, prob_perplex: 2.80e+02, code_perplex: 2.75e+02, num_vars: 640, temp: 1.80, backprop_loss: 6.48e+03, total_loss: 6.48e+03, steps: 21500, lr: 3.58e-04, avg_loss: 7.49e+03, run_time: 2.80e+02
+2023-12-01 13:34:29,652 - speechbrain.utils.train_logger - INFO - loss: 6.75e+03, accuracy: 3.71e-01, num_masked: 2760, ratio_masked: 6.48e-01, diversity_loss: 5.90e-01, prob_perplex: 2.63e+02, code_perplex: 2.56e+02, num_vars: 640, temp: 1.79, backprop_loss: 6.92e+03, total_loss: 6.92e+03, steps: 22000, lr: 3.67e-04, avg_loss: 7.48e+03, run_time: 2.80e+02
+2023-12-01 13:39:10,757 - speechbrain.utils.train_logger - INFO - loss: 8.19e+03, accuracy: 3.57e-01, num_masked: 3080, ratio_masked: 6.38e-01, diversity_loss: 5.61e-01, prob_perplex: 2.81e+02, code_perplex: 2.75e+02, num_vars: 640, temp: 1.79, backprop_loss: 8.37e+03, total_loss: 8.37e+03, steps: 22500, lr: 3.75e-04, avg_loss: 7.47e+03, run_time: 2.81e+02
+2023-12-01 13:43:51,646 - speechbrain.utils.train_logger - INFO - loss: 7.31e+03, accuracy: 3.95e-01, num_masked: 3060, ratio_masked: 6.46e-01, diversity_loss: 5.58e-01, prob_perplex: 2.83e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.78, backprop_loss: 7.48e+03, total_loss: 7.48e+03, steps: 23000, lr: 3.83e-04, avg_loss: 7.46e+03, run_time: 2.81e+02
+2023-12-01 13:48:32,044 - speechbrain.utils.train_logger - INFO - loss: 7.00e+03, accuracy: 3.77e-01, num_masked: 2880, ratio_masked: 6.41e-01, diversity_loss: 5.73e-01, prob_perplex: 2.73e+02, code_perplex: 2.67e+02, num_vars: 640, temp: 1.78, backprop_loss: 7.16e+03, total_loss: 7.16e+03, steps: 23500, lr: 3.92e-04, avg_loss: 7.45e+03, run_time: 2.80e+02
+2023-12-01 13:53:13,033 - speechbrain.utils.train_logger - INFO - loss: 7.64e+03, accuracy: 3.56e-01, num_masked: 2940, ratio_masked: 6.50e-01, diversity_loss: 5.77e-01, prob_perplex: 2.71e+02, code_perplex: 2.65e+02, num_vars: 640, temp: 1.77, backprop_loss: 7.81e+03, total_loss: 7.81e+03, steps: 24000, lr: 4.00e-04, avg_loss: 7.44e+03, run_time: 2.81e+02
+2023-12-01 13:55:48,697 - speechbrain.utils.train_logger - INFO - epoch: 5, steps: 24160, lr: 4.03e-04 - train loss: 7.43e+03 - valid loss: 1.96e+03, valid accuracy: 0.4435742199420929
+2023-12-01 13:55:49,800 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+13-55-48+00
+2023-12-01 13:55:50,472 - speechbrain.utils.epoch_loop - INFO - Going into epoch 6
+2023-12-01 13:55:50,474 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 13:55:51,276 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 13:59:03,994 - speechbrain.utils.train_logger - INFO - loss: 7.75e+03, accuracy: 3.77e-01, num_masked: 3000, ratio_masked: 6.25e-01, diversity_loss: 5.48e-01, prob_perplex: 2.89e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.77, backprop_loss: 7.91e+03, total_loss: 7.91e+03, steps: 24500, lr: 4.08e-04, avg_loss: 7.34e+03, run_time: 3.51e+02
+2023-12-01 14:03:45,041 - speechbrain.utils.train_logger - INFO - loss: 7.60e+03, accuracy: 3.87e-01, num_masked: 3060, ratio_masked: 6.48e-01, diversity_loss: 5.66e-01, prob_perplex: 2.78e+02, code_perplex: 2.71e+02, num_vars: 640, temp: 1.77, backprop_loss: 7.77e+03, total_loss: 7.77e+03, steps: 25000, lr: 4.17e-04, avg_loss: 7.31e+03, run_time: 2.81e+02
+2023-12-01 14:08:25,505 - speechbrain.utils.train_logger - INFO - loss: 6.61e+03, accuracy: 4.03e-01, num_masked: 2760, ratio_masked: 6.44e-01, diversity_loss: 5.54e-01, prob_perplex: 2.86e+02, code_perplex: 2.79e+02, num_vars: 640, temp: 1.76, backprop_loss: 6.76e+03, total_loss: 6.76e+03, steps: 25500, lr: 4.25e-04, avg_loss: 7.28e+03, run_time: 2.80e+02
+2023-12-01 14:13:06,511 - speechbrain.utils.train_logger - INFO - loss: 6.21e+03, accuracy: 4.03e-01, num_masked: 2650, ratio_masked: 6.35e-01, diversity_loss: 5.54e-01, prob_perplex: 2.85e+02, code_perplex: 2.80e+02, num_vars: 640, temp: 1.76, backprop_loss: 6.36e+03, total_loss: 6.36e+03, steps: 26000, lr: 4.33e-04, avg_loss: 7.27e+03, run_time: 2.81e+02
+2023-12-01 14:17:47,383 - speechbrain.utils.train_logger - INFO - loss: 7.17e+03, accuracy: 3.77e-01, num_masked: 2880, ratio_masked: 6.42e-01, diversity_loss: 5.88e-01, prob_perplex: 2.64e+02, code_perplex: 2.56e+02, num_vars: 640, temp: 1.75, backprop_loss: 7.34e+03, total_loss: 7.34e+03, steps: 26500, lr: 4.42e-04, avg_loss: 7.26e+03, run_time: 2.81e+02
+2023-12-01 14:22:28,280 - speechbrain.utils.train_logger - INFO - loss: 6.36e+03, accuracy: 3.97e-01, num_masked: 2650, ratio_masked: 6.38e-01, diversity_loss: 5.74e-01, prob_perplex: 2.72e+02, code_perplex: 2.66e+02, num_vars: 640, temp: 1.75, backprop_loss: 6.51e+03, total_loss: 6.51e+03, steps: 27000, lr: 4.50e-04, avg_loss: 7.24e+03, run_time: 2.81e+02
+2023-12-01 14:27:09,103 - speechbrain.utils.train_logger - INFO - loss: 7.18e+03, accuracy: 4.01e-01, num_masked: 3000, ratio_masked: 6.42e-01, diversity_loss: 5.81e-01, prob_perplex: 2.68e+02, code_perplex: 2.61e+02, num_vars: 640, temp: 1.74, backprop_loss: 7.36e+03, total_loss: 7.36e+03, steps: 27500, lr: 4.58e-04, avg_loss: 7.23e+03, run_time: 2.81e+02
+2023-12-01 14:31:50,333 - speechbrain.utils.train_logger - INFO - loss: 6.84e+03, accuracy: 3.94e-01, num_masked: 2880, ratio_masked: 6.37e-01, diversity_loss: 5.77e-01, prob_perplex: 2.71e+02, code_perplex: 2.64e+02, num_vars: 640, temp: 1.74, backprop_loss: 7.00e+03, total_loss: 7.00e+03, steps: 28000, lr: 4.67e-04, avg_loss: 7.22e+03, run_time: 2.81e+02
+2023-12-01 14:36:31,968 - speechbrain.utils.train_logger - INFO - loss: 7.78e+03, accuracy: 3.56e-01, num_masked: 3080, ratio_masked: 6.48e-01, diversity_loss: 5.74e-01, prob_perplex: 2.73e+02, code_perplex: 2.65e+02, num_vars: 640, temp: 1.73, backprop_loss: 7.96e+03, total_loss: 7.96e+03, steps: 28500, lr: 4.75e-04, avg_loss: 7.21e+03, run_time: 2.82e+02
+2023-12-01 14:42:13,904 - speechbrain.utils.train_logger - INFO - epoch: 6, steps: 28992, lr: 4.83e-04 - train loss: 7.21e+03 - valid loss: 1.87e+03, valid accuracy: 0.46495798230171204
+2023-12-01 14:42:14,981 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+14-42-13+00
+2023-12-01 14:42:16,072 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+10-50-18+00
+2023-12-01 14:42:16,073 - speechbrain.utils.epoch_loop - INFO - Going into epoch 7
+2023-12-01 14:42:16,074 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 14:42:16,996 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 14:42:22,921 - speechbrain.utils.train_logger - INFO - loss: 6.17e+03, accuracy: 4.21e-01, num_masked: 2600, ratio_masked: 6.27e-01, diversity_loss: 5.64e-01, prob_perplex: 2.79e+02, code_perplex: 2.72e+02, num_vars: 640, temp: 1.73, backprop_loss: 6.31e+03, total_loss: 6.31e+03, steps: 29000, lr: 4.83e-04, avg_loss: 7.30e+03, run_time: 3.51e+02
+2023-12-01 14:47:05,122 - speechbrain.utils.train_logger - INFO - loss: 6.25e+03, accuracy: 4.49e-01, num_masked: 2870, ratio_masked: 6.35e-01, diversity_loss: 5.68e-01, prob_perplex: 2.76e+02, code_perplex: 2.72e+02, num_vars: 640, temp: 1.73, backprop_loss: 6.41e+03, total_loss: 6.41e+03, steps: 29500, lr: 4.92e-04, avg_loss: 7.10e+03, run_time: 2.82e+02
+2023-12-01 14:51:46,015 - speechbrain.utils.train_logger - INFO - loss: 6.32e+03, accuracy: 3.98e-01, num_masked: 2700, ratio_masked: 6.28e-01, diversity_loss: 5.76e-01, prob_perplex: 2.71e+02, code_perplex: 2.64e+02, num_vars: 640, temp: 1.72, backprop_loss: 6.48e+03, total_loss: 6.48e+03, steps: 30000, lr: 5.00e-04, avg_loss: 7.08e+03, run_time: 2.81e+02
+2023-12-01 14:56:26,667 - speechbrain.utils.train_logger - INFO - loss: 6.35e+03, accuracy: 4.46e-01, num_masked: 2880, ratio_masked: 6.43e-01, diversity_loss: 5.73e-01, prob_perplex: 2.74e+02, code_perplex: 2.67e+02, num_vars: 640, temp: 1.72, backprop_loss: 6.51e+03, total_loss: 6.51e+03, steps: 30500, lr: 4.58e-04, avg_loss: 7.05e+03, run_time: 2.81e+02
+2023-12-01 15:01:07,427 - speechbrain.utils.train_logger - INFO - loss: 6.22e+03, accuracy: 3.98e-01, num_masked: 2650, ratio_masked: 6.35e-01, diversity_loss: 5.84e-01, prob_perplex: 2.66e+02, code_perplex: 2.60e+02, num_vars: 640, temp: 1.71, backprop_loss: 6.38e+03, total_loss: 6.38e+03, steps: 31000, lr: 4.57e-04, avg_loss: 7.03e+03, run_time: 2.81e+02
+2023-12-01 15:05:47,645 - speechbrain.utils.train_logger - INFO - loss: 8.09e+03, accuracy: 3.88e-01, num_masked: 3300, ratio_masked: 6.75e-01, diversity_loss: 5.49e-01, prob_perplex: 2.88e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.71, backprop_loss: 8.27e+03, total_loss: 8.27e+03, steps: 31500, lr: 4.57e-04, avg_loss: 7.02e+03, run_time: 2.80e+02
+2023-12-01 15:10:28,155 - speechbrain.utils.train_logger - INFO - loss: 6.92e+03, accuracy: 4.20e-01, num_masked: 2940, ratio_masked: 6.58e-01, diversity_loss: 5.58e-01, prob_perplex: 2.83e+02, code_perplex: 2.77e+02, num_vars: 640, temp: 1.70, backprop_loss: 7.09e+03, total_loss: 7.09e+03, steps: 32000, lr: 4.56e-04, avg_loss: 7.02e+03, run_time: 2.81e+02
+2023-12-01 15:15:08,815 - speechbrain.utils.train_logger - INFO - loss: 7.17e+03, accuracy: 4.07e-01, num_masked: 3000, ratio_masked: 6.43e-01, diversity_loss: 5.70e-01, prob_perplex: 2.75e+02, code_perplex: 2.70e+02, num_vars: 640, temp: 1.70, backprop_loss: 7.34e+03, total_loss: 7.34e+03, steps: 32500, lr: 4.56e-04, avg_loss: 7.01e+03, run_time: 2.81e+02
+2023-12-01 15:19:49,725 - speechbrain.utils.train_logger - INFO - loss: 6.64e+03, accuracy: 4.31e-01, num_masked: 3000, ratio_masked: 6.31e-01, diversity_loss: 5.55e-01, prob_perplex: 2.85e+02, code_perplex: 2.80e+02, num_vars: 640, temp: 1.70, backprop_loss: 6.81e+03, total_loss: 6.81e+03, steps: 33000, lr: 4.55e-04, avg_loss: 7.00e+03, run_time: 2.81e+02
+2023-12-01 15:24:30,644 - speechbrain.utils.train_logger - INFO - loss: 6.98e+03, accuracy: 4.02e-01, num_masked: 3000, ratio_masked: 6.64e-01, diversity_loss: 5.51e-01, prob_perplex: 2.87e+02, code_perplex: 2.82e+02, num_vars: 640, temp: 1.69, backprop_loss: 7.15e+03, total_loss: 7.15e+03, steps: 33500, lr: 4.54e-04, avg_loss: 6.99e+03, run_time: 2.81e+02
+2023-12-01 15:28:38,504 - speechbrain.utils.train_logger - INFO - epoch: 7, steps: 33824, lr: 4.54e-04 - train loss: 6.98e+03 - valid loss: 1.80e+03, valid accuracy: 0.48382171988487244
+2023-12-01 15:28:39,765 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+15-28-38+00
+2023-12-01 15:28:40,623 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+11-36-40+00
+2023-12-01 15:28:40,624 - speechbrain.utils.epoch_loop - INFO - Going into epoch 8
+2023-12-01 15:28:40,625 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 15:28:41,400 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 15:30:22,508 - speechbrain.utils.train_logger - INFO - loss: 7.84e+03, accuracy: 3.92e-01, num_masked: 3150, ratio_masked: 6.42e-01, diversity_loss: 5.43e-01, prob_perplex: 2.93e+02, code_perplex: 2.88e+02, num_vars: 640, temp: 1.69, backprop_loss: 8.01e+03, total_loss: 8.01e+03, steps: 34000, lr: 4.54e-04, avg_loss: 6.90e+03, run_time: 3.52e+02
+2023-12-01 15:35:03,318 - speechbrain.utils.train_logger - INFO - loss: 7.51e+03, accuracy: 3.81e-01, num_masked: 3060, ratio_masked: 6.48e-01, diversity_loss: 5.68e-01, prob_perplex: 2.76e+02, code_perplex: 2.70e+02, num_vars: 640, temp: 1.68, backprop_loss: 7.68e+03, total_loss: 7.68e+03, steps: 34500, lr: 4.53e-04, avg_loss: 6.85e+03, run_time: 2.81e+02
+2023-12-01 15:39:43,986 - speechbrain.utils.train_logger - INFO - loss: 7.25e+03, accuracy: 3.88e-01, num_masked: 3060, ratio_masked: 6.45e-01, diversity_loss: 5.80e-01, prob_perplex: 2.69e+02, code_perplex: 2.62e+02, num_vars: 640, temp: 1.68, backprop_loss: 7.43e+03, total_loss: 7.43e+03, steps: 35000, lr: 4.52e-04, avg_loss: 6.83e+03, run_time: 2.81e+02
+2023-12-01 15:44:24,630 - speechbrain.utils.train_logger - INFO - loss: 7.15e+03, accuracy: 4.11e-01, num_masked: 3080, ratio_masked: 6.51e-01, diversity_loss: 5.51e-01, prob_perplex: 2.88e+02, code_perplex: 2.82e+02, num_vars: 640, temp: 1.67, backprop_loss: 7.32e+03, total_loss: 7.32e+03, steps: 35500, lr: 4.52e-04, avg_loss: 6.82e+03, run_time: 2.81e+02
+2023-12-01 15:49:05,123 - speechbrain.utils.train_logger - INFO - loss: 6.49e+03, accuracy: 4.38e-01, num_masked: 2940, ratio_masked: 6.51e-01, diversity_loss: 5.62e-01, prob_perplex: 2.80e+02, code_perplex: 2.75e+02, num_vars: 640, temp: 1.67, backprop_loss: 6.66e+03, total_loss: 6.66e+03, steps: 36000, lr: 4.51e-04, avg_loss: 6.83e+03, run_time: 2.80e+02
+2023-12-01 15:53:45,367 - speechbrain.utils.train_logger - INFO - loss: 6.59e+03, accuracy: 4.26e-01, num_masked: 2880, ratio_masked: 6.40e-01, diversity_loss: 5.45e-01, prob_perplex: 2.91e+02, code_perplex: 2.87e+02, num_vars: 640, temp: 1.67, backprop_loss: 6.75e+03, total_loss: 6.75e+03, steps: 36500, lr: 4.51e-04, avg_loss: 6.82e+03, run_time: 2.80e+02
+2023-12-01 15:58:26,318 - speechbrain.utils.train_logger - INFO - loss: 5.80e+03, accuracy: 4.61e-01, num_masked: 2700, ratio_masked: 6.29e-01, diversity_loss: 5.61e-01, prob_perplex: 2.81e+02, code_perplex: 2.74e+02, num_vars: 640, temp: 1.66, backprop_loss: 5.95e+03, total_loss: 5.95e+03, steps: 37000, lr: 4.50e-04, avg_loss: 6.82e+03, run_time: 2.81e+02
+2023-12-01 16:03:07,212 - speechbrain.utils.train_logger - INFO - loss: 6.88e+03, accuracy: 4.29e-01, num_masked: 3060, ratio_masked: 6.53e-01, diversity_loss: 5.67e-01, prob_perplex: 2.77e+02, code_perplex: 2.72e+02, num_vars: 640, temp: 1.66, backprop_loss: 7.05e+03, total_loss: 7.05e+03, steps: 37500, lr: 4.49e-04, avg_loss: 6.81e+03, run_time: 2.81e+02
+2023-12-01 16:07:48,006 - speechbrain.utils.train_logger - INFO - loss: 6.60e+03, accuracy: 4.29e-01, num_masked: 2870, ratio_masked: 6.36e-01, diversity_loss: 5.95e-01, prob_perplex: 2.59e+02, code_perplex: 2.53e+02, num_vars: 640, temp: 1.65, backprop_loss: 6.77e+03, total_loss: 6.77e+03, steps: 38000, lr: 4.49e-04, avg_loss: 6.80e+03, run_time: 2.81e+02
+2023-12-01 16:12:28,965 - speechbrain.utils.train_logger - INFO - loss: 6.67e+03, accuracy: 4.34e-01, num_masked: 2880, ratio_masked: 6.37e-01, diversity_loss: 5.45e-01, prob_perplex: 2.91e+02, code_perplex: 2.86e+02, num_vars: 640, temp: 1.65, backprop_loss: 6.83e+03, total_loss: 6.83e+03, steps: 38500, lr: 4.48e-04, avg_loss: 6.79e+03, run_time: 2.81e+02
+2023-12-01 16:15:06,758 - speechbrain.utils.train_logger - INFO - epoch: 8, steps: 38656, lr: 4.48e-04 - train loss: 6.79e+03 - valid loss: 1.74e+03, valid accuracy: 0.49647337198257446
+2023-12-01 16:15:07,852 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+16-15-06+00
+2023-12-01 16:15:08,833 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+12-23-01+00
+2023-12-01 16:15:08,834 - speechbrain.utils.epoch_loop - INFO - Going into epoch 9
+2023-12-01 16:15:08,835 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 16:15:09,651 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 16:18:25,370 - speechbrain.utils.train_logger - INFO - loss: 5.61e+03, accuracy: 4.61e-01, num_masked: 2750, ratio_masked: 6.46e-01, diversity_loss: 5.58e-01, prob_perplex: 2.83e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.65, backprop_loss: 5.77e+03, total_loss: 5.77e+03, steps: 39000, lr: 4.48e-04, avg_loss: 6.66e+03, run_time: 3.56e+02
+2023-12-01 16:23:06,689 - speechbrain.utils.train_logger - INFO - loss: 6.88e+03, accuracy: 4.31e-01, num_masked: 3080, ratio_masked: 6.48e-01, diversity_loss: 5.58e-01, prob_perplex: 2.83e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.64, backprop_loss: 7.05e+03, total_loss: 7.05e+03, steps: 39500, lr: 4.47e-04, avg_loss: 6.70e+03, run_time: 2.81e+02
+2023-12-01 16:27:47,806 - speechbrain.utils.train_logger - INFO - loss: 6.35e+03, accuracy: 4.20e-01, num_masked: 2880, ratio_masked: 6.37e-01, diversity_loss: 5.77e-01, prob_perplex: 2.71e+02, code_perplex: 2.65e+02, num_vars: 640, temp: 1.64, backprop_loss: 6.52e+03, total_loss: 6.52e+03, steps: 40000, lr: 4.46e-04, avg_loss: 6.70e+03, run_time: 2.81e+02
+2023-12-01 16:32:28,275 - speechbrain.utils.train_logger - INFO - loss: 6.66e+03, accuracy: 4.53e-01, num_masked: 3080, ratio_masked: 6.50e-01, diversity_loss: 5.56e-01, prob_perplex: 2.84e+02, code_perplex: 2.79e+02, num_vars: 640, temp: 1.63, backprop_loss: 6.83e+03, total_loss: 6.83e+03, steps: 40500, lr: 4.46e-04, avg_loss: 6.69e+03, run_time: 2.80e+02
+2023-12-01 16:37:08,843 - speechbrain.utils.train_logger - INFO - loss: 6.40e+03, accuracy: 4.34e-01, num_masked: 2870, ratio_masked: 6.32e-01, diversity_loss: 5.69e-01, prob_perplex: 2.76e+02, code_perplex: 2.69e+02, num_vars: 640, temp: 1.63, backprop_loss: 6.57e+03, total_loss: 6.57e+03, steps: 41000, lr: 4.45e-04, avg_loss: 6.69e+03, run_time: 2.81e+02
+2023-12-01 16:41:50,346 - speechbrain.utils.train_logger - INFO - loss: 7.34e+03, accuracy: 3.99e-01, num_masked: 3080, ratio_masked: 6.40e-01, diversity_loss: 5.42e-01, prob_perplex: 2.93e+02, code_perplex: 2.88e+02, num_vars: 640, temp: 1.63, backprop_loss: 7.51e+03, total_loss: 7.51e+03, steps: 41500, lr: 4.44e-04, avg_loss: 6.68e+03, run_time: 2.81e+02
+2023-12-01 16:46:30,938 - speechbrain.utils.train_logger - INFO - loss: 6.04e+03, accuracy: 4.62e-01, num_masked: 3000, ratio_masked: 6.32e-01, diversity_loss: 5.70e-01, prob_perplex: 2.75e+02, code_perplex: 2.69e+02, num_vars: 640, temp: 1.62, backprop_loss: 6.21e+03, total_loss: 6.21e+03, steps: 42000, lr: 4.44e-04, avg_loss: 6.68e+03, run_time: 2.81e+02
+2023-12-01 16:51:12,315 - speechbrain.utils.train_logger - INFO - loss: 6.35e+03, accuracy: 4.41e-01, num_masked: 2870, ratio_masked: 6.34e-01, diversity_loss: 5.45e-01, prob_perplex: 2.91e+02, code_perplex: 2.87e+02, num_vars: 640, temp: 1.62, backprop_loss: 6.51e+03, total_loss: 6.51e+03, steps: 42500, lr: 4.43e-04, avg_loss: 6.67e+03, run_time: 2.81e+02
+2023-12-01 16:55:53,216 - speechbrain.utils.train_logger - INFO - loss: 6.67e+03, accuracy: 4.30e-01, num_masked: 3010, ratio_masked: 6.31e-01, diversity_loss: 5.67e-01, prob_perplex: 2.77e+02, code_perplex: 2.71e+02, num_vars: 640, temp: 1.61, backprop_loss: 6.84e+03, total_loss: 6.84e+03, steps: 43000, lr: 4.43e-04, avg_loss: 6.66e+03, run_time: 2.81e+02
+2023-12-01 17:01:32,908 - speechbrain.utils.train_logger - INFO - epoch: 9, steps: 43488, lr: 4.42e-04 - train loss: 6.66e+03 - valid loss: 1.70e+03, valid accuracy: 0.5047962069511414
+2023-12-01 17:01:34,027 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+17-01-32+00
+2023-12-01 17:01:35,053 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+13-09-24+00
+2023-12-01 17:01:35,054 - speechbrain.utils.epoch_loop - INFO - Going into epoch 10
+2023-12-01 17:01:35,055 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 17:01:35,991 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 17:01:44,198 - speechbrain.utils.train_logger - INFO - loss: 6.53e+03, accuracy: 4.35e-01, num_masked: 2880, ratio_masked: 6.38e-01, diversity_loss: 5.62e-01, prob_perplex: 2.80e+02, code_perplex: 2.75e+02, num_vars: 640, temp: 1.61, backprop_loss: 6.69e+03, total_loss: 6.69e+03, steps: 43500, lr: 4.42e-04, avg_loss: 6.32e+03, run_time: 3.51e+02
+2023-12-01 17:06:25,274 - speechbrain.utils.train_logger - INFO - loss: 7.34e+03, accuracy: 3.95e-01, num_masked: 3120, ratio_masked: 6.57e-01, diversity_loss: 5.83e-01, prob_perplex: 2.67e+02, code_perplex: 2.60e+02, num_vars: 640, temp: 1.61, backprop_loss: 7.52e+03, total_loss: 7.52e+03, steps: 44000, lr: 4.41e-04, avg_loss: 6.58e+03, run_time: 2.81e+02
+2023-12-01 17:11:05,909 - speechbrain.utils.train_logger - INFO - loss: 6.18e+03, accuracy: 4.45e-01, num_masked: 3000, ratio_masked: 6.32e-01, diversity_loss: 5.49e-01, prob_perplex: 2.89e+02, code_perplex: 2.83e+02, num_vars: 640, temp: 1.60, backprop_loss: 6.34e+03, total_loss: 6.34e+03, steps: 44500, lr: 4.41e-04, avg_loss: 6.60e+03, run_time: 2.81e+02
+2023-12-01 17:15:46,969 - speechbrain.utils.train_logger - INFO - loss: 6.41e+03, accuracy: 4.31e-01, num_masked: 2940, ratio_masked: 6.51e-01, diversity_loss: 5.46e-01, prob_perplex: 2.90e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.60, backprop_loss: 6.57e+03, total_loss: 6.57e+03, steps: 45000, lr: 4.40e-04, avg_loss: 6.58e+03, run_time: 2.81e+02
+2023-12-01 17:20:27,579 - speechbrain.utils.train_logger - INFO - loss: 5.95e+03, accuracy: 4.26e-01, num_masked: 2650, ratio_masked: 6.43e-01, diversity_loss: 5.50e-01, prob_perplex: 2.88e+02, code_perplex: 2.81e+02, num_vars: 640, temp: 1.59, backprop_loss: 6.10e+03, total_loss: 6.10e+03, steps: 45500, lr: 4.39e-04, avg_loss: 6.58e+03, run_time: 2.81e+02
+2023-12-01 17:25:07,981 - speechbrain.utils.train_logger - INFO - loss: 6.58e+03, accuracy: 3.93e-01, num_masked: 2760, ratio_masked: 6.42e-01, diversity_loss: 5.64e-01, prob_perplex: 2.79e+02, code_perplex: 2.72e+02, num_vars: 640, temp: 1.59, backprop_loss: 6.73e+03, total_loss: 6.73e+03, steps: 46000, lr: 4.39e-04, avg_loss: 6.57e+03, run_time: 2.80e+02
+2023-12-01 17:29:48,841 - speechbrain.utils.train_logger - INFO - loss: 6.45e+03, accuracy: 4.59e-01, num_masked: 3080, ratio_masked: 6.47e-01, diversity_loss: 5.50e-01, prob_perplex: 2.88e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.59, backprop_loss: 6.62e+03, total_loss: 6.62e+03, steps: 46500, lr: 4.38e-04, avg_loss: 6.56e+03, run_time: 2.81e+02
+2023-12-01 17:34:29,760 - speechbrain.utils.train_logger - INFO - loss: 6.31e+03, accuracy: 4.61e-01, num_masked: 3000, ratio_masked: 6.41e-01, diversity_loss: 5.66e-01, prob_perplex: 2.78e+02, code_perplex: 2.71e+02, num_vars: 640, temp: 1.58, backprop_loss: 6.48e+03, total_loss: 6.48e+03, steps: 47000, lr: 4.38e-04, avg_loss: 6.56e+03, run_time: 2.81e+02
+2023-12-01 17:39:10,053 - speechbrain.utils.train_logger - INFO - loss: 5.92e+03, accuracy: 4.40e-01, num_masked: 2700, ratio_masked: 6.53e-01, diversity_loss: 5.56e-01, prob_perplex: 2.84e+02, code_perplex: 2.77e+02, num_vars: 640, temp: 1.58, backprop_loss: 6.07e+03, total_loss: 6.07e+03, steps: 47500, lr: 4.37e-04, avg_loss: 6.55e+03, run_time: 2.80e+02
+2023-12-01 17:43:51,346 - speechbrain.utils.train_logger - INFO - loss: 5.99e+03, accuracy: 4.47e-01, num_masked: 2760, ratio_masked: 6.41e-01, diversity_loss: 5.56e-01, prob_perplex: 2.84e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.57, backprop_loss: 6.14e+03, total_loss: 6.14e+03, steps: 48000, lr: 4.36e-04, avg_loss: 6.54e+03, run_time: 2.81e+02
+2023-12-01 17:47:57,281 - speechbrain.utils.train_logger - INFO - epoch: 10, steps: 48320, lr: 4.36e-04 - train loss: 6.54e+03 - valid loss: 1.67e+03, valid accuracy: 0.5136781930923462
+2023-12-01 17:47:58,406 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+17-47-57+00
+2023-12-01 17:47:59,328 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+13-55-48+00
+2023-12-01 17:47:59,328 - speechbrain.utils.epoch_loop - INFO - Going into epoch 11
+2023-12-01 17:47:59,330 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 17:48:00,250 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 17:49:43,086 - speechbrain.utils.train_logger - INFO - loss: 5.95e+03, accuracy: 4.75e-01, num_masked: 2880, ratio_masked: 6.43e-01, diversity_loss: 5.60e-01, prob_perplex: 2.81e+02, code_perplex: 2.74e+02, num_vars: 640, temp: 1.57, backprop_loss: 6.11e+03, total_loss: 6.11e+03, steps: 48500, lr: 4.36e-04, avg_loss: 6.52e+03, run_time: 3.52e+02
+2023-12-01 17:54:24,829 - speechbrain.utils.train_logger - INFO - loss: 6.12e+03, accuracy: 4.27e-01, num_masked: 2750, ratio_masked: 6.46e-01, diversity_loss: 5.54e-01, prob_perplex: 2.86e+02, code_perplex: 2.79e+02, num_vars: 640, temp: 1.57, backprop_loss: 6.27e+03, total_loss: 6.27e+03, steps: 49000, lr: 4.35e-04, avg_loss: 6.49e+03, run_time: 2.82e+02
+2023-12-01 17:59:05,289 - speechbrain.utils.train_logger - INFO - loss: 5.97e+03, accuracy: 4.38e-01, num_masked: 2760, ratio_masked: 6.48e-01, diversity_loss: 5.71e-01, prob_perplex: 2.75e+02, code_perplex: 2.67e+02, num_vars: 640, temp: 1.56, backprop_loss: 6.13e+03, total_loss: 6.13e+03, steps: 49500, lr: 4.34e-04, avg_loss: 6.47e+03, run_time: 2.80e+02
+2023-12-01 18:03:46,266 - speechbrain.utils.train_logger - INFO - loss: 6.68e+03, accuracy: 3.93e-01, num_masked: 2880, ratio_masked: 6.50e-01, diversity_loss: 5.53e-01, prob_perplex: 2.86e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.56, backprop_loss: 6.84e+03, total_loss: 6.84e+03, steps: 50000, lr: 4.34e-04, avg_loss: 6.48e+03, run_time: 2.81e+02
+2023-12-01 18:08:27,009 - speechbrain.utils.train_logger - INFO - loss: 6.69e+03, accuracy: 4.33e-01, num_masked: 3060, ratio_masked: 6.44e-01, diversity_loss: 5.75e-01, prob_perplex: 2.72e+02, code_perplex: 2.67e+02, num_vars: 640, temp: 1.55, backprop_loss: 6.87e+03, total_loss: 6.87e+03, steps: 50500, lr: 4.33e-04, avg_loss: 6.46e+03, run_time: 2.81e+02
+2023-12-01 18:13:08,344 - speechbrain.utils.train_logger - INFO - loss: 6.61e+03, accuracy: 4.55e-01, num_masked: 3000, ratio_masked: 6.33e-01, diversity_loss: 5.82e-01, prob_perplex: 2.67e+02, code_perplex: 2.59e+02, num_vars: 640, temp: 1.55, backprop_loss: 6.78e+03, total_loss: 6.78e+03, steps: 51000, lr: 4.33e-04, avg_loss: 6.46e+03, run_time: 2.81e+02
+2023-12-01 18:17:49,354 - speechbrain.utils.train_logger - INFO - loss: 6.18e+03, accuracy: 4.81e-01, num_masked: 3010, ratio_masked: 6.35e-01, diversity_loss: 5.62e-01, prob_perplex: 2.80e+02, code_perplex: 2.74e+02, num_vars: 640, temp: 1.55, backprop_loss: 6.35e+03, total_loss: 6.35e+03, steps: 51500, lr: 4.32e-04, avg_loss: 6.45e+03, run_time: 2.81e+02
+2023-12-01 18:22:30,155 - speechbrain.utils.train_logger - INFO - loss: 6.15e+03, accuracy: 4.76e-01, num_masked: 3010, ratio_masked: 6.37e-01, diversity_loss: 5.40e-01, prob_perplex: 2.95e+02, code_perplex: 2.88e+02, num_vars: 640, temp: 1.54, backprop_loss: 6.31e+03, total_loss: 6.31e+03, steps: 52000, lr: 4.31e-04, avg_loss: 6.45e+03, run_time: 2.81e+02
+2023-12-01 18:27:11,357 - speechbrain.utils.train_logger - INFO - loss: 6.15e+03, accuracy: 4.62e-01, num_masked: 3000, ratio_masked: 6.39e-01, diversity_loss: 5.57e-01, prob_perplex: 2.84e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.54, backprop_loss: 6.32e+03, total_loss: 6.32e+03, steps: 52500, lr: 4.31e-04, avg_loss: 6.45e+03, run_time: 2.81e+02
+2023-12-01 18:31:52,267 - speechbrain.utils.train_logger - INFO - loss: 5.05e+03, accuracy: 5.11e-01, num_masked: 2760, ratio_masked: 6.47e-01, diversity_loss: 5.68e-01, prob_perplex: 2.77e+02, code_perplex: 2.70e+02, num_vars: 640, temp: 1.53, backprop_loss: 5.20e+03, total_loss: 5.20e+03, steps: 53000, lr: 4.30e-04, avg_loss: 6.45e+03, run_time: 2.81e+02
+2023-12-01 18:34:23,775 - speechbrain.utils.train_logger - INFO - epoch: 11, steps: 53152, lr: 4.30e-04 - train loss: 6.45e+03 - valid loss: 1.65e+03, valid accuracy: 0.5216922760009766
+2023-12-01 18:34:24,926 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+18-34-23+00
+2023-12-01 18:34:26,021 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+14-42-13+00
+2023-12-01 18:34:26,021 - speechbrain.utils.epoch_loop - INFO - Going into epoch 12
+2023-12-01 18:34:26,022 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 18:34:26,768 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 18:37:44,481 - speechbrain.utils.train_logger - INFO - loss: 6.12e+03, accuracy: 4.51e-01, num_masked: 2880, ratio_masked: 6.53e-01, diversity_loss: 5.37e-01, prob_perplex: 2.96e+02, code_perplex: 2.91e+02, num_vars: 640, temp: 1.53, backprop_loss: 6.27e+03, total_loss: 6.27e+03, steps: 53500, lr: 4.30e-04, avg_loss: 6.39e+03, run_time: 3.52e+02
+2023-12-01 18:42:25,333 - speechbrain.utils.train_logger - INFO - loss: 6.05e+03, accuracy: 4.77e-01, num_masked: 2940, ratio_masked: 6.58e-01, diversity_loss: 5.58e-01, prob_perplex: 2.83e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.53, backprop_loss: 6.22e+03, total_loss: 6.22e+03, steps: 54000, lr: 4.29e-04, avg_loss: 6.41e+03, run_time: 2.81e+02
+2023-12-01 18:47:06,401 - speechbrain.utils.train_logger - INFO - loss: 7.01e+03, accuracy: 4.21e-01, num_masked: 3200, ratio_masked: 6.48e-01, diversity_loss: 5.44e-01, prob_perplex: 2.92e+02, code_perplex: 2.86e+02, num_vars: 640, temp: 1.52, backprop_loss: 7.18e+03, total_loss: 7.18e+03, steps: 54500, lr: 4.28e-04, avg_loss: 6.40e+03, run_time: 2.81e+02
+2023-12-01 18:51:46,928 - speechbrain.utils.train_logger - INFO - loss: 6.17e+03, accuracy: 4.38e-01, num_masked: 2880, ratio_masked: 6.38e-01, diversity_loss: 5.66e-01, prob_perplex: 2.78e+02, code_perplex: 2.70e+02, num_vars: 640, temp: 1.52, backprop_loss: 6.33e+03, total_loss: 6.33e+03, steps: 55000, lr: 4.28e-04, avg_loss: 6.38e+03, run_time: 2.81e+02
+2023-12-01 18:56:27,529 - speechbrain.utils.train_logger - INFO - loss: 6.60e+03, accuracy: 4.34e-01, num_masked: 2970, ratio_masked: 6.52e-01, diversity_loss: 5.29e-01, prob_perplex: 3.01e+02, code_perplex: 2.96e+02, num_vars: 640, temp: 1.52, backprop_loss: 6.75e+03, total_loss: 6.75e+03, steps: 55500, lr: 4.27e-04, avg_loss: 6.38e+03, run_time: 2.81e+02
+2023-12-01 19:01:09,885 - speechbrain.utils.train_logger - INFO - loss: 6.24e+03, accuracy: 4.92e-01, num_masked: 3200, ratio_masked: 6.49e-01, diversity_loss: 5.57e-01, prob_perplex: 2.84e+02, code_perplex: 2.80e+02, num_vars: 640, temp: 1.51, backprop_loss: 6.42e+03, total_loss: 6.42e+03, steps: 56000, lr: 4.26e-04, avg_loss: 6.38e+03, run_time: 2.82e+02
+2023-12-01 19:05:50,544 - speechbrain.utils.train_logger - INFO - loss: 6.55e+03, accuracy: 4.41e-01, num_masked: 3000, ratio_masked: 6.40e-01, diversity_loss: 5.55e-01, prob_perplex: 2.85e+02, code_perplex: 2.80e+02, num_vars: 640, temp: 1.51, backprop_loss: 6.72e+03, total_loss: 6.72e+03, steps: 56500, lr: 4.26e-04, avg_loss: 6.38e+03, run_time: 2.81e+02
+2023-12-01 19:10:31,833 - speechbrain.utils.train_logger - INFO - loss: 5.83e+03, accuracy: 4.82e-01, num_masked: 2940, ratio_masked: 6.52e-01, diversity_loss: 5.47e-01, prob_perplex: 2.90e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.50, backprop_loss: 5.99e+03, total_loss: 5.99e+03, steps: 57000, lr: 4.25e-04, avg_loss: 6.38e+03, run_time: 2.81e+02
+2023-12-01 19:15:13,124 - speechbrain.utils.train_logger - INFO - loss: 6.24e+03, accuracy: 4.36e-01, num_masked: 2880, ratio_masked: 6.44e-01, diversity_loss: 5.34e-01, prob_perplex: 2.98e+02, code_perplex: 2.94e+02, num_vars: 640, temp: 1.50, backprop_loss: 6.40e+03, total_loss: 6.40e+03, steps: 57500, lr: 4.25e-04, avg_loss: 6.37e+03, run_time: 2.81e+02
+2023-12-01 19:20:51,468 - speechbrain.utils.train_logger - INFO - epoch: 12, steps: 57984, lr: 4.24e-04 - train loss: 6.36e+03 - valid loss: 1.60e+03, valid accuracy: 0.5351119041442871
+2023-12-01 19:20:52,562 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+19-20-51+00
+2023-12-01 19:20:53,582 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+15-28-38+00
+2023-12-01 19:20:53,582 - speechbrain.utils.epoch_loop - INFO - Going into epoch 13
+2023-12-01 19:20:53,583 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 19:20:54,552 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 19:21:05,026 - speechbrain.utils.train_logger - INFO - loss: 5.74e+03, accuracy: 4.74e-01, num_masked: 2870, ratio_masked: 6.33e-01, diversity_loss: 5.49e-01, prob_perplex: 2.89e+02, code_perplex: 2.82e+02, num_vars: 640, temp: 1.50, backprop_loss: 5.90e+03, total_loss: 5.90e+03, steps: 58000, lr: 4.24e-04, avg_loss: 6.40e+03, run_time: 3.52e+02
+2023-12-01 19:25:45,782 - speechbrain.utils.train_logger - INFO - loss: 5.82e+03, accuracy: 4.37e-01, num_masked: 2760, ratio_masked: 6.46e-01, diversity_loss: 5.51e-01, prob_perplex: 2.87e+02, code_perplex: 2.81e+02, num_vars: 640, temp: 1.49, backprop_loss: 5.97e+03, total_loss: 5.97e+03, steps: 58500, lr: 4.23e-04, avg_loss: 6.33e+03, run_time: 2.81e+02
+2023-12-01 19:30:26,286 - speechbrain.utils.train_logger - INFO - loss: 7.09e+03, accuracy: 4.36e-01, num_masked: 3120, ratio_masked: 6.58e-01, diversity_loss: 5.52e-01, prob_perplex: 2.86e+02, code_perplex: 2.80e+02, num_vars: 640, temp: 1.49, backprop_loss: 7.26e+03, total_loss: 7.26e+03, steps: 59000, lr: 4.23e-04, avg_loss: 6.33e+03, run_time: 2.80e+02
+2023-12-01 19:35:06,907 - speechbrain.utils.train_logger - INFO - loss: 6.31e+03, accuracy: 4.60e-01, num_masked: 3000, ratio_masked: 6.31e-01, diversity_loss: 5.91e-01, prob_perplex: 2.62e+02, code_perplex: 2.56e+02, num_vars: 640, temp: 1.49, backprop_loss: 6.48e+03, total_loss: 6.48e+03, steps: 59500, lr: 4.22e-04, avg_loss: 6.32e+03, run_time: 2.81e+02
+2023-12-01 19:39:47,869 - speechbrain.utils.train_logger - INFO - loss: 6.46e+03, accuracy: 4.61e-01, num_masked: 3120, ratio_masked: 6.33e-01, diversity_loss: 5.36e-01, prob_perplex: 2.97e+02, code_perplex: 2.92e+02, num_vars: 640, temp: 1.48, backprop_loss: 6.63e+03, total_loss: 6.63e+03, steps: 60000, lr: 4.21e-04, avg_loss: 6.32e+03, run_time: 2.81e+02
+2023-12-01 19:44:28,365 - speechbrain.utils.train_logger - INFO - loss: 5.85e+03, accuracy: 4.62e-01, num_masked: 2880, ratio_masked: 6.43e-01, diversity_loss: 5.39e-01, prob_perplex: 2.95e+02, code_perplex: 2.89e+02, num_vars: 640, temp: 1.48, backprop_loss: 6.01e+03, total_loss: 6.01e+03, steps: 60500, lr: 4.21e-04, avg_loss: 6.32e+03, run_time: 2.81e+02
+2023-12-01 19:49:08,844 - speechbrain.utils.train_logger - INFO - loss: 5.84e+03, accuracy: 4.40e-01, num_masked: 2700, ratio_masked: 6.29e-01, diversity_loss: 5.72e-01, prob_perplex: 2.74e+02, code_perplex: 2.66e+02, num_vars: 640, temp: 1.47, backprop_loss: 5.99e+03, total_loss: 5.99e+03, steps: 61000, lr: 4.20e-04, avg_loss: 6.31e+03, run_time: 2.80e+02
+2023-12-01 19:53:50,139 - speechbrain.utils.train_logger - INFO - loss: 5.92e+03, accuracy: 4.63e-01, num_masked: 2880, ratio_masked: 6.43e-01, diversity_loss: 5.25e-01, prob_perplex: 3.04e+02, code_perplex: 2.97e+02, num_vars: 640, temp: 1.47, backprop_loss: 6.07e+03, total_loss: 6.07e+03, steps: 61500, lr: 4.20e-04, avg_loss: 6.30e+03, run_time: 2.81e+02
+2023-12-01 19:58:31,703 - speechbrain.utils.train_logger - INFO - loss: 5.85e+03, accuracy: 4.87e-01, num_masked: 2880, ratio_masked: 6.39e-01, diversity_loss: 5.93e-01, prob_perplex: 2.61e+02, code_perplex: 2.56e+02, num_vars: 640, temp: 1.47, backprop_loss: 6.02e+03, total_loss: 6.02e+03, steps: 62000, lr: 4.19e-04, avg_loss: 6.30e+03, run_time: 2.82e+02
+2023-12-01 20:03:12,563 - speechbrain.utils.train_logger - INFO - loss: 5.16e+03, accuracy: 4.79e-01, num_masked: 2600, ratio_masked: 6.30e-01, diversity_loss: 5.53e-01, prob_perplex: 2.86e+02, code_perplex: 2.79e+02, num_vars: 640, temp: 1.46, backprop_loss: 5.31e+03, total_loss: 5.31e+03, steps: 62500, lr: 4.18e-04, avg_loss: 6.30e+03, run_time: 2.81e+02
+2023-12-01 20:07:15,866 - speechbrain.utils.train_logger - INFO - epoch: 13, steps: 62816, lr: 4.18e-04 - train loss: 6.29e+03 - valid loss: 1.59e+03, valid accuracy: 0.5356509685516357
+2023-12-01 20:07:17,013 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+20-07-15+00
+2023-12-01 20:07:18,082 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+16-15-06+00
+2023-12-01 20:07:18,082 - speechbrain.utils.epoch_loop - INFO - Going into epoch 14
+2023-12-01 20:07:18,084 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 20:07:18,909 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 20:09:03,814 - speechbrain.utils.train_logger - INFO - loss: 6.30e+03, accuracy: 4.36e-01, num_masked: 2880, ratio_masked: 6.44e-01, diversity_loss: 5.53e-01, prob_perplex: 2.86e+02, code_perplex: 2.80e+02, num_vars: 640, temp: 1.46, backprop_loss: 6.46e+03, total_loss: 6.46e+03, steps: 63000, lr: 4.18e-04, avg_loss: 6.28e+03, run_time: 3.51e+02
+2023-12-01 20:13:44,584 - speechbrain.utils.train_logger - INFO - loss: 6.56e+03, accuracy: 4.54e-01, num_masked: 2990, ratio_masked: 6.27e-01, diversity_loss: 5.36e-01, prob_perplex: 2.97e+02, code_perplex: 2.90e+02, num_vars: 640, temp: 1.46, backprop_loss: 6.72e+03, total_loss: 6.72e+03, steps: 63500, lr: 4.17e-04, avg_loss: 6.29e+03, run_time: 2.81e+02
+2023-12-01 20:18:25,897 - speechbrain.utils.train_logger - INFO - loss: 5.71e+03, accuracy: 4.41e-01, num_masked: 2600, ratio_masked: 6.31e-01, diversity_loss: 5.64e-01, prob_perplex: 2.79e+02, code_perplex: 2.72e+02, num_vars: 640, temp: 1.45, backprop_loss: 5.86e+03, total_loss: 5.86e+03, steps: 64000, lr: 4.17e-04, avg_loss: 6.27e+03, run_time: 2.81e+02
+2023-12-01 20:23:07,000 - speechbrain.utils.train_logger - INFO - loss: 4.84e+03, accuracy: 5.20e-01, num_masked: 2650, ratio_masked: 6.40e-01, diversity_loss: 5.67e-01, prob_perplex: 2.77e+02, code_perplex: 2.69e+02, num_vars: 640, temp: 1.45, backprop_loss: 4.99e+03, total_loss: 4.99e+03, steps: 64500, lr: 4.16e-04, avg_loss: 6.26e+03, run_time: 2.81e+02
+2023-12-01 20:27:48,154 - speechbrain.utils.train_logger - INFO - loss: 6.66e+03, accuracy: 4.33e-01, num_masked: 3000, ratio_masked: 6.31e-01, diversity_loss: 5.53e-01, prob_perplex: 2.86e+02, code_perplex: 2.79e+02, num_vars: 640, temp: 1.45, backprop_loss: 6.83e+03, total_loss: 6.83e+03, steps: 65000, lr: 4.15e-04, avg_loss: 6.25e+03, run_time: 2.81e+02
+2023-12-01 20:32:29,183 - speechbrain.utils.train_logger - INFO - loss: 5.44e+03, accuracy: 4.92e-01, num_masked: 2760, ratio_masked: 6.44e-01, diversity_loss: 5.59e-01, prob_perplex: 2.82e+02, code_perplex: 2.76e+02, num_vars: 640, temp: 1.44, backprop_loss: 5.59e+03, total_loss: 5.59e+03, steps: 65500, lr: 4.15e-04, avg_loss: 6.25e+03, run_time: 2.81e+02
+2023-12-01 20:37:10,137 - speechbrain.utils.train_logger - INFO - loss: 6.38e+03, accuracy: 4.46e-01, num_masked: 3000, ratio_masked: 6.31e-01, diversity_loss: 5.64e-01, prob_perplex: 2.79e+02, code_perplex: 2.71e+02, num_vars: 640, temp: 1.44, backprop_loss: 6.55e+03, total_loss: 6.55e+03, steps: 66000, lr: 4.14e-04, avg_loss: 6.24e+03, run_time: 2.81e+02
+2023-12-01 20:41:51,157 - speechbrain.utils.train_logger - INFO - loss: 5.91e+03, accuracy: 4.77e-01, num_masked: 2870, ratio_masked: 6.32e-01, diversity_loss: 5.56e-01, prob_perplex: 2.84e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.43, backprop_loss: 6.07e+03, total_loss: 6.07e+03, steps: 66500, lr: 4.13e-04, avg_loss: 6.24e+03, run_time: 2.81e+02
+2023-12-01 20:46:32,070 - speechbrain.utils.train_logger - INFO - loss: 6.33e+03, accuracy: 4.79e-01, num_masked: 3040, ratio_masked: 6.45e-01, diversity_loss: 5.41e-01, prob_perplex: 2.94e+02, code_perplex: 2.89e+02, num_vars: 640, temp: 1.43, backprop_loss: 6.49e+03, total_loss: 6.49e+03, steps: 67000, lr: 4.13e-04, avg_loss: 6.24e+03, run_time: 2.81e+02
+2023-12-01 20:51:12,873 - speechbrain.utils.train_logger - INFO - loss: 6.16e+03, accuracy: 4.65e-01, num_masked: 3000, ratio_masked: 6.33e-01, diversity_loss: 5.40e-01, prob_perplex: 2.95e+02, code_perplex: 2.89e+02, num_vars: 640, temp: 1.43, backprop_loss: 6.32e+03, total_loss: 6.32e+03, steps: 67500, lr: 4.12e-04, avg_loss: 6.23e+03, run_time: 2.81e+02
+2023-12-01 20:53:42,025 - speechbrain.utils.train_logger - INFO - epoch: 14, steps: 67648, lr: 4.12e-04 - train loss: 6.23e+03 - valid loss: 1.57e+03, valid accuracy: 0.5417802929878235
+2023-12-01 20:53:43,139 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+20-53-42+00
+2023-12-01 20:53:44,220 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+17-01-32+00
+2023-12-01 20:53:44,221 - speechbrain.utils.epoch_loop - INFO - Going into epoch 15
+2023-12-01 20:53:44,222 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 20:53:45,046 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 20:57:05,049 - speechbrain.utils.train_logger - INFO - loss: 5.78e+03, accuracy: 5.05e-01, num_masked: 3000, ratio_masked: 6.32e-01, diversity_loss: 5.48e-01, prob_perplex: 2.89e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.42, backprop_loss: 5.95e+03, total_loss: 5.95e+03, steps: 68000, lr: 4.12e-04, avg_loss: 6.18e+03, run_time: 3.52e+02
+2023-12-01 21:01:45,669 - speechbrain.utils.train_logger - INFO - loss: 6.81e+03, accuracy: 4.35e-01, num_masked: 3080, ratio_masked: 6.47e-01, diversity_loss: 5.30e-01, prob_perplex: 3.01e+02, code_perplex: 2.95e+02, num_vars: 640, temp: 1.42, backprop_loss: 6.98e+03, total_loss: 6.98e+03, steps: 68500, lr: 4.11e-04, avg_loss: 6.16e+03, run_time: 2.81e+02
+2023-12-01 21:06:25,949 - speechbrain.utils.train_logger - INFO - loss: 6.27e+03, accuracy: 4.66e-01, num_masked: 3120, ratio_masked: 6.33e-01, diversity_loss: 5.53e-01, prob_perplex: 2.86e+02, code_perplex: 2.79e+02, num_vars: 640, temp: 1.42, backprop_loss: 6.44e+03, total_loss: 6.44e+03, steps: 69000, lr: 4.10e-04, avg_loss: 6.16e+03, run_time: 2.80e+02
+2023-12-01 21:11:06,902 - speechbrain.utils.train_logger - INFO - loss: 5.21e+03, accuracy: 5.18e-01, num_masked: 2760, ratio_masked: 6.43e-01, diversity_loss: 5.31e-01, prob_perplex: 3.00e+02, code_perplex: 2.95e+02, num_vars: 640, temp: 1.41, backprop_loss: 5.36e+03, total_loss: 5.36e+03, steps: 69500, lr: 4.10e-04, avg_loss: 6.17e+03, run_time: 2.81e+02
+2023-12-01 21:15:47,581 - speechbrain.utils.train_logger - INFO - loss: 5.52e+03, accuracy: 4.79e-01, num_masked: 2760, ratio_masked: 6.42e-01, diversity_loss: 5.34e-01, prob_perplex: 2.98e+02, code_perplex: 2.90e+02, num_vars: 640, temp: 1.41, backprop_loss: 5.67e+03, total_loss: 5.67e+03, steps: 70000, lr: 4.09e-04, avg_loss: 6.17e+03, run_time: 2.81e+02
+2023-12-01 21:20:28,577 - speechbrain.utils.train_logger - INFO - loss: 5.88e+03, accuracy: 4.73e-01, num_masked: 2940, ratio_masked: 6.52e-01, diversity_loss: 5.74e-01, prob_perplex: 2.73e+02, code_perplex: 2.66e+02, num_vars: 640, temp: 1.41, backprop_loss: 6.05e+03, total_loss: 6.05e+03, steps: 70500, lr: 4.08e-04, avg_loss: 6.17e+03, run_time: 2.81e+02
+2023-12-01 21:25:09,139 - speechbrain.utils.train_logger - INFO - loss: 5.32e+03, accuracy: 5.05e-01, num_masked: 2820, ratio_masked: 6.28e-01, diversity_loss: 5.50e-01, prob_perplex: 2.88e+02, code_perplex: 2.83e+02, num_vars: 640, temp: 1.40, backprop_loss: 5.48e+03, total_loss: 5.48e+03, steps: 71000, lr: 4.08e-04, avg_loss: 6.17e+03, run_time: 2.81e+02
+2023-12-01 21:29:49,960 - speechbrain.utils.train_logger - INFO - loss: 5.32e+03, accuracy: 4.89e-01, num_masked: 2750, ratio_masked: 6.46e-01, diversity_loss: 5.46e-01, prob_perplex: 2.90e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.40, backprop_loss: 5.47e+03, total_loss: 5.47e+03, steps: 71500, lr: 4.07e-04, avg_loss: 6.16e+03, run_time: 2.81e+02
+2023-12-01 21:34:31,038 - speechbrain.utils.train_logger - INFO - loss: 5.44e+03, accuracy: 5.09e-01, num_masked: 2760, ratio_masked: 6.46e-01, diversity_loss: 5.24e-01, prob_perplex: 3.05e+02, code_perplex: 2.99e+02, num_vars: 640, temp: 1.40, backprop_loss: 5.58e+03, total_loss: 5.58e+03, steps: 72000, lr: 4.07e-04, avg_loss: 6.16e+03, run_time: 2.81e+02
+2023-12-01 21:40:06,470 - speechbrain.utils.train_logger - INFO - epoch: 15, steps: 72480, lr: 4.06e-04 - train loss: 6.16e+03 - valid loss: 1.56e+03, valid accuracy: 0.5433640480041504
+2023-12-01 21:40:07,572 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+21-40-06+00
+2023-12-01 21:40:08,664 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+17-47-57+00
+2023-12-01 21:40:08,664 - speechbrain.utils.epoch_loop - INFO - Going into epoch 16
+2023-12-01 21:40:08,665 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 21:40:09,568 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 21:40:22,547 - speechbrain.utils.train_logger - INFO - loss: 6.03e+03, accuracy: 4.84e-01, num_masked: 3000, ratio_masked: 6.37e-01, diversity_loss: 5.49e-01, prob_perplex: 2.89e+02, code_perplex: 2.83e+02, num_vars: 640, temp: 1.39, backprop_loss: 6.19e+03, total_loss: 6.19e+03, steps: 72500, lr: 4.06e-04, avg_loss: 6.10e+03, run_time: 3.52e+02
+2023-12-01 21:45:04,109 - speechbrain.utils.train_logger - INFO - loss: 6.26e+03, accuracy: 4.71e-01, num_masked: 3000, ratio_masked: 6.42e-01, diversity_loss: 5.50e-01, prob_perplex: 2.88e+02, code_perplex: 2.80e+02, num_vars: 640, temp: 1.39, backprop_loss: 6.42e+03, total_loss: 6.42e+03, steps: 73000, lr: 4.05e-04, avg_loss: 6.09e+03, run_time: 2.82e+02
+2023-12-01 21:49:44,797 - speechbrain.utils.train_logger - INFO - loss: 5.60e+03, accuracy: 4.90e-01, num_masked: 2880, ratio_masked: 6.37e-01, diversity_loss: 5.43e-01, prob_perplex: 2.92e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.38, backprop_loss: 5.75e+03, total_loss: 5.75e+03, steps: 73500, lr: 4.05e-04, avg_loss: 6.10e+03, run_time: 2.81e+02
+2023-12-01 21:54:25,992 - speechbrain.utils.train_logger - INFO - loss: 7.04e+03, accuracy: 4.40e-01, num_masked: 3240, ratio_masked: 6.60e-01, diversity_loss: 5.20e-01, prob_perplex: 3.07e+02, code_perplex: 3.02e+02, num_vars: 640, temp: 1.38, backprop_loss: 7.20e+03, total_loss: 7.20e+03, steps: 74000, lr: 4.04e-04, avg_loss: 6.11e+03, run_time: 2.81e+02
+2023-12-01 21:59:06,329 - speechbrain.utils.train_logger - INFO - loss: 5.82e+03, accuracy: 4.93e-01, num_masked: 2940, ratio_masked: 6.46e-01, diversity_loss: 5.23e-01, prob_perplex: 3.05e+02, code_perplex: 2.99e+02, num_vars: 640, temp: 1.38, backprop_loss: 5.97e+03, total_loss: 5.97e+03, steps: 74500, lr: 4.03e-04, avg_loss: 6.12e+03, run_time: 2.80e+02
+2023-12-01 22:03:47,450 - speechbrain.utils.train_logger - INFO - loss: 5.54e+03, accuracy: 4.99e-01, num_masked: 2900, ratio_masked: 6.37e-01, diversity_loss: 5.27e-01, prob_perplex: 3.03e+02, code_perplex: 2.97e+02, num_vars: 640, temp: 1.37, backprop_loss: 5.69e+03, total_loss: 5.69e+03, steps: 75000, lr: 4.03e-04, avg_loss: 6.11e+03, run_time: 2.81e+02
+2023-12-01 22:08:28,813 - speechbrain.utils.train_logger - INFO - loss: 6.33e+03, accuracy: 4.61e-01, num_masked: 3080, ratio_masked: 6.45e-01, diversity_loss: 5.28e-01, prob_perplex: 3.02e+02, code_perplex: 2.96e+02, num_vars: 640, temp: 1.37, backprop_loss: 6.49e+03, total_loss: 6.49e+03, steps: 75500, lr: 4.02e-04, avg_loss: 6.11e+03, run_time: 2.81e+02
+2023-12-01 22:13:10,150 - speechbrain.utils.train_logger - INFO - loss: 7.27e+03, accuracy: 4.24e-01, num_masked: 3120, ratio_masked: 6.75e-01, diversity_loss: 5.21e-01, prob_perplex: 3.07e+02, code_perplex: 3.02e+02, num_vars: 640, temp: 1.37, backprop_loss: 7.43e+03, total_loss: 7.43e+03, steps: 76000, lr: 4.02e-04, avg_loss: 6.11e+03, run_time: 2.81e+02
+2023-12-01 22:17:51,310 - speechbrain.utils.train_logger - INFO - loss: 5.71e+03, accuracy: 5.06e-01, num_masked: 3000, ratio_masked: 6.40e-01, diversity_loss: 5.19e-01, prob_perplex: 3.08e+02, code_perplex: 3.03e+02, num_vars: 640, temp: 1.36, backprop_loss: 5.87e+03, total_loss: 5.87e+03, steps: 76500, lr: 4.01e-04, avg_loss: 6.11e+03, run_time: 2.81e+02
+2023-12-01 22:22:32,396 - speechbrain.utils.train_logger - INFO - loss: 5.23e+03, accuracy: 4.95e-01, num_masked: 2760, ratio_masked: 6.42e-01, diversity_loss: 5.73e-01, prob_perplex: 2.73e+02, code_perplex: 2.67e+02, num_vars: 640, temp: 1.36, backprop_loss: 5.39e+03, total_loss: 5.39e+03, steps: 77000, lr: 4.00e-04, avg_loss: 6.11e+03, run_time: 2.81e+02
+2023-12-01 22:26:33,367 - speechbrain.utils.train_logger - INFO - epoch: 16, steps: 77312, lr: 4.00e-04 - train loss: 6.10e+03 - valid loss: 1.53e+03, valid accuracy: 0.5539517998695374
+2023-12-01 22:26:34,487 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+22-26-33+00
+2023-12-01 22:26:35,595 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+18-34-23+00
+2023-12-01 22:26:35,595 - speechbrain.utils.epoch_loop - INFO - Going into epoch 17
+2023-12-01 22:26:35,597 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 22:26:36,400 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 22:28:24,061 - speechbrain.utils.train_logger - INFO - loss: 6.70e+03, accuracy: 4.41e-01, num_masked: 3000, ratio_masked: 6.33e-01, diversity_loss: 5.55e-01, prob_perplex: 2.85e+02, code_perplex: 2.76e+02, num_vars: 640, temp: 1.36, backprop_loss: 6.87e+03, total_loss: 6.87e+03, steps: 77500, lr: 4.00e-04, avg_loss: 6.07e+03, run_time: 3.52e+02
+2023-12-01 22:33:05,105 - speechbrain.utils.train_logger - INFO - loss: 6.16e+03, accuracy: 4.82e-01, num_masked: 3060, ratio_masked: 6.50e-01, diversity_loss: 5.36e-01, prob_perplex: 2.97e+02, code_perplex: 2.91e+02, num_vars: 640, temp: 1.35, backprop_loss: 6.32e+03, total_loss: 6.32e+03, steps: 78000, lr: 3.99e-04, avg_loss: 6.03e+03, run_time: 2.81e+02
+2023-12-01 22:37:45,524 - speechbrain.utils.train_logger - INFO - loss: 5.93e+03, accuracy: 4.61e-01, num_masked: 2820, ratio_masked: 6.24e-01, diversity_loss: 5.22e-01, prob_perplex: 3.06e+02, code_perplex: 3.00e+02, num_vars: 640, temp: 1.35, backprop_loss: 6.08e+03, total_loss: 6.08e+03, steps: 78500, lr: 3.99e-04, avg_loss: 6.05e+03, run_time: 2.80e+02
+2023-12-01 22:42:26,034 - speechbrain.utils.train_logger - INFO - loss: 5.94e+03, accuracy: 4.81e-01, num_masked: 2880, ratio_masked: 6.40e-01, diversity_loss: 5.54e-01, prob_perplex: 2.85e+02, code_perplex: 2.76e+02, num_vars: 640, temp: 1.35, backprop_loss: 6.10e+03, total_loss: 6.10e+03, steps: 79000, lr: 3.98e-04, avg_loss: 6.06e+03, run_time: 2.81e+02
+2023-12-01 22:47:06,687 - speechbrain.utils.train_logger - INFO - loss: 5.61e+03, accuracy: 4.84e-01, num_masked: 2800, ratio_masked: 6.58e-01, diversity_loss: 5.39e-01, prob_perplex: 2.95e+02, code_perplex: 2.87e+02, num_vars: 640, temp: 1.34, backprop_loss: 5.76e+03, total_loss: 5.76e+03, steps: 79500, lr: 3.97e-04, avg_loss: 6.06e+03, run_time: 2.81e+02
+2023-12-01 22:51:47,672 - speechbrain.utils.train_logger - INFO - loss: 5.80e+03, accuracy: 4.89e-01, num_masked: 3000, ratio_masked: 6.34e-01, diversity_loss: 5.31e-01, prob_perplex: 3.00e+02, code_perplex: 2.95e+02, num_vars: 640, temp: 1.34, backprop_loss: 5.96e+03, total_loss: 5.96e+03, steps: 80000, lr: 3.97e-04, avg_loss: 6.05e+03, run_time: 2.81e+02
+2023-12-01 22:56:28,216 - speechbrain.utils.train_logger - INFO - loss: 5.53e+03, accuracy: 4.83e-01, num_masked: 2760, ratio_masked: 6.42e-01, diversity_loss: 5.54e-01, prob_perplex: 2.85e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.34, backprop_loss: 5.68e+03, total_loss: 5.68e+03, steps: 80500, lr: 3.96e-04, avg_loss: 6.05e+03, run_time: 2.81e+02
+2023-12-01 23:01:08,985 - speechbrain.utils.train_logger - INFO - loss: 5.60e+03, accuracy: 4.89e-01, num_masked: 2880, ratio_masked: 6.43e-01, diversity_loss: 5.23e-01, prob_perplex: 3.05e+02, code_perplex: 2.99e+02, num_vars: 640, temp: 1.33, backprop_loss: 5.75e+03, total_loss: 5.75e+03, steps: 81000, lr: 3.95e-04, avg_loss: 6.05e+03, run_time: 2.81e+02
+2023-12-01 23:05:50,421 - speechbrain.utils.train_logger - INFO - loss: 5.31e+03, accuracy: 5.36e-01, num_masked: 2940, ratio_masked: 6.47e-01, diversity_loss: 5.42e-01, prob_perplex: 2.93e+02, code_perplex: 2.87e+02, num_vars: 640, temp: 1.33, backprop_loss: 5.47e+03, total_loss: 5.47e+03, steps: 81500, lr: 3.95e-04, avg_loss: 6.04e+03, run_time: 2.81e+02
+2023-12-01 23:10:31,498 - speechbrain.utils.train_logger - INFO - loss: 6.10e+03, accuracy: 4.74e-01, num_masked: 3000, ratio_masked: 6.41e-01, diversity_loss: 5.36e-01, prob_perplex: 2.97e+02, code_perplex: 2.90e+02, num_vars: 640, temp: 1.33, backprop_loss: 6.26e+03, total_loss: 6.26e+03, steps: 82000, lr: 3.94e-04, avg_loss: 6.04e+03, run_time: 2.81e+02
+2023-12-01 23:12:58,289 - speechbrain.utils.train_logger - INFO - epoch: 17, steps: 82144, lr: 3.94e-04 - train loss: 6.04e+03 - valid loss: 1.50e+03, valid accuracy: 0.558208703994751
+2023-12-01 23:12:59,365 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+23-12-58+00
+2023-12-01 23:13:00,558 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+19-20-51+00
+2023-12-01 23:13:00,558 - speechbrain.utils.epoch_loop - INFO - Going into epoch 18
+2023-12-01 23:13:00,559 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 23:13:01,338 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 23:16:23,663 - speechbrain.utils.train_logger - INFO - loss: 6.13e+03, accuracy: 4.79e-01, num_masked: 3060, ratio_masked: 6.40e-01, diversity_loss: 5.26e-01, prob_perplex: 3.03e+02, code_perplex: 2.96e+02, num_vars: 640, temp: 1.32, backprop_loss: 6.30e+03, total_loss: 6.30e+03, steps: 82500, lr: 3.94e-04, avg_loss: 6.02e+03, run_time: 3.52e+02
+2023-12-01 23:21:04,357 - speechbrain.utils.train_logger - INFO - loss: 5.90e+03, accuracy: 4.46e-01, num_masked: 2760, ratio_masked: 6.42e-01, diversity_loss: 5.43e-01, prob_perplex: 2.93e+02, code_perplex: 2.84e+02, num_vars: 640, temp: 1.32, backprop_loss: 6.05e+03, total_loss: 6.05e+03, steps: 83000, lr: 3.93e-04, avg_loss: 6.01e+03, run_time: 2.81e+02
+2023-12-01 23:25:44,826 - speechbrain.utils.train_logger - INFO - loss: 6.61e+03, accuracy: 4.56e-01, num_masked: 3080, ratio_masked: 6.44e-01, diversity_loss: 5.27e-01, prob_perplex: 3.03e+02, code_perplex: 2.97e+02, num_vars: 640, temp: 1.32, backprop_loss: 6.77e+03, total_loss: 6.77e+03, steps: 83500, lr: 3.92e-04, avg_loss: 6.00e+03, run_time: 2.80e+02
+2023-12-01 23:30:25,661 - speechbrain.utils.train_logger - INFO - loss: 6.08e+03, accuracy: 4.85e-01, num_masked: 3080, ratio_masked: 6.46e-01, diversity_loss: 5.36e-01, prob_perplex: 2.97e+02, code_perplex: 2.89e+02, num_vars: 640, temp: 1.31, backprop_loss: 6.25e+03, total_loss: 6.25e+03, steps: 84000, lr: 3.92e-04, avg_loss: 5.99e+03, run_time: 2.81e+02
+2023-12-01 23:35:05,965 - speechbrain.utils.train_logger - INFO - loss: 6.05e+03, accuracy: 4.67e-01, num_masked: 2880, ratio_masked: 6.51e-01, diversity_loss: 5.21e-01, prob_perplex: 3.06e+02, code_perplex: 3.00e+02, num_vars: 640, temp: 1.31, backprop_loss: 6.20e+03, total_loss: 6.20e+03, steps: 84500, lr: 3.91e-04, avg_loss: 5.99e+03, run_time: 2.80e+02
+2023-12-01 23:39:46,094 - speechbrain.utils.train_logger - INFO - loss: 6.15e+03, accuracy: 4.78e-01, num_masked: 3060, ratio_masked: 6.52e-01, diversity_loss: 5.18e-01, prob_perplex: 3.09e+02, code_perplex: 3.03e+02, num_vars: 640, temp: 1.31, backprop_loss: 6.31e+03, total_loss: 6.31e+03, steps: 85000, lr: 3.90e-04, avg_loss: 5.99e+03, run_time: 2.80e+02
+2023-12-01 23:44:26,832 - speechbrain.utils.train_logger - INFO - loss: 5.88e+03, accuracy: 4.76e-01, num_masked: 2880, ratio_masked: 6.38e-01, diversity_loss: 5.31e-01, prob_perplex: 3.00e+02, code_perplex: 2.94e+02, num_vars: 640, temp: 1.30, backprop_loss: 6.03e+03, total_loss: 6.03e+03, steps: 85500, lr: 3.90e-04, avg_loss: 5.99e+03, run_time: 2.81e+02
+2023-12-01 23:49:07,279 - speechbrain.utils.train_logger - INFO - loss: 6.01e+03, accuracy: 4.43e-01, num_masked: 2760, ratio_masked: 6.42e-01, diversity_loss: 5.47e-01, prob_perplex: 2.90e+02, code_perplex: 2.79e+02, num_vars: 640, temp: 1.30, backprop_loss: 6.16e+03, total_loss: 6.16e+03, steps: 86000, lr: 3.89e-04, avg_loss: 5.98e+03, run_time: 2.80e+02
+2023-12-01 23:53:47,556 - speechbrain.utils.train_logger - INFO - loss: 5.67e+03, accuracy: 4.92e-01, num_masked: 2870, ratio_masked: 6.34e-01, diversity_loss: 5.23e-01, prob_perplex: 3.05e+02, code_perplex: 2.99e+02, num_vars: 640, temp: 1.30, backprop_loss: 5.82e+03, total_loss: 5.82e+03, steps: 86500, lr: 3.89e-04, avg_loss: 5.98e+03, run_time: 2.80e+02
+2023-12-01 23:59:20,764 - speechbrain.utils.train_logger - INFO - epoch: 18, steps: 86976, lr: 3.88e-04 - train loss: 5.98e+03 - valid loss: 1.50e+03, valid accuracy: 0.5607740879058838
+2023-12-01 23:59:21,903 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+23-59-20+00
+2023-12-01 23:59:23,072 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+20-07-15+00
+2023-12-01 23:59:23,073 - speechbrain.utils.epoch_loop - INFO - Going into epoch 19
+2023-12-01 23:59:23,074 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 23:59:23,920 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-01 23:59:38,994 - speechbrain.utils.train_logger - INFO - loss: 5.54e+03, accuracy: 5.04e-01, num_masked: 2880, ratio_masked: 6.37e-01, diversity_loss: 5.25e-01, prob_perplex: 3.04e+02, code_perplex: 2.98e+02, num_vars: 640, temp: 1.29, backprop_loss: 5.69e+03, total_loss: 5.69e+03, steps: 87000, lr: 3.88e-04, avg_loss: 5.82e+03, run_time: 3.51e+02
+2023-12-02 00:04:21,456 - speechbrain.utils.train_logger - INFO - loss: 5.23e+03, accuracy: 4.93e-01, num_masked: 2650, ratio_masked: 6.39e-01, diversity_loss: 5.12e-01, prob_perplex: 3.13e+02, code_perplex: 3.05e+02, num_vars: 640, temp: 1.29, backprop_loss: 5.36e+03, total_loss: 5.36e+03, steps: 87500, lr: 3.87e-04, avg_loss: 5.92e+03, run_time: 2.82e+02
+2023-12-02 00:09:01,828 - speechbrain.utils.train_logger - INFO - loss: 5.71e+03, accuracy: 4.93e-01, num_masked: 3000, ratio_masked: 6.38e-01, diversity_loss: 5.29e-01, prob_perplex: 3.02e+02, code_perplex: 2.95e+02, num_vars: 640, temp: 1.29, backprop_loss: 5.86e+03, total_loss: 5.86e+03, steps: 88000, lr: 3.87e-04, avg_loss: 5.95e+03, run_time: 2.80e+02
+2023-12-02 00:13:42,433 - speechbrain.utils.train_logger - INFO - loss: 5.94e+03, accuracy: 4.96e-01, num_masked: 3080, ratio_masked: 6.48e-01, diversity_loss: 5.17e-01, prob_perplex: 3.09e+02, code_perplex: 3.02e+02, num_vars: 640, temp: 1.28, backprop_loss: 6.10e+03, total_loss: 6.10e+03, steps: 88500, lr: 3.86e-04, avg_loss: 5.96e+03, run_time: 2.81e+02
+2023-12-02 00:18:23,413 - speechbrain.utils.train_logger - INFO - loss: 5.85e+03, accuracy: 5.01e-01, num_masked: 3000, ratio_masked: 6.35e-01, diversity_loss: 5.50e-01, prob_perplex: 2.88e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.28, backprop_loss: 6.02e+03, total_loss: 6.02e+03, steps: 89000, lr: 3.86e-04, avg_loss: 5.96e+03, run_time: 2.81e+02
+2023-12-02 00:23:04,175 - speechbrain.utils.train_logger - INFO - loss: 5.81e+03, accuracy: 4.93e-01, num_masked: 3000, ratio_masked: 6.32e-01, diversity_loss: 5.03e-01, prob_perplex: 3.18e+02, code_perplex: 3.11e+02, num_vars: 640, temp: 1.28, backprop_loss: 5.97e+03, total_loss: 5.97e+03, steps: 89500, lr: 3.85e-04, avg_loss: 5.96e+03, run_time: 2.81e+02
+2023-12-02 00:27:44,697 - speechbrain.utils.train_logger - INFO - loss: 5.81e+03, accuracy: 4.84e-01, num_masked: 2940, ratio_masked: 6.56e-01, diversity_loss: 5.13e-01, prob_perplex: 3.11e+02, code_perplex: 3.03e+02, num_vars: 640, temp: 1.28, backprop_loss: 5.96e+03, total_loss: 5.96e+03, steps: 90000, lr: 3.84e-04, avg_loss: 5.95e+03, run_time: 2.81e+02
+2023-12-02 00:32:25,185 - speechbrain.utils.train_logger - INFO - loss: 5.63e+03, accuracy: 4.80e-01, num_masked: 2760, ratio_masked: 6.42e-01, diversity_loss: 5.32e-01, prob_perplex: 3.00e+02, code_perplex: 2.91e+02, num_vars: 640, temp: 1.27, backprop_loss: 5.78e+03, total_loss: 5.78e+03, steps: 90500, lr: 3.84e-04, avg_loss: 5.95e+03, run_time: 2.81e+02
+2023-12-02 00:37:05,532 - speechbrain.utils.train_logger - INFO - loss: 5.62e+03, accuracy: 5.05e-01, num_masked: 3010, ratio_masked: 6.32e-01, diversity_loss: 5.11e-01, prob_perplex: 3.13e+02, code_perplex: 3.05e+02, num_vars: 640, temp: 1.27, backprop_loss: 5.78e+03, total_loss: 5.78e+03, steps: 91000, lr: 3.83e-04, avg_loss: 5.95e+03, run_time: 2.80e+02
+2023-12-02 00:41:46,295 - speechbrain.utils.train_logger - INFO - loss: 6.28e+03, accuracy: 4.77e-01, num_masked: 3100, ratio_masked: 6.47e-01, diversity_loss: 5.03e-01, prob_perplex: 3.18e+02, code_perplex: 3.12e+02, num_vars: 640, temp: 1.27, backprop_loss: 6.44e+03, total_loss: 6.44e+03, steps: 91500, lr: 3.82e-04, avg_loss: 5.95e+03, run_time: 2.81e+02
+2023-12-02 00:45:45,370 - speechbrain.utils.train_logger - INFO - epoch: 19, steps: 91808, lr: 3.82e-04 - train loss: 5.94e+03 - valid loss: 1.49e+03, valid accuracy: 0.5602729320526123
+2023-12-02 00:45:46,501 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-02+00-45-45+00
+2023-12-02 00:45:47,663 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+20-53-42+00
+2023-12-02 00:45:47,663 - speechbrain.utils.epoch_loop - INFO - Going into epoch 20
+2023-12-02 00:45:47,664 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-02 00:45:48,411 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-02 00:47:38,029 - speechbrain.utils.train_logger - INFO - loss: 5.46e+03, accuracy: 5.14e-01, num_masked: 2880, ratio_masked: 6.31e-01, diversity_loss: 5.16e-01, prob_perplex: 3.10e+02, code_perplex: 3.04e+02, num_vars: 640, temp: 1.26, backprop_loss: 5.61e+03, total_loss: 5.61e+03, steps: 92000, lr: 3.82e-04, avg_loss: 5.93e+03, run_time: 3.52e+02
+2023-12-02 00:52:18,951 - speechbrain.utils.train_logger - INFO - loss: 5.77e+03, accuracy: 5.10e-01, num_masked: 3000, ratio_masked: 6.34e-01, diversity_loss: 5.00e-01, prob_perplex: 3.20e+02, code_perplex: 3.13e+02, num_vars: 640, temp: 1.26, backprop_loss: 5.92e+03, total_loss: 5.92e+03, steps: 92500, lr: 3.81e-04, avg_loss: 5.93e+03, run_time: 2.81e+02
+2023-12-02 00:56:59,789 - speechbrain.utils.train_logger - INFO - loss: 5.65e+03, accuracy: 4.57e-01, num_masked: 2760, ratio_masked: 6.45e-01, diversity_loss: 5.17e-01, prob_perplex: 3.09e+02, code_perplex: 3.02e+02, num_vars: 640, temp: 1.26, backprop_loss: 5.79e+03, total_loss: 5.79e+03, steps: 93000, lr: 3.81e-04, avg_loss: 5.91e+03, run_time: 2.81e+02
+2023-12-02 01:01:41,043 - speechbrain.utils.train_logger - INFO - loss: 4.65e+03, accuracy: 5.50e-01, num_masked: 2650, ratio_masked: 6.44e-01, diversity_loss: 5.46e-01, prob_perplex: 2.91e+02, code_perplex: 2.81e+02, num_vars: 640, temp: 1.25, backprop_loss: 4.79e+03, total_loss: 4.79e+03, steps: 93500, lr: 3.80e-04, avg_loss: 5.91e+03, run_time: 2.81e+02
+2023-12-02 01:06:21,598 - speechbrain.utils.train_logger - INFO - loss: 5.21e+03, accuracy: 5.06e-01, num_masked: 2800, ratio_masked: 6.25e-01, diversity_loss: 5.16e-01, prob_perplex: 3.10e+02, code_perplex: 3.04e+02, num_vars: 640, temp: 1.25, backprop_loss: 5.35e+03, total_loss: 5.35e+03, steps: 94000, lr: 3.79e-04, avg_loss: 5.90e+03, run_time: 2.81e+02
+2023-12-02 01:11:02,853 - speechbrain.utils.train_logger - INFO - loss: 5.45e+03, accuracy: 5.14e-01, num_masked: 2880, ratio_masked: 6.40e-01, diversity_loss: 5.53e-01, prob_perplex: 2.86e+02, code_perplex: 2.78e+02, num_vars: 640, temp: 1.25, backprop_loss: 5.61e+03, total_loss: 5.61e+03, steps: 94500, lr: 3.79e-04, avg_loss: 5.90e+03, run_time: 2.81e+02
+2023-12-02 01:15:43,458 - speechbrain.utils.train_logger - INFO - loss: 6.14e+03, accuracy: 4.89e-01, num_masked: 3000, ratio_masked: 6.25e-01, diversity_loss: 5.09e-01, prob_perplex: 3.14e+02, code_perplex: 3.08e+02, num_vars: 640, temp: 1.24, backprop_loss: 6.29e+03, total_loss: 6.29e+03, steps: 95000, lr: 3.78e-04, avg_loss: 5.90e+03, run_time: 2.81e+02
+2023-12-02 01:20:24,304 - speechbrain.utils.train_logger - INFO - loss: 5.73e+03, accuracy: 5.18e-01, num_masked: 3060, ratio_masked: 6.43e-01, diversity_loss: 5.26e-01, prob_perplex: 3.03e+02, code_perplex: 2.97e+02, num_vars: 640, temp: 1.24, backprop_loss: 5.89e+03, total_loss: 5.89e+03, steps: 95500, lr: 3.77e-04, avg_loss: 5.90e+03, run_time: 2.81e+02
+2023-12-02 01:25:05,725 - speechbrain.utils.train_logger - INFO - loss: 4.98e+03, accuracy: 5.62e-01, num_masked: 3000, ratio_masked: 6.37e-01, diversity_loss: 5.17e-01, prob_perplex: 3.09e+02, code_perplex: 3.02e+02, num_vars: 640, temp: 1.24, backprop_loss: 5.14e+03, total_loss: 5.14e+03, steps: 96000, lr: 3.77e-04, avg_loss: 5.89e+03, run_time: 2.81e+02
+2023-12-02 01:29:46,730 - speechbrain.utils.train_logger - INFO - loss: 6.35e+03, accuracy: 4.57e-01, num_masked: 3000, ratio_masked: 6.33e-01, diversity_loss: 5.03e-01, prob_perplex: 3.18e+02, code_perplex: 3.12e+02, num_vars: 640, temp: 1.23, backprop_loss: 6.51e+03, total_loss: 6.51e+03, steps: 96500, lr: 3.76e-04, avg_loss: 5.89e+03, run_time: 2.81e+02
+2023-12-02 01:32:11,144 - speechbrain.utils.train_logger - INFO - epoch: 20, steps: 96640, lr: 3.76e-04 - train loss: 5.89e+03 - valid loss: 1.46e+03, valid accuracy: 0.5693584680557251
+2023-12-02 01:32:12,378 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-02+01-32-11+00
+2023-12-02 01:32:13,368 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+21-40-06+00
+2023-12-02 01:32:13,368 - speechbrain.utils.epoch_loop - INFO - Going into epoch 21
+2023-12-02 01:32:13,369 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-02 01:32:14,199 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-02 01:35:38,498 - speechbrain.utils.train_logger - INFO - loss: 5.44e+03, accuracy: 4.59e-01, num_masked: 2700, ratio_masked: 6.28e-01, diversity_loss: 5.31e-01, prob_perplex: 3.00e+02, code_perplex: 2.93e+02, num_vars: 640, temp: 1.23, backprop_loss: 5.58e+03, total_loss: 5.58e+03, steps: 97000, lr: 3.76e-04, avg_loss: 5.90e+03, run_time: 3.52e+02
+2023-12-02 01:40:19,011 - speechbrain.utils.train_logger - INFO - loss: 5.68e+03, accuracy: 4.88e-01, num_masked: 2880, ratio_masked: 6.37e-01, diversity_loss: 5.24e-01, prob_perplex: 3.04e+02, code_perplex: 2.96e+02, num_vars: 640, temp: 1.23, backprop_loss: 5.83e+03, total_loss: 5.83e+03, steps: 97500, lr: 3.75e-04, avg_loss: 5.86e+03, run_time: 2.80e+02
+2023-12-02 01:45:00,332 - speechbrain.utils.train_logger - INFO - loss: 6.18e+03, accuracy: 5.02e-01, num_masked: 3200, ratio_masked: 6.46e-01, diversity_loss: 5.00e-01, prob_perplex: 3.20e+02, code_perplex: 3.14e+02, num_vars: 640, temp: 1.23, backprop_loss: 6.34e+03, total_loss: 6.34e+03, steps: 98000, lr: 3.74e-04, avg_loss: 5.86e+03, run_time: 2.81e+02
+2023-12-02 01:49:41,362 - speechbrain.utils.train_logger - INFO - loss: 6.44e+03, accuracy: 4.70e-01, num_masked: 3080, ratio_masked: 6.40e-01, diversity_loss: 4.94e-01, prob_perplex: 3.24e+02, code_perplex: 3.18e+02, num_vars: 640, temp: 1.22, backprop_loss: 6.59e+03, total_loss: 6.59e+03, steps: 98500, lr: 3.74e-04, avg_loss: 5.86e+03, run_time: 2.81e+02
+2023-12-02 01:54:22,083 - speechbrain.utils.train_logger - INFO - loss: 5.27e+03, accuracy: 4.84e-01, num_masked: 2650, ratio_masked: 6.43e-01, diversity_loss: 4.91e-01, prob_perplex: 3.25e+02, code_perplex: 3.18e+02, num_vars: 640, temp: 1.22, backprop_loss: 5.40e+03, total_loss: 5.40e+03, steps: 99000, lr: 3.73e-04, avg_loss: 5.87e+03, run_time: 2.81e+02
+2023-12-02 01:59:03,104 - speechbrain.utils.train_logger - INFO - loss: 4.85e+03, accuracy: 5.28e-01, num_masked: 2650, ratio_masked: 6.50e-01, diversity_loss: 5.16e-01, prob_perplex: 3.10e+02, code_perplex: 3.03e+02, num_vars: 640, temp: 1.22, backprop_loss: 4.99e+03, total_loss: 4.99e+03, steps: 99500, lr: 3.73e-04, avg_loss: 5.87e+03, run_time: 2.81e+02
+2023-12-02 02:03:43,668 - speechbrain.utils.train_logger - INFO - loss: 5.55e+03, accuracy: 5.08e-01, num_masked: 3010, ratio_masked: 6.30e-01, diversity_loss: 5.13e-01, prob_perplex: 3.12e+02, code_perplex: 3.05e+02, num_vars: 640, temp: 1.21, backprop_loss: 5.70e+03, total_loss: 5.70e+03, steps: 100000, lr: 3.72e-04, avg_loss: 5.87e+03, run_time: 2.81e+02
+2023-12-02 02:08:24,622 - speechbrain.utils.train_logger - INFO - loss: 6.66e+03, accuracy: 4.55e-01, num_masked: 3080, ratio_masked: 6.34e-01, diversity_loss: 4.98e-01, prob_perplex: 3.22e+02, code_perplex: 3.15e+02, num_vars: 640, temp: 1.21, backprop_loss: 6.81e+03, total_loss: 6.81e+03, steps: 100500, lr: 3.71e-04, avg_loss: 5.86e+03, run_time: 2.81e+02
+2023-12-02 02:13:05,310 - speechbrain.utils.train_logger - INFO - loss: 6.16e+03, accuracy: 4.56e-01, num_masked: 2940, ratio_masked: 6.46e-01, diversity_loss: 5.17e-01, prob_perplex: 3.09e+02, code_perplex: 3.03e+02, num_vars: 640, temp: 1.21, backprop_loss: 6.31e+03, total_loss: 6.31e+03, steps: 101000, lr: 3.71e-04, avg_loss: 5.86e+03, run_time: 2.81e+02
+2023-12-02 02:18:36,367 - speechbrain.utils.train_logger - INFO - epoch: 21, steps: 101472, lr: 3.70e-04 - train loss: 5.86e+03 - valid loss: 1.47e+03, valid accuracy: 0.5683228969573975
+2023-12-02 02:18:37,499 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-base/save/CKPT+2023-12-02+02-18-36+00
+2023-12-02 02:18:38,684 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-base/save/CKPT+2023-12-01+22-26-33+00

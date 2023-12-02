@@ -1,0 +1,413 @@
+2023-12-02 09:28:19,118 - speechbrain.core - INFO - Beginning experiment!
+2023-12-02 09:28:19,118 - speechbrain.core - INFO - Experiment folder: results/LibriSpeech/w2v2/1000
+2023-12-02 09:28:19,814 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==23.1.0
+black==19.10b0
+certifi==2023.11.17
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+cmake==3.27.7
+distlib==0.3.7
+entrypoints==0.3
+filelock==3.13.1
+flake8==3.7.9
+fsspec==2023.10.0
+huggingface-hub==0.19.4
+HyperPyYAML==1.2.2
+identify==2.5.32
+idna==3.6
+iniconfig==2.0.0
+Jinja2==3.1.2
+joblib==1.3.2
+lit==17.0.6
+MarkupSafe==2.1.3
+mccabe==0.6.1
+mpmath==1.3.0
+networkx==3.2.1
+nodeenv==1.8.0
+numpy==1.26.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu11==10.9.0.58
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu11==10.2.10.91
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu11==2.14.3
+nvidia-nccl-cu12==2.18.1
+nvidia-nvjitlink-cu12==12.3.101
+nvidia-nvtx-cu11==11.7.91
+nvidia-nvtx-cu12==12.1.105
+packaging==23.2
+pandas==2.1.3
+pathspec==0.11.2
+platformdirs==4.0.0
+pluggy==1.3.0
+pre-commit==3.5.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+pytest==7.4.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+regex==2023.10.3
+requests==2.31.0
+ruamel.yaml==0.18.5
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.1
+scipy==1.11.4
+sentencepiece==0.1.99
+six==1.16.0
+-e git+https://github.com/whettenr/speechbrain.git@b545d914c7e1677cae6d8fe030a00f7594b78475#egg=speechbrain
+sympy==1.12
+tokenizers==0.15.0
+toml==0.10.2
+torch==2.0.1
+torchaudio==2.0.2
+tqdm==4.66.1
+transformers==4.35.2
+triton==2.0.0
+typed-ast==1.5.5
+typing_extensions==4.8.0
+tzdata==2023.3
+urllib3==2.1.0
+virtualenv==20.24.7
+yamllint==1.23.0
+
+
+2023-12-02 09:28:19,827 - speechbrain.utils.superpowers - DEBUG - 51e9a7c
+
+
+2023-12-02 09:28:22,285 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/train_w2v2.py", line 322, in <module>
+    train_data, valid_data, test_datasets, label_encoder = dataio_prepare(
+                                                           ^^^^^^^^^^^^^^^
+  File "/gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/train_w2v2.py", line 229, in dataio_prepare
+    test_datasets[name] = sb.dataio.dataset.DynamicItemDataset.from_csv(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain/speechbrain/dataio/dataset.py", line 408, in from_csv
+    data = load_data_csv(csv_path, replacements)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain/speechbrain/dataio/dataio.py", line 129, in load_data_csv
+    with open(csv_path, newline="") as csvfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/bestrq/csv/test-other.csv'
+2023-12-02 09:30:41,734 - speechbrain.core - INFO - Beginning experiment!
+2023-12-02 09:30:41,734 - speechbrain.core - INFO - Experiment folder: results/LibriSpeech/w2v2/1000
+2023-12-02 09:30:42,787 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==23.1.0
+black==19.10b0
+certifi==2023.11.17
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+cmake==3.27.7
+distlib==0.3.7
+entrypoints==0.3
+filelock==3.13.1
+flake8==3.7.9
+fsspec==2023.10.0
+huggingface-hub==0.19.4
+HyperPyYAML==1.2.2
+identify==2.5.32
+idna==3.6
+iniconfig==2.0.0
+Jinja2==3.1.2
+joblib==1.3.2
+lit==17.0.6
+MarkupSafe==2.1.3
+mccabe==0.6.1
+mpmath==1.3.0
+networkx==3.2.1
+nodeenv==1.8.0
+numpy==1.26.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu11==10.9.0.58
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu11==10.2.10.91
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu11==2.14.3
+nvidia-nccl-cu12==2.18.1
+nvidia-nvjitlink-cu12==12.3.101
+nvidia-nvtx-cu11==11.7.91
+nvidia-nvtx-cu12==12.1.105
+packaging==23.2
+pandas==2.1.3
+pathspec==0.11.2
+platformdirs==4.0.0
+pluggy==1.3.0
+pre-commit==3.5.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+pytest==7.4.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+regex==2023.10.3
+requests==2.31.0
+ruamel.yaml==0.18.5
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.1
+scipy==1.11.4
+sentencepiece==0.1.99
+six==1.16.0
+-e git+https://github.com/whettenr/speechbrain.git@b545d914c7e1677cae6d8fe030a00f7594b78475#egg=speechbrain
+sympy==1.12
+tokenizers==0.15.0
+toml==0.10.2
+torch==2.0.1
+torchaudio==2.0.2
+tqdm==4.66.1
+transformers==4.35.2
+triton==2.0.0
+typed-ast==1.5.5
+typing_extensions==4.8.0
+tzdata==2023.3
+urllib3==2.1.0
+virtualenv==20.24.7
+yamllint==1.23.0
+
+
+2023-12-02 09:30:42,810 - speechbrain.utils.superpowers - DEBUG - 51e9a7c
+
+
+2023-12-02 09:30:43,287 - speechbrain.dataio.encoder - DEBUG - Would load categorical encoding from results/LibriSpeech/w2v2/1000/save/label_encoder.txt, but file doesn't exist yet.
+2023-12-02 09:30:43,798 - speechbrain.dataio.encoder - INFO - Moving label 'T' from index 0, because '<blank>' was put at its place.
+2023-12-02 09:30:43,800 - speechbrain.dataio.encoder - INFO - Load called, but CTCTextEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2023-12-02 09:30:43,801 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/w2v2/1000/save/label_encoder.txt
+2023-12-02 09:30:43,801 - speechbrain.core - INFO - Info: auto_mix_prec arg from hparam file is used
+2023-12-02 09:30:43,801 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2023-12-02 09:30:45,860 - speechbrain.core - INFO - 44.7M trainable parameters in ASR
+2023-12-02 09:30:45,860 - speechbrain.utils.parameter_transfer - DEBUG - Collecting files (or symlinks) for pretraining in results/LibriSpeech/w2v2/1000/save.
+2023-12-02 09:30:45,863 - speechbrain.pretrained.fetching - INFO - Destination latent_extractor.ckpt: local file in /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-02+02-18-36+00/latent_extractor.ckpt.
+2023-12-02 09:30:45,864 - speechbrain.utils.parameter_transfer - INFO - Set local path in self.paths[extractor] = results/LibriSpeech/w2v2/1000/save/extractor.ckpt
+2023-12-02 09:30:45,865 - speechbrain.pretrained.fetching - INFO - Destination latent_encoder.ckpt: local file in /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-02+02-18-36+00/latent_encoder.ckpt.
+2023-12-02 09:30:45,866 - speechbrain.utils.parameter_transfer - INFO - Set local path in self.paths[encoder_wrapper] = results/LibriSpeech/w2v2/1000/save/encoder_wrapper.ckpt
+2023-12-02 09:30:45,866 - speechbrain.utils.parameter_transfer - INFO - Loading pretrained files for: extractor, encoder_wrapper
+2023-12-02 09:30:45,866 - speechbrain.utils.parameter_transfer - INFO - Redirecting (loading from local path): results/LibriSpeech/w2v2/1000/save/extractor.ckpt -> results/LibriSpeech/w2v2/1000/save/extractor.ckpt
+2023-12-02 09:30:45,866 - speechbrain.utils.parameter_transfer - INFO - Redirecting (loading from local path): results/LibriSpeech/w2v2/1000/save/encoder_wrapper.ckpt -> results/LibriSpeech/w2v2/1000/save/encoder_wrapper.ckpt
+2023-12-02 09:30:47,478 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2023-12-02 09:30:47,478 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2023-12-02 09:35:45,926 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/train_w2v2.py", line 371, in <module>
+    asr_brain.fit(
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain/speechbrain/core.py", line 1366, in fit
+    self._fit_train(train_set=train_set, epoch=epoch, enable=enable)
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain/speechbrain/core.py", line 1193, in _fit_train
+    loss = self.fit_batch(batch)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/train_w2v2.py", line 85, in fit_batch
+    predictions = self.compute_forward(batch, sb.Stage.TRAIN)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/train_w2v2.py", line 31, in compute_forward
+    feats = self.modules.weighted_ssl_model[1](feats, wav_lens=wav_lens)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/linkhome/rech/genzjn01/uaj64gk/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain/speechbrain/lobes/models/wav2vec.py", line 287, in forward
+    results = self.transformer(
+              ^^^^^^^^^^^^^^^^^
+  File "/linkhome/rech/genzjn01/uaj64gk/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain/speechbrain/lobes/models/wav2vec.py", line 231, in forward
+    padding_mask = ~length_to_mask(wav_lens, dtype=bool)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain/speechbrain/dataio/dataio.py", line 791, in length_to_mask
+    max_len = length.max().long().item()  # using arange to generate mask
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2023-12-02 09:39:51,172 - speechbrain.core - INFO - Beginning experiment!
+2023-12-02 09:39:51,189 - speechbrain.core - INFO - Experiment folder: results/LibriSpeech/w2v2/1000
+2023-12-02 09:39:59,081 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==23.1.0
+black==19.10b0
+certifi==2023.11.17
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+cmake==3.27.7
+distlib==0.3.7
+entrypoints==0.3
+filelock==3.13.1
+flake8==3.7.9
+fsspec==2023.10.0
+huggingface-hub==0.19.4
+HyperPyYAML==1.2.2
+identify==2.5.32
+idna==3.6
+iniconfig==2.0.0
+Jinja2==3.1.2
+joblib==1.3.2
+lit==17.0.6
+MarkupSafe==2.1.3
+mccabe==0.6.1
+mpmath==1.3.0
+networkx==3.2.1
+nodeenv==1.8.0
+numpy==1.26.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu11==10.9.0.58
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu11==10.2.10.91
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu11==2.14.3
+nvidia-nccl-cu12==2.18.1
+nvidia-nvjitlink-cu12==12.3.101
+nvidia-nvtx-cu11==11.7.91
+nvidia-nvtx-cu12==12.1.105
+packaging==23.2
+pandas==2.1.3
+pathspec==0.11.2
+platformdirs==4.0.0
+pluggy==1.3.0
+pre-commit==3.5.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+pytest==7.4.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+regex==2023.10.3
+requests==2.31.0
+ruamel.yaml==0.18.5
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.1
+scipy==1.11.4
+sentencepiece==0.1.99
+six==1.16.0
+-e /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain
+sympy==1.12
+tokenizers==0.15.0
+toml==0.10.2
+torch==2.0.1
+torchaudio==2.0.2
+tqdm==4.66.1
+transformers==4.35.2
+triton==2.0.0
+typed-ast==1.5.5
+typing_extensions==4.8.0
+tzdata==2023.3
+urllib3==2.1.0
+virtualenv==20.24.7
+yamllint==1.23.0
+
+ERROR: Error [Errno 2] No such file or directory: 'git' while executing command git config --get-regexp 'remote\..*\.url'
+WARNING: cannot determine version of editable source in /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain (git command not found in path)
+
+2023-12-02 09:39:59,867 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/w2v2/1000/save/label_encoder.txt
+2023-12-02 09:39:59,867 - speechbrain.dataio.encoder - INFO - Load called, but CTCTextEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2023-12-02 09:39:59,908 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/w2v2/1000/save/label_encoder.txt
+2023-12-02 09:39:59,909 - speechbrain.core - INFO - Info: auto_mix_prec arg from hparam file is used
+2023-12-02 09:39:59,909 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2023-12-02 09:40:09,036 - speechbrain.core - INFO - 44.7M trainable parameters in ASR
+2023-12-02 09:40:09,061 - speechbrain.utils.parameter_transfer - DEBUG - Collecting files (or symlinks) for pretraining in results/LibriSpeech/w2v2/1000/save.
+2023-12-02 09:40:09,163 - speechbrain.pretrained.fetching - INFO - Fetch latent_extractor.ckpt: Using existing file/symlink in results/LibriSpeech/w2v2/1000/save/extractor.ckpt.
+2023-12-02 09:40:09,200 - speechbrain.utils.parameter_transfer - INFO - Set local path in self.paths[extractor] = results/LibriSpeech/w2v2/1000/save/extractor.ckpt
+2023-12-02 09:40:09,231 - speechbrain.pretrained.fetching - INFO - Fetch latent_encoder.ckpt: Using existing file/symlink in results/LibriSpeech/w2v2/1000/save/encoder_wrapper.ckpt.
+2023-12-02 09:40:09,232 - speechbrain.utils.parameter_transfer - INFO - Set local path in self.paths[encoder_wrapper] = results/LibriSpeech/w2v2/1000/save/encoder_wrapper.ckpt
+2023-12-02 09:40:09,232 - speechbrain.utils.parameter_transfer - INFO - Loading pretrained files for: extractor, encoder_wrapper
+2023-12-02 09:40:09,232 - speechbrain.utils.parameter_transfer - INFO - Redirecting (loading from local path): results/LibriSpeech/w2v2/1000/save/extractor.ckpt -> results/LibriSpeech/w2v2/1000/save/extractor.ckpt
+2023-12-02 09:40:09,232 - speechbrain.utils.parameter_transfer - INFO - Redirecting (loading from local path): results/LibriSpeech/w2v2/1000/save/encoder_wrapper.ckpt -> results/LibriSpeech/w2v2/1000/save/encoder_wrapper.ckpt
+2023-12-02 09:40:11,578 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2023-12-02 09:40:11,614 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2023-12-02 10:12:20,450 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+10-05-11+00
+2023-12-02 10:29:03,140 - speechbrain.utils.train_logger - INFO - epoch: 1, lr_model: 2.00e-04 - train loss: 4.89e-01 - valid loss: 3.15e-01, valid CER: 8.99, valid WER: 30.02
+2023-12-02 10:29:50,209 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+10-29-03+00
+2023-12-02 10:29:50,234 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+10-05-11+00
+2023-12-02 10:29:50,234 - speechbrain.utils.epoch_loop - INFO - Going into epoch 2
+2023-12-02 10:54:51,509 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+10-54-50+00
+2023-12-02 11:09:56,703 - speechbrain.utils.train_logger - INFO - epoch: 2, lr_model: 2.00e-04 - train loss: 2.72e-01 - valid loss: 2.66e-01, valid CER: 7.33, valid WER: 24.62
+2023-12-02 11:09:57,970 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+11-09-56+00
+2023-12-02 11:09:57,991 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+10-29-03+00
+2023-12-02 11:09:58,083 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+10-54-50+00
+2023-12-02 11:09:58,083 - speechbrain.utils.epoch_loop - INFO - Going into epoch 3
+2023-12-02 11:34:59,222 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+11-34-58+00
+2023-12-02 11:49:59,746 - speechbrain.utils.train_logger - INFO - epoch: 3, lr_model: 2.00e-04 - train loss: 2.13e-01 - valid loss: 2.48e-01, valid CER: 6.69, valid WER: 22.53
+2023-12-02 11:50:00,795 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+11-49-59+00
+2023-12-02 11:50:00,820 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+11-34-58+00
+2023-12-02 11:50:00,835 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+11-09-56+00
+2023-12-02 11:50:00,835 - speechbrain.utils.epoch_loop - INFO - Going into epoch 4
+2023-12-02 12:15:02,103 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+12-15-01+00
+2023-12-02 12:30:00,471 - speechbrain.utils.train_logger - INFO - epoch: 4, lr_model: 2.00e-04 - train loss: 1.75e-01 - valid loss: 2.37e-01, valid CER: 6.24, valid WER: 20.83
+2023-12-02 12:30:01,587 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+12-30-00+00
+2023-12-02 12:30:01,633 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+12-15-01+00
+2023-12-02 12:30:01,634 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+11-49-59+00
+2023-12-02 12:30:01,635 - speechbrain.utils.epoch_loop - INFO - Going into epoch 5
+2023-12-02 12:55:03,048 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+12-55-01+00
+2023-12-02 13:10:01,047 - speechbrain.utils.train_logger - INFO - epoch: 5, lr_model: 2.00e-04 - train loss: 1.48e-01 - valid loss: 2.36e-01, valid CER: 6.03, valid WER: 20.34
+2023-12-02 13:10:02,219 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+13-10-01+00
+2023-12-02 13:10:02,273 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+12-55-01+00
+2023-12-02 13:10:02,274 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+12-30-00+00
+2023-12-02 13:10:02,275 - speechbrain.utils.epoch_loop - INFO - Going into epoch 6
+2023-12-02 13:35:03,705 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+13-35-02+00
+2023-12-02 13:50:00,251 - speechbrain.utils.train_logger - INFO - epoch: 6, lr_model: 2.00e-04 - train loss: 1.27e-01 - valid loss: 2.31e-01, valid CER: 5.77, valid WER: 19.54
+2023-12-02 13:50:01,416 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+13-50-00+00
+2023-12-02 13:50:01,478 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+13-10-01+00
+2023-12-02 13:50:01,481 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+13-35-02+00
+2023-12-02 13:50:01,481 - speechbrain.utils.epoch_loop - INFO - Going into epoch 7
+2023-12-02 14:15:02,732 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+14-15-01+00
+2023-12-02 14:29:58,819 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0002 to 0.00016
+2023-12-02 14:29:58,838 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.01 to 0.009
+2023-12-02 14:29:58,838 - speechbrain.utils.train_logger - INFO - epoch: 7, lr_model: 2.00e-04 - train loss: 1.10e-01 - valid loss: 2.33e-01, valid CER: 5.68, valid WER: 19.36
+2023-12-02 14:29:59,857 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+14-29-58+00
+2023-12-02 14:29:59,908 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+14-15-01+00
+2023-12-02 14:29:59,926 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+13-50-00+00
+2023-12-02 14:29:59,926 - speechbrain.utils.epoch_loop - INFO - Going into epoch 8
+2023-12-02 14:55:01,029 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+14-54-59+00
+2023-12-02 15:09:57,543 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.00016 to 0.00013
+2023-12-02 15:09:57,557 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.009 to 0.0081
+2023-12-02 15:09:57,558 - speechbrain.utils.train_logger - INFO - epoch: 8, lr_model: 1.60e-04 - train loss: 8.63e-02 - valid loss: 2.34e-01, valid CER: 5.42, valid WER: 18.19
+2023-12-02 15:09:58,537 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+15-09-57+00
+2023-12-02 15:09:58,615 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+14-29-58+00
+2023-12-02 15:09:58,616 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+14-54-59+00
+2023-12-02 15:09:58,617 - speechbrain.utils.epoch_loop - INFO - Going into epoch 9
+2023-12-02 15:34:59,631 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+15-34-58+00
+2023-12-02 15:49:58,699 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.00013 to 0.0001
+2023-12-02 15:49:58,718 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0081 to 0.0073
+2023-12-02 15:49:58,764 - speechbrain.utils.train_logger - INFO - epoch: 9, lr_model: 1.28e-04 - train loss: 6.61e-02 - valid loss: 2.40e-01, valid CER: 5.33, valid WER: 18.11
+2023-12-02 15:49:59,797 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+15-49-58+00
+2023-12-02 15:49:59,867 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+15-34-58+00
+2023-12-02 15:49:59,880 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+15-09-57+00
+2023-12-02 15:49:59,880 - speechbrain.utils.epoch_loop - INFO - Going into epoch 10
