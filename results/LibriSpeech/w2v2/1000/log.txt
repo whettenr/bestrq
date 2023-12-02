@@ -411,3 +411,12 @@ WARNING: cannot determine version of editable source in /gpfsdswork/projects/rec
 2023-12-02 15:49:59,867 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+15-34-58+00
 2023-12-02 15:49:59,880 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+15-09-57+00
 2023-12-02 15:49:59,880 - speechbrain.utils.epoch_loop - INFO - Going into epoch 10
+2023-12-02 16:15:00,985 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+16-14-59+00
+2023-12-02 16:30:00,847 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0001 to 8.2e-05
+2023-12-02 16:30:00,871 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0073 to 0.0066
+2023-12-02 16:30:00,911 - speechbrain.utils.train_logger - INFO - epoch: 10, lr_model: 1.02e-04 - train loss: 4.97e-02 - valid loss: 2.48e-01, valid CER: 5.20, valid WER: 17.46
+2023-12-02 16:30:01,908 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+16-30-00+00
+2023-12-02 16:30:01,981 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+16-14-59+00
+2023-12-02 16:30:01,982 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+15-49-58+00
+2023-12-02 16:30:01,982 - speechbrain.utils.epoch_loop - INFO - Going into epoch 11
+2023-12-02 16:55:03,155 - speechbrain.utils.checkpoints - DEBUG - Saved an intra-epoch checkpoint in results/LibriSpeech/w2v2/1000/save/CKPT+2023-12-02+16-55-02+00

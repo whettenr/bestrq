@@ -7,3 +7,4 @@ epoch: 6, lr_model: 2.00e-04 - train loss: 1.27e-01 - valid loss: 2.31e-01, vali
 epoch: 7, lr_model: 2.00e-04 - train loss: 1.10e-01 - valid loss: 2.33e-01, valid CER: 5.68, valid WER: 19.36
 epoch: 8, lr_model: 1.60e-04 - train loss: 8.63e-02 - valid loss: 2.34e-01, valid CER: 5.42, valid WER: 18.19
 epoch: 9, lr_model: 1.28e-04 - train loss: 6.61e-02 - valid loss: 2.40e-01, valid CER: 5.33, valid WER: 18.11
+epoch: 10, lr_model: 1.02e-04 - train loss: 4.97e-02 - valid loss: 2.48e-01, valid CER: 5.20, valid WER: 17.46

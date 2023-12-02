@@ -1393,3 +1393,22 @@ KeyboardInterrupt
 2023-12-02 15:55:16,932 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+15-33-28+00
 2023-12-02 15:55:16,934 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+15-11-39+00
 2023-12-02 15:55:16,935 - speechbrain.utils.epoch_loop - INFO - Going into epoch 19
+2023-12-02 16:17:02,751 - speechbrain.nnet.schedulers - INFO - Changing lr from 1.7e-05 to 1.4e-05
+2023-12-02 16:17:02,791 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0031 to 0.0028
+2023-12-02 16:17:02,794 - speechbrain.utils.train_logger - INFO - epoch: 19, lr_model: 1.72e-05 - train loss: 2.32e-02 - valid loss: 3.60e-01, valid CER: 5.80, valid WER: 19.28
+2023-12-02 16:17:03,821 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+16-17-02+00
+2023-12-02 16:17:03,898 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+15-55-15+00
+2023-12-02 16:17:03,898 - speechbrain.utils.epoch_loop - INFO - Going into epoch 20
+2023-12-02 16:38:45,562 - speechbrain.nnet.schedulers - INFO - Changing lr from 1.4e-05 to 1.1e-05
+2023-12-02 16:38:45,578 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0028 to 0.0025
+2023-12-02 16:38:45,578 - speechbrain.utils.train_logger - INFO - epoch: 20, lr_model: 1.37e-05 - train loss: 2.14e-02 - valid loss: 3.63e-01, valid CER: 5.79, valid WER: 19.15
+2023-12-02 16:38:46,643 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+16-38-45+00
+2023-12-02 16:38:46,697 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+16-17-02+00
+2023-12-02 16:38:46,698 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+16-38-45+00
+2023-12-02 16:38:47,390 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+16-38-45+00/tokenizer.ckpt
+2023-12-02 16:38:47,391 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
+2023-12-02 16:39:52,165 - speechbrain.utils.train_logger - INFO - Epoch loaded: 20 - test loss: 3.72e-01, test CER: 5.56, test WER: 18.47
+2023-12-02 16:39:52,289 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+16-38-45+00
+2023-12-02 16:39:53,328 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brq_hyperconf/2000/save/CKPT+2023-12-02+16-38-45+00/tokenizer.ckpt
+2023-12-02 16:39:53,328 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
+2023-12-02 16:40:58,455 - speechbrain.utils.train_logger - INFO - Epoch loaded: 20 - test loss: 1.13, test CER: 16.00, test WER: 41.80

@@ -17,3 +17,6 @@ epoch: 16, lr_model: 8.19e-05 - train loss: 2.29e-01 - valid loss: 4.73e-01, val
 epoch: 17, lr_model: 8.19e-05 - train loss: 2.18e-01 - valid loss: 4.77e-01, valid CER: 10.33, valid WER: 34.17
 epoch: 18, lr_model: 6.55e-05 - train loss: 2.04e-01 - valid loss: 4.81e-01, valid CER: 10.40, valid WER: 33.99
 epoch: 19, lr_model: 5.24e-05 - train loss: 1.90e-01 - valid loss: 4.79e-01, valid CER: 10.30, valid WER: 33.94
+epoch: 20, lr_model: 5.24e-05 - train loss: 1.82e-01 - valid loss: 4.83e-01, valid CER: 10.33, valid WER: 33.80
+Epoch loaded: 20 - test loss: 4.70e-01, test CER: 9.93, test WER: 32.65
+Epoch loaded: 20 - test loss: 1.20, test CER: 23.23, test WER: 58.10

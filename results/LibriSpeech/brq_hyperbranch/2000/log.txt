@@ -890,3 +890,16 @@ WARNING: cannot determine version of editable source in /gpfsdswork/projects/rec
 2023-12-02 16:04:18,421 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+16-04-17+00
 2023-12-02 16:04:18,488 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+15-43-43+00
 2023-12-02 16:04:18,488 - speechbrain.utils.epoch_loop - INFO - Going into epoch 20
+2023-12-02 16:24:51,780 - speechbrain.nnet.schedulers - INFO - Changing lr from 5.2e-05 to 4.2e-05
+2023-12-02 16:24:51,813 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0053 to 0.0048
+2023-12-02 16:24:51,844 - speechbrain.utils.train_logger - INFO - epoch: 20, lr_model: 5.24e-05 - train loss: 1.82e-01 - valid loss: 4.83e-01, valid CER: 10.33, valid WER: 33.80
+2023-12-02 16:24:52,904 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+16-24-51+00
+2023-12-02 16:24:52,986 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+16-04-17+00
+2023-12-02 16:24:52,987 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+16-24-51+00
+2023-12-02 16:24:53,551 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+16-24-51+00/tokenizer.ckpt
+2023-12-02 16:24:53,552 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
+2023-12-02 16:25:53,277 - speechbrain.utils.train_logger - INFO - Epoch loaded: 20 - test loss: 4.70e-01, test CER: 9.93, test WER: 32.65
+2023-12-02 16:25:53,415 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+16-24-51+00
+2023-12-02 16:25:54,350 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brq_hyperbranch/2000/save/CKPT+2023-12-02+16-24-51+00/tokenizer.ckpt
+2023-12-02 16:25:54,351 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
+2023-12-02 16:26:53,596 - speechbrain.utils.train_logger - INFO - Epoch loaded: 20 - test loss: 1.20, test CER: 23.23, test WER: 58.10
