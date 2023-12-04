@@ -20,3 +20,5 @@ epoch: 19, lr_model: 1.37e-05 - train loss: 8.88e-03 - valid loss: 2.90e-01, val
 epoch: 20, lr_model: 1.10e-05 - train loss: 8.05e-03 - valid loss: 2.91e-01, valid CER: 4.85, valid WER: 16.09
 Epoch loaded: 20 - test loss: 3.16e-01, test CER: 4.89, test WER: 16.26
 Epoch loaded: 20 - test loss: 1.10, test CER: 15.45, test WER: 40.17
+Epoch loaded: 20 - test loss: 3.16e-01, test CER: 3.80, test WER: 10.63
+Epoch loaded: 20 - test loss: 1.10, test CER: 13.52, test WER: 30.83

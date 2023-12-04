@@ -1,4 +1,4 @@
-# Generated 2023-12-02 from:
+# Generated 2023-12-04 from:
 # /gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/hparams/ssl_w2v2.yaml
 # yamllint disable
 # ################################
@@ -48,8 +48,9 @@ lr_weights: 0.01
 sorting: ascending
 auto_mix_prec: false
 sample_rate: 16000
-language_modelling: false
-# ngram_lm_path: /users/rwhetten/benchmarks/benchmarks/MP3S/LibriSpeech/4-gram.arpa
+language_modelling: true
+ngram_lm_path: /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
+                            #path/to/4-gram.arpa
 
 # With data_parallel batch_size is split into N jobs
 # With DDP batch_size is multiplied by N jobs
