@@ -43,7 +43,7 @@ max_grad_norm: 1.
 # Empirically, we found that this value should be >= 128.
 # Please, set your parameters accordingly.
 
-number_of_epochs: 22
+number_of_epochs: 42
 optimizer_step_limit: 400000
 # grad_accumulation_factor: 2
 
