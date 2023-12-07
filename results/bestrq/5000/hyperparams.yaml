@@ -1,5 +1,5 @@
-# Generated 2023-12-05 from:
-# /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/bestrq/hparams/best_rq_base.yaml
+# Generated 2023-12-07 from:
+# /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/bestrq/hparams/best_rq_wide.yaml
 # yamllint disable
 # ############################################################################
 # Model: SSL: Implementation of Best-RQ
@@ -9,20 +9,20 @@
 # ############################################################################
 # Seed needs to be set at top of yaml, before objects with parameters are made
 
-seed: 1000
-__set_seed: !apply:torch.manual_seed [1000]
+seed: 5000
+__set_seed: !apply:torch.manual_seed [5000]
 
 project_name: bestrq
 experiment_name: base
 data_folder: /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/
-output_folder: results/bestrq/1000
+output_folder: results/bestrq/5000
 
 ckpt_interval_min: 15
-save_folder: results/bestrq/1000/save
+save_folder: results/bestrq/5000/save
 # Logging file for every N optimizer steps (many lines)
-train_steps_log: results/bestrq/1000/train_steps_log.txt
+train_steps_log: results/bestrq/5000/train_steps_log.txt
 # Logging file per epoch
-train_stage_log: results/bestrq/1000/train_stage_log.txt
+train_stage_log: results/bestrq/5000/train_stage_log.txt
 
 train_splits: [train-clean-100, train-clean-360, train-other-500]
 dev_splits: [dev-clean]
@@ -70,7 +70,7 @@ pad_to_divisible_by: 4
 
 ####################### Model parameters ###########################
 # Transformer
-d_model: 512
+d_model: 768
 nhead: 8 # table 1 https://arxiv.org/pdf/2010.10504.pdf
 num_encoder_layers: 12 # section 4.1.1
 num_decoder_layers: 0
@@ -108,7 +108,7 @@ Transformer: &id002 !new:speechbrain.lobes.models.transformer.TransformerASR.Tra
 
   input_size: 640
   tgt_vocab: 5000
-  d_model: 512
+  d_model: 768
   nhead: 8
   num_encoder_layers: 12
   num_decoder_layers: 0
@@ -133,7 +133,7 @@ Quantizer: &id005 !new:.quantiser.RandomProjectionQuantizer
 
 linear: &id006 !new:speechbrain.nnet.linear.Linear
 
-  input_size: 512
+  input_size: 768
   n_neurons: 8192
 
 modules:
@@ -166,17 +166,17 @@ epoch_counter: &id010 !new:speechbrain.utils.epoch_loop.EpochCounter
 
 
 train_steps_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
-  save_file: results/bestrq/1000/train_steps_log.txt
+  save_file: results/bestrq/5000/train_steps_log.txt
 
 train_stage_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
-  save_file: results/bestrq/1000/train_stage_log.txt
+  save_file: results/bestrq/5000/train_stage_log.txt
 
 noam_annealing: &id009 !new:speechbrain.nnet.schedulers.NoamScheduler
   lr_initial: 0.0008
   n_warmup_steps: 25000
 
 checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
-  checkpoints_dir: results/bestrq/1000/save
+  checkpoints_dir: results/bestrq/5000/save
   recoverables:
     model: *id008
     noam_scheduler: *id009

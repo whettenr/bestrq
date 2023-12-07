@@ -1,0 +1,198 @@
+# Generated 2023-12-07 from:
+# /gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/hparams/ssl_w2v2.yaml
+# yamllint disable
+# ################################
+# Recipe for training an SSL-based ctc ASR system with librispeech.
+# Decoding is performed with ctc greedy or LM-rescored decoder.
+#
+# Authors
+# * Salah Zaiem 2023
+# * Youcef Kemiche 2023
+# ################################
+
+# Seed needs to be set at top of yaml, before objects with parameters are made
+seed: 1001
+__set_seed: !apply:torch.manual_seed [1001]
+output_folder: results/LibriSpeech/w2v2/1001
+wer_file: results/LibriSpeech/w2v2/1001/wer.txt
+save_folder: results/LibriSpeech/w2v2/1001/save
+train_log: results/LibriSpeech/w2v2/1001/train_log.txt
+
+
+# Data files
+data_folder: /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/
+                          # e,g./path/to/LibriSpeech
+# noise/ris dataset will automatically be downloaded
+# data_folder_rirs: !ref <data_folder>
+train_splits: [train-clean-100]
+dev_splits: [dev-clean]
+test_splits: [test-clean, test-other]
+
+skip_prep: true
+ckpt_interval_minutes: 25 # save checkpoint every N min
+train_csv: results/LibriSpeech/csv/train.csv
+valid_csv: results/LibriSpeech/csv/dev-clean.csv
+test_csv:
+- results/LibriSpeech/csv/test-clean.csv
+- results/LibriSpeech/csv/test-other.csv
+
+num_layers_ssl: 13  #Number of layers in the SSL model (should be 25 for large )
+encoder_dim: 768
+
+ssl_hub: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-06+08-46-56+00
+
+# Training parameters
+number_of_epochs: 20
+lr: 0.0002
+lr_weights: 0.01
+sorting: ascending
+auto_mix_prec: false
+sample_rate: 16000
+language_modelling: true
+ngram_lm_path: /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
+                            #path/to/4-gram.arpa
+
+# With data_parallel batch_size is split into N jobs
+# With DDP batch_size is multiplied by N jobs
+# Must be 3 per GPU to fit 32GB of VRAM
+batch_size: 4
+test_batch_size: 4
+
+# Dataloader options
+train_dataloader_opts:
+  batch_size: 4
+
+valid_dataloader_opts:
+  batch_size: 4
+
+test_dataloader_opts:
+  batch_size: 4
+
+# Model parameters
+activation: !name:torch.nn.Sigmoid
+dnn_layers: 1
+dnn_neurons: 768
+freeze_encoder: true
+
+# Outputs
+output_neurons: 30  # BPE size, index(blank/eos/bos) = 0
+
+# Functions and classes
+#
+epoch_counter: &id011 !new:speechbrain.utils.epoch_loop.EpochCounter
+  limit: 20
+
+augmentation: !new:speechbrain.lobes.augment.TimeDomainSpecAugment
+  sample_rate: 16000
+  speeds: [95, 100, 105]
+
+############################## Pre-Trained Model ################################
+
+
+# standard parameters for the BASE model
+extractor: &id003 !new:speechbrain.lobes.models.wav2vec.W2VLatentExtractor
+  out_channels: [512, 512, 512, 512, 512, 512, 512]
+
+# standard parameters for the BASE model
+encoder: &id001 !new:speechbrain.lobes.models.transformer.Transformer.TransformerEncoder
+  d_model: 768
+  num_layers: 12
+  nhead: 8
+  d_ffn: 3072
+  dropout: 0.1
+  layerdrop_prob: 0.0
+  normalize_before: true
+  activation: !name:torch.nn.GELU
+
+# standard parameters for the BASE model
+encoder_wrapper: &id002 !new:speechbrain.lobes.models.wav2vec.EncoderWrapper
+  in_dim: 512
+  embedding_dim: 768
+  latent_encoder: *id001
+  dropout_encoder_input: 0.1
+  output_hidden_states: true
+
+wrapper: &id004 !new:speechbrain.lobes.models.wav2vec.WeightedEncoderWrapper
+  transformer: *id002
+  num_layers: 13
+  freeze: true
+
+weighted_ssl_model: &id007 !new:torch.nn.ModuleList
+
+- [*id003, *id004]
+enc: &id005 !new:speechbrain.nnet.RNN.LSTM
+# ds_enc: !new:speechbrain.nnet.RNN.LSTM
+  input_shape: [null, null, 768]
+  num_layers: 2
+  bidirectional: true
+  dropout: 0.2
+  hidden_size: 1024
+
+ctc_lin: &id006 !new:speechbrain.nnet.linear.Linear
+  input_size: 2048
+  n_neurons: 30
+
+log_softmax: !new:speechbrain.nnet.activations.Softmax
+  apply_log: true
+
+ctc_cost: !name:speechbrain.nnet.losses.ctc_loss
+  blank_index: 0
+
+modules:
+  enc: *id005
+  ctc_lin: *id006
+  weighted_ssl_model: *id007
+model: &id008 !new:torch.nn.ModuleList
+- [*id005, *id006]
+model_opt_class: !name:torch.optim.Adam
+  lr: 0.0002
+
+weights_opt_class: !name:torch.optim.Adam
+  lr: 0.01
+
+lr_annealing_model: &id009 !new:speechbrain.nnet.schedulers.NewBobScheduler
+  initial_value: 0.0002
+  improvement_threshold: 0.0025
+  annealing_factor: 0.8
+  patient: 0
+
+lr_annealing_weights: &id010 !new:speechbrain.nnet.schedulers.NewBobScheduler
+  initial_value: 0.01
+  improvement_threshold: 0.0025
+  annealing_factor: 0.9
+  patient: 0
+
+label_encoder: &id012 !new:speechbrain.dataio.encoder.CTCTextEncoder
+
+
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+  checkpoints_dir: results/LibriSpeech/w2v2/1001/save
+  recoverables:
+    model: *id008
+    ssl_model: *id007
+    scheduler_model: *id009
+    scheduler_encoder: *id010
+    counter: *id011
+    tokenizer: *id012
+pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
+  collect_in: results/LibriSpeech/w2v2/1001/save
+  loadables:
+    extractor: *id003
+    encoder_wrapper: *id002
+  paths:
+    extractor: 
+      /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-06+08-46-56+00/latent_extractor.ckpt
+    encoder_wrapper: 
+      /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-06+08-46-56+00/latent_encoder.ckpt
+
+blank_index: 0
+unk_index: 1
+
+
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+  save_file: results/LibriSpeech/w2v2/1001/train_log.txt
+
+error_rate_computer: !name:speechbrain.utils.metric_stats.ErrorRateStats
+
+cer_computer: !name:speechbrain.utils.metric_stats.ErrorRateStats
+  split_tokens: true
