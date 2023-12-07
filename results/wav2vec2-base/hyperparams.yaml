@@ -1,4 +1,4 @@
-# Generated 2023-12-01 from:
+# Generated 2023-12-05 from:
 # /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/bestrq/wav2vec2/hparams/wav2vec2_base.yaml
 # yamllint disable
 # ################################
@@ -86,7 +86,7 @@ optimizer: !name:torch.optim.AdamW
 
 epoch_counter: &id009 !new:speechbrain.utils.epoch_loop.EpochCounter
 
-  limit: 21
+  limit: 42
 
 extractor: &id004 !new:speechbrain.lobes.models.wav2vec.W2VLatentExtractor
   kernel_sizes: *id001
