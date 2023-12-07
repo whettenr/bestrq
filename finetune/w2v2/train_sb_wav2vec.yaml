@@ -25,7 +25,7 @@ data_folder: !PLACEHOLDER # e,g./path/to/LibriSpeech
 train_splits: ["train-clean-100"]
 dev_splits: ["dev-clean"]
 test_splits: ["test-clean", "test-other"]
-skip_prep: False
+skip_prep: True
 ckpt_interval_minutes: 25 # save checkpoint every N min
 train_csv: !ref results/ft/csv/train.csv
 valid_csv: !ref results/ft/csv/dev-clean.csv
