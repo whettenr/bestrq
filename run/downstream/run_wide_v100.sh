@@ -15,8 +15,8 @@ cd /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq
 
 python /gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/train_brq.py /gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/hparams/ssl_brq.yaml \
     --data_folder /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/ \
-    --ssl_hub /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqb/CKPT+2023-12-05+22-58-16+00 \
-    --d_model 768 --encoder_dim 768 --seed 1001 \
+    --ssl_hub /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide \
+    --d_model 768 --encoder_dim 768 --seed 5000 \
     --language_modelling False --ngram_lm_path /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
     # --test_only --language_modelling True --ngram_lm_path /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
 
