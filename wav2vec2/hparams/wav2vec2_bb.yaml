@@ -36,15 +36,15 @@ grad_accumulation_factor: 3
 
 # The training will either stops at number_of_epochs or optimizer_step_limit
 # I.e. the first that is reached.
-number_of_epochs: 42
-optimizer_step_limit: 400000
+number_of_epochs: 90
+optimizer_step_limit: 250000
 
 # # Dynamic Batching parameters
 # train_num_buckets: 70
 # seconds_per_batch: 200 # Fits in a 32GB GPUs (V100)
 
-seconds_per_batch: 200
-train_num_buckets: 70
+seconds_per_batch: 150
+train_num_buckets: 60
 
 train_dataloader_options:
    num_workers: 4

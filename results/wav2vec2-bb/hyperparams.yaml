@@ -1,5 +1,5 @@
-# Generated 2023-12-07 from:
-# /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/bestrq/wav2vec2/hparams/wav2vec2_bb.yaml
+# Generated 2023-12-08 from:
+# /users/rwhetten/bestrq/wav2vec2/hparams/wav2vec2_bb.yaml
 # yamllint disable
 # ################################
 # Model: wav2vec2
@@ -18,8 +18,8 @@ train_stage_log: results/wav2vec2-bb/train_stage_log.txt
 train_splits: [train-clean-100, train-clean-360, train-other-500]
 dev_splits: [dev-clean]
 test_splits: [test-clean]
-train_csv: results/bestrq/csv/train.csv
-valid_csv: results/bestrq/csv/dev-clean.csv
+train_csv: /users/rwhetten/best-rq-test/results/bestrq/csv/train.csv
+valid_csv: /users/rwhetten/best-rq-test/results/bestrq/csv/dev-clean.csv
 skip_prep: true
 
 # train_csv: !ref <output_folder>/train.csv
@@ -46,8 +46,8 @@ optimizer_step_limit: 400000
 # train_num_buckets: 70
 # seconds_per_batch: 200 # Fits in a 32GB GPUs (V100)
 
-seconds_per_batch: 200
-train_num_buckets: 70
+seconds_per_batch: 150
+train_num_buckets: 60
 
 train_dataloader_options:
   num_workers: 4
