@@ -1186,3 +1186,30 @@ WARNING: cannot determine version of editable source in /gpfsdswork/projects/rec
 2023-12-07 10:03:30,630 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
 2023-12-07 10:03:31,612 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
 2023-12-07 10:04:45,518 - speechbrain.utils.train_logger - INFO - steps: 193500, lr: 2.88e-04, avg_loss: 3.22, run_time: 2.08e+02
+2023-12-07 10:07:30,805 - speechbrain.utils.train_logger - INFO - steps: 194000, lr: 2.87e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:10:15,711 - speechbrain.utils.train_logger - INFO - steps: 194500, lr: 2.87e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:13:00,598 - speechbrain.utils.train_logger - INFO - steps: 195000, lr: 2.86e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:15:45,969 - speechbrain.utils.train_logger - INFO - steps: 195500, lr: 2.86e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:18:31,214 - speechbrain.utils.train_logger - INFO - steps: 196000, lr: 2.86e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:21:17,076 - speechbrain.utils.train_logger - INFO - steps: 196500, lr: 2.85e-04, avg_loss: 3.21, run_time: 1.66e+02
+2023-12-07 10:24:03,288 - speechbrain.utils.train_logger - INFO - steps: 197000, lr: 2.85e-04, avg_loss: 3.21, run_time: 1.66e+02
+2023-12-07 10:26:48,742 - speechbrain.utils.train_logger - INFO - steps: 197500, lr: 2.85e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:29:34,271 - speechbrain.utils.train_logger - INFO - steps: 198000, lr: 2.84e-04, avg_loss: 3.21, run_time: 1.66e+02
+2023-12-07 10:30:50,341 - speechbrain.utils.train_logger - INFO - epoch: 41, steps: 198112, lr: 2.84e-04 - train loss: 3.21 - valid loss: 3.59, valid accuracy: 2.24e-01
+2023-12-07 10:30:58,173 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/bestrq/5000/save/CKPT+2023-12-07+10-30-50+00
+2023-12-07 10:30:58,234 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/bestrq/5000/save/CKPT+2023-12-07+03-43-27+00
+2023-12-07 10:30:58,235 - speechbrain.utils.epoch_loop - INFO - Going into epoch 42
+2023-12-07 10:30:58,237 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-07 10:30:59,162 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-07 10:33:08,969 - speechbrain.utils.train_logger - INFO - steps: 198500, lr: 2.84e-04, avg_loss: 3.22, run_time: 2.15e+02
+2023-12-07 10:35:54,481 - speechbrain.utils.train_logger - INFO - steps: 199000, lr: 2.84e-04, avg_loss: 3.22, run_time: 1.66e+02
+2023-12-07 10:38:40,377 - speechbrain.utils.train_logger - INFO - steps: 199500, lr: 2.83e-04, avg_loss: 3.22, run_time: 1.66e+02
+2023-12-07 10:41:25,698 - speechbrain.utils.train_logger - INFO - steps: 200000, lr: 2.83e-04, avg_loss: 3.22, run_time: 1.65e+02
+2023-12-07 10:44:11,543 - speechbrain.utils.train_logger - INFO - steps: 200500, lr: 2.82e-04, avg_loss: 3.22, run_time: 1.66e+02
+2023-12-07 10:46:57,019 - speechbrain.utils.train_logger - INFO - steps: 201000, lr: 2.82e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:49:42,417 - speechbrain.utils.train_logger - INFO - steps: 201500, lr: 2.82e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:52:27,727 - speechbrain.utils.train_logger - INFO - steps: 202000, lr: 2.81e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:55:12,566 - speechbrain.utils.train_logger - INFO - steps: 202500, lr: 2.81e-04, avg_loss: 3.21, run_time: 1.65e+02
+2023-12-07 10:58:18,400 - speechbrain.utils.train_logger - INFO - epoch: 42, steps: 202944, lr: 2.81e-04 - train loss: 3.21 - valid loss: 3.58, valid accuracy: 2.24e-01
+2023-12-07 10:58:20,673 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/bestrq/5000/save/CKPT+2023-12-07+10-58-18+00
+2023-12-07 10:58:20,751 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/bestrq/5000/save/CKPT+2023-12-07+04-10-15+00

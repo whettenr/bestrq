@@ -39,3 +39,5 @@ epoch: 38, steps: 183616, lr: 2.95e-04 - train loss: 3.22 - valid loss: 3.61, va
 epoch: 39, steps: 188448, lr: 2.91e-04 - train loss: 3.22 - valid loss: 3.60, valid accuracy: 2.22e-01
 epoch: 40, steps: 193280, lr: 2.88e-04 - train loss: 3.22 - valid loss: 3.57, valid accuracy: 2.26e-01
 epoch: 40, steps: 193280, lr: 2.88e-04 - train loss: 3.21 - valid loss: 3.58, valid accuracy: 2.23e-01
+epoch: 41, steps: 198112, lr: 2.84e-04 - train loss: 3.21 - valid loss: 3.59, valid accuracy: 2.24e-01
+epoch: 42, steps: 202944, lr: 2.81e-04 - train loss: 3.21 - valid loss: 3.58, valid accuracy: 2.24e-01

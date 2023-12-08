@@ -38,9 +38,9 @@ test_csv:
 
 # num_layers_ssl: 25  #Number of layers in the SSL model (should be 25 for large )
 num_layers_ssl: 13  #Number of layers in the SSL model (should be 25 for large )
-encoder_dim: 512
+encoder_dim: 768
 
-ssl_hub: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqb/CKPT+2023-12-05+22-58-16+00
+ssl_hub: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide
 
 # Training parameters
 number_of_epochs: 20
@@ -49,7 +49,7 @@ lr_weights: 0.01
 sorting: ascending
 auto_mix_prec: false
 sample_rate: 16000
-language_modelling: true
+language_modelling: false
 ngram_lm_path: /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
                             #path/to/4-gram.arpa
 
@@ -89,7 +89,7 @@ augmentation: !new:speechbrain.lobes.augment.TimeDomainSpecAugment
 
 ####################### Pre-Trained Model parameters ###########################
 # Transformer
-d_model: 512
+d_model: 768
 nhead: 8 # table 1 https://arxiv.org/pdf/2010.10504.pdf
 num_encoder_layers: 12 # section 4.1.1
 num_decoder_layers: 0
@@ -131,7 +131,7 @@ Transformer: &id002 !new:speechbrain.lobes.models.transformer.TransformerASR.Tra
                                                                                      # yamllint disable-line rule:line-length
   input_size: 640
   tgt_vocab: 5000
-  d_model: 512
+  d_model: 768
   nhead: 8
   num_encoder_layers: 12
   num_decoder_layers: 0
@@ -159,7 +159,7 @@ Quantizer: &id005 !new:speechbrain.nnet.quantisers.RandomProjectionQuantizer
   cb_vocab: 8192
 
 linear: &id006 !new:speechbrain.nnet.linear.Linear
-  input_size: 512
+  input_size: 768
   n_neurons: 8192
 
 weighted_ssl_model: &id009 !new:torch.nn.ModuleList
@@ -167,7 +167,7 @@ weighted_ssl_model: &id009 !new:torch.nn.ModuleList
 - [*id003, *id004, *id005, *id006]
 enc: &id007 !new:speechbrain.nnet.RNN.LSTM
    # enc: !ref <ds_enc>
-  input_shape: [null, null, 512]
+  input_shape: [null, null, 768]
   num_layers: 2
   bidirectional: true
   dropout: 0.2
@@ -225,10 +225,8 @@ pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
     weighted_ssl_model: *id009
     normalize: *id015
   paths:
-    weighted_ssl_model: 
-      /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqb/CKPT+2023-12-05+22-58-16+00/model.ckpt
-    normalize: 
-      /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqb/CKPT+2023-12-05+22-58-16+00/normalizer.ckpt
+    weighted_ssl_model: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide/model.ckpt
+    normalize: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide/normalizer.ckpt
 
 # pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
 #    collect_in: !ref <save_folder>

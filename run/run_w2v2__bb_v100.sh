@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=brqb   # nom du job
+#SBATCH --job-name=wbb   # nom du job
 #SBATCH --account=nkp@v100
 #SBATCH -C v100
 #SBATCH --partition=gpu_p2

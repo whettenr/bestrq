@@ -1,0 +1,32 @@
+epoch: 1, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 7.17e-01 - valid loss: 3.69e-01, valid CER: 8.99, valid WER: 30.46
+epoch: 2, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 3.68e-01 - valid loss: 2.82e-01, valid CER: 7.02, valid WER: 23.99
+epoch: 3, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 2.97e-01 - valid loss: 2.45e-01, valid CER: 6.03, valid WER: 20.66
+epoch: 4, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 2.57e-01 - valid loss: 2.23e-01, valid CER: 5.56, valid WER: 18.98
+epoch: 5, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 2.29e-01 - valid loss: 2.07e-01, valid CER: 5.13, valid WER: 17.39
+epoch: 6, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 2.08e-01 - valid loss: 2.03e-01, valid CER: 4.88, valid WER: 16.57
+epoch: 7, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 1.91e-01 - valid loss: 1.94e-01, valid CER: 4.62, valid WER: 15.71
+epoch: 8, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 1.77e-01 - valid loss: 1.91e-01, valid CER: 4.50, valid WER: 15.18
+epoch: 9, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 1.65e-01 - valid loss: 1.84e-01, valid CER: 4.35, valid WER: 14.78
+epoch: 10, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 1.55e-01 - valid loss: 1.89e-01, valid CER: 4.25, valid WER: 14.39
+epoch: 11, lr_model: 1.50e-04, lr_wav2vec: 3.50e-05 - train loss: 1.36e-01 - valid loss: 1.74e-01, valid CER: 4.08, valid WER: 13.75
+epoch: 12, lr_model: 1.50e-04, lr_wav2vec: 3.50e-05 - train loss: 1.28e-01 - valid loss: 1.74e-01, valid CER: 3.99, valid WER: 13.34
+epoch: 13, lr_model: 7.50e-05, lr_wav2vec: 2.45e-05 - train loss: 1.18e-01 - valid loss: 1.67e-01, valid CER: 3.84, valid WER: 12.89
+epoch: 14, lr_model: 7.50e-05, lr_wav2vec: 2.45e-05 - train loss: 1.12e-01 - valid loss: 1.71e-01, valid CER: 3.77, valid WER: 12.62
+epoch: 15, lr_model: 3.75e-05, lr_wav2vec: 1.71e-05 - train loss: 1.06e-01 - valid loss: 1.70e-01, valid CER: 3.68, valid WER: 12.37
+epoch: 16, lr_model: 3.75e-05, lr_wav2vec: 1.71e-05 - train loss: 1.03e-01 - valid loss: 1.66e-01, valid CER: 3.63, valid WER: 12.05
+epoch: 17, lr_model: 3.75e-05, lr_wav2vec: 1.71e-05 - train loss: 1.00e-01 - valid loss: 1.70e-01, valid CER: 3.65, valid WER: 12.14
+epoch: 18, lr_model: 1.87e-05, lr_wav2vec: 1.20e-05 - train loss: 9.51e-02 - valid loss: 1.69e-01, valid CER: 3.58, valid WER: 11.93
+epoch: 19, lr_model: 1.87e-05, lr_wav2vec: 1.20e-05 - train loss: 9.31e-02 - valid loss: 1.70e-01, valid CER: 3.58, valid WER: 11.83
+epoch: 20, lr_model: 9.37e-06, lr_wav2vec: 8.40e-06 - train loss: 9.11e-02 - valid loss: 1.69e-01, valid CER: 3.58, valid WER: 11.84
+epoch: 21, lr_model: 9.37e-06, lr_wav2vec: 8.40e-06 - train loss: 8.90e-02 - valid loss: 1.69e-01, valid CER: 3.54, valid WER: 11.76
+epoch: 22, lr_model: 4.69e-06, lr_wav2vec: 5.88e-06 - train loss: 8.72e-02 - valid loss: 1.70e-01, valid CER: 3.51, valid WER: 11.64
+epoch: 23, lr_model: 2.34e-06, lr_wav2vec: 4.12e-06 - train loss: 8.62e-02 - valid loss: 1.70e-01, valid CER: 3.50, valid WER: 11.61
+epoch: 24, lr_model: 1.17e-06, lr_wav2vec: 2.88e-06 - train loss: 8.45e-02 - valid loss: 1.70e-01, valid CER: 3.51, valid WER: 11.59
+epoch: 25, lr_model: 5.86e-07, lr_wav2vec: 2.02e-06 - train loss: 8.43e-02 - valid loss: 1.70e-01, valid CER: 3.51, valid WER: 11.55
+epoch: 26, lr_model: 2.93e-07, lr_wav2vec: 1.41e-06 - train loss: 8.45e-02 - valid loss: 1.70e-01, valid CER: 3.51, valid WER: 11.53
+epoch: 27, lr_model: 1.46e-07, lr_wav2vec: 9.89e-07 - train loss: 8.37e-02 - valid loss: 1.70e-01, valid CER: 3.50, valid WER: 11.56
+epoch: 28, lr_model: 7.32e-08, lr_wav2vec: 6.92e-07 - train loss: 8.38e-02 - valid loss: 1.70e-01, valid CER: 3.49, valid WER: 11.54
+epoch: 29, lr_model: 3.66e-08, lr_wav2vec: 4.84e-07 - train loss: 8.27e-02 - valid loss: 1.69e-01, valid CER: 3.50, valid WER: 11.52
+epoch: 30, lr_model: 1.83e-08, lr_wav2vec: 3.39e-07 - train loss: 8.30e-02 - valid loss: 1.69e-01, valid CER: 3.49, valid WER: 11.53
+Epoch loaded: 29 - test loss: 1.80e-01, test CER: 3.52, test WER: 11.73
+Epoch loaded: 29 - test loss: 5.17e-01, test CER: 9.57, test WER: 25.63
