@@ -174,7 +174,7 @@ checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
    checkpoints_dir: !ref <save_folder>
    recoverables:
       extractor: !ref <extractor>
-      encoder: !ref <encoder>
+      encoder_wrapper: !ref <encoder_wrapper>
       scheduler_model: !ref <lr_annealing_model>
       scheduler_wav2vec: !ref <lr_annealing_wav2vec>
       counter: !ref <epoch_counter>

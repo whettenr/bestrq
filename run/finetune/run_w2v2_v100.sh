@@ -17,6 +17,6 @@ python /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/finetune/w2v2/train_with_wav2
     --data_folder /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/ \
     --pt_model_hub /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-06+08-46-56+00 \
     --use_language_modelling False --ngram_lm_path /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
-    # --test_only --language_modelling True --ngram_lm_path /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
+    # --test_only --use_language_modelling True --ngram_lm_path /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
 
     # 100K --ssl_hub /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-02+02-18-36+00 
