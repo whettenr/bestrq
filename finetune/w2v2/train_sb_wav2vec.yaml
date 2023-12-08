@@ -5,7 +5,7 @@
 # ################################
 
 # Seed needs to be set at top of yaml, before objects with parameters are made
-seed: 1000
+seed: 1010
 __set_seed: !apply:torch.manual_seed [!ref <seed>]
 output_folder: !ref results/ft/ft_wav2vec2_libri_100/<seed>
 output_wer_folder: !ref <output_folder>/
