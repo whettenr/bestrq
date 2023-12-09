@@ -1,5 +1,5 @@
-# Generated 2023-12-08 from:
-# /users/rwhetten/bestrq/wav2vec2/hparams/wav2vec2_bb.yaml
+# Generated 2023-12-09 from:
+# /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/bestrq/wav2vec2/hparams/wav2vec2_bb.yaml
 # yamllint disable
 # ################################
 # Model: wav2vec2
@@ -18,8 +18,8 @@ train_stage_log: results/wav2vec2-bb/train_stage_log.txt
 train_splits: [train-clean-100, train-clean-360, train-other-500]
 dev_splits: [dev-clean]
 test_splits: [test-clean]
-train_csv: /users/rwhetten/best-rq-test/results/bestrq/csv/train.csv
-valid_csv: /users/rwhetten/best-rq-test/results/bestrq/csv/dev-clean.csv
+train_csv: results/bestrq/csv/train.csv
+valid_csv: results/bestrq/csv/dev-clean.csv
 skip_prep: true
 
 # train_csv: !ref <output_folder>/train.csv
@@ -39,8 +39,8 @@ grad_accumulation_factor: 3
 
 # The training will either stops at number_of_epochs or optimizer_step_limit
 # I.e. the first that is reached.
-number_of_epochs: 42
-optimizer_step_limit: 400000
+number_of_epochs: 90
+optimizer_step_limit: 250000
 
 # # Dynamic Batching parameters
 # train_num_buckets: 70
@@ -86,7 +86,7 @@ optimizer: !name:torch.optim.AdamW
 
 epoch_counter: &id009 !new:speechbrain.utils.epoch_loop.EpochCounter
 
-  limit: 42
+  limit: 90
 
 extractor: &id004 !new:speechbrain.lobes.models.wav2vec.W2VLatentExtractor
   kernel_sizes: *id001
@@ -130,7 +130,7 @@ lr_scheduler: &id008 !new:speechbrain.nnet.schedulers.WarmCoolDecayLRSchedule
   lr: 0.0005
   warmup: 30000
   cooldown: 370000
-  total_steps: 400000
+  total_steps: 250000
 
 checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
   checkpoints_dir: results/wav2vec2-bb/save

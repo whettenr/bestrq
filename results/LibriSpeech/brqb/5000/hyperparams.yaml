@@ -1,4 +1,4 @@
-# Generated 2023-12-07 from:
+# Generated 2023-12-08 from:
 # /gpfswork/rech/nkp/uaj64gk/bestrqexp/benchmark/benchmarks/MP3S/LibriSpeech/LSTM/hparams/ssl_brq.yaml
 # yamllint disable
 # ################################
@@ -49,7 +49,7 @@ lr_weights: 0.01
 sorting: ascending
 auto_mix_prec: false
 sample_rate: 16000
-language_modelling: false
+language_modelling: true
 ngram_lm_path: /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
                             #path/to/4-gram.arpa
 

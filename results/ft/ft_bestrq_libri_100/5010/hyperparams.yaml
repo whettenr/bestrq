@@ -1,5 +1,5 @@
 # Generated 2023-12-08 from:
-# /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/finetune/w2v2/train_sb_wav2vec.yaml
+# /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/finetune/brq/finetune_bestrq.yaml
 # yamllint disable
 # ################################
 # Model: wav2vec2 + DNN + CTC
@@ -8,21 +8,22 @@
 # ################################
 
 # Seed needs to be set at top of yaml, before objects with parameters are made
-seed: 1000
-__set_seed: !apply:torch.manual_seed [1000]
-output_folder: results/ft/ft_wav2vec2_libri_100/1000
-output_wer_folder: results/ft/ft_wav2vec2_libri_100/1000/
-save_folder: results/ft/ft_wav2vec2_libri_100/1000/save
-train_log: results/ft/ft_wav2vec2_libri_100/1000/train_log.txt
+seed: 5010
+__set_seed: !apply:torch.manual_seed [5010]
+output_folder: results/ft/ft_bestrq_libri_100/5010
+output_wer_folder: results/ft/ft_bestrq_libri_100/5010/
+save_folder: results/ft/ft_bestrq_libri_100/5010/save
+train_log: results/ft/ft_bestrq_libri_100/5010/train_log.txt
 
-# Path of the SpeechBrain checkpoints containing the pretrained wav2vec2 model
-# It can be a local path or a HuggingFace hub containing the model
-pt_model_hub: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-06+08-46-56+00
-wav2vec_output_dim: 768 # This corresponds to the embedding size of the w2v2
+
+pt_model_hub: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide
+# pt_model_hub: /users/rwhetten/best-rq-test/CTC/pt_model/CKPT+2023-10-28+18-25-00+00
+pt_model_output_dim: 768
 
 # Data files
 data_folder: /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/
                           # e,g./path/to/LibriSpeech
+
 # noise/ris dataset will automatically be downloaded if uncommented
 # data_folder_rirs: !ref <data_folder>
 # train_splits: ["train-clean-100", "train-clean-360", "train-other-500"]
@@ -31,6 +32,7 @@ dev_splits: [dev-clean]
 test_splits: [test-clean, test-other]
 skip_prep: true
 ckpt_interval_minutes: 25 # save checkpoint every N min
+
 train_csv: results/ft/csv/train.csv
 valid_csv: results/ft/csv/dev-clean.csv
 test_csv:
@@ -65,28 +67,23 @@ test_dataloader_opts:
 # Model parameters
 dnn_activation: &id001 !new:torch.nn.LeakyReLU
 
-# enc: !new:speechbrain.lobes.models.VanillaNN.VanillaNN
-#   input_shape: [null, null, !ref <wav2vec_output_dim>]
-#   activation: !ref <dnn_activation>
-#   dnn_blocks: 3
-#   dnn_neurons: !ref <dnn_neurons>
-
-# standard parameters for the BASE model
+####################### Model parameters ###########################
+# Transformer
 dnn_neurons: 1280
 dnn_dropout: 0.15
 
 # Outputs
-output_neurons: 29  # BPE size, index(blank/eos/bos) = 0
+output_neurons_ctc: 29  # BPE size, index(blank/eos/bos) = 0
 
 # Decoding parameters
 blank_index: 0
-use_language_modelling: true
+use_language_modelling: false
 ngram_lm_path: /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
 
 #
 # Functions and classes
 #
-epoch_counter: &id009 !new:speechbrain.utils.epoch_loop.EpochCounter
+epoch_counter: &id015 !new:speechbrain.utils.epoch_loop.EpochCounter
 
   limit: 30
 
@@ -94,7 +91,7 @@ augmentation: !new:speechbrain.lobes.augment.TimeDomainSpecAugment
   sample_rate: 16000
   speeds: [95, 100, 105]
 
-enc: &id005 !new:speechbrain.nnet.containers.Sequential
+back_end_ffn: &id010 !new:speechbrain.nnet.containers.Sequential
   input_shape: [null, null, 768]
   linear1: !name:speechbrain.nnet.linear.Linear
     n_neurons: 1280
@@ -115,28 +112,78 @@ enc: &id005 !new:speechbrain.nnet.containers.Sequential
     bias: true
   bn3: !name:speechbrain.nnet.normalization.LayerNorm
   activation3: *id001
-extractor: &id003 !new:speechbrain.lobes.models.wav2vec.W2VLatentExtractor
-  out_channels: [512, 512, 512, 512, 512, 512, 512]
+d_model: 768
+nhead: 8 # table 1 https://arxiv.org/pdf/2010.10504.pdf
+num_encoder_layers: 12 # section 4.1.1
+num_decoder_layers: 0
+d_ffn: 2048
+transformer_dropout: 0.1
+activation: &id002 !name:torch.nn.GELU
+output_neurons: 5000
 
-# standard parameters for the BASE model
-encoder: &id002 !new:speechbrain.lobes.models.transformer.Transformer.TransformerEncoder
+# Feature parameters
+n_fft: 400
+n_mels: 80
+
+# quantizer parameters not using though for finetunning
+p_input: 320
+cb_dim: 16
+cb_vocab: 8192
+
+############################## models ################################
+
+compute_features: !new:speechbrain.lobes.features.Fbank
+  sample_rate: 16000
+  n_fft: 400
+  n_mels: 80
+
+normalize: &id008 !new:speechbrain.processing.features.InputNormalization
+
+  norm_type: global
+  update_until_epoch: 4
+
+CNN: &id004 !new:speechbrain.lobes.models.convolution.ConvolutionFrontEnd
+  input_shape: (8, 10, 80)
+  num_blocks: 2
+  num_layers_per_block: 1
+  out_channels: (128, 32)
+  kernel_sizes: (3, 3)
+  strides: (2, 2)
+  residuals: (False, False)
+
+Transformer: &id003 !new:speechbrain.lobes.models.transformer.TransformerASR.TransformerASR
+
+# Quantizer: !new:.quantiser.RandomProjectionQuantizer
+  input_size: 640
+  tgt_vocab: 5000
   d_model: 768
-  num_layers: 12
   nhead: 8
-  d_ffn: 3072
+  num_encoder_layers: 12
+  num_decoder_layers: 0
+  d_ffn: 2048
   dropout: 0.1
-  layerdrop_prob: 0.0
+  activation: *id002
+  encoder_module: conformer
+  attention_type: RelPosMHAXL
   normalize_before: true
-  activation: !name:torch.nn.GELU
+  causal: false
 
-# standard parameters for the BASE model
-encoder_wrapper: &id004 !new:speechbrain.lobes.models.wav2vec.EncoderWrapper
-  in_dim: 512
-  embedding_dim: 768
-  latent_encoder: *id002
-  dropout_encoder_input: 0.1
+enc: &id005 !new:speechbrain.lobes.models.transformer.TransformerASR.EncoderWrapper
+  transformer: *id003
+Quantizer: &id006 !new:speechbrain.nnet.quantisers.RandomProjectionQuantizer
+    # projection
+  input_dim: 320
+    # codebook
+  cb_dim: 16
+  cb_vocab: 8192
 
-ctc_lin: &id006 !new:speechbrain.nnet.linear.Linear
+linear: &id007 !new:speechbrain.nnet.linear.Linear
+  input_size: 768
+  n_neurons: 8192
+
+pt_model: &id009 !new:torch.nn.ModuleList
+- [*id004, *id005, *id006, *id007]
+ctc_lin: &id011 !new:speechbrain.nnet.linear.Linear
 
   input_size: 1280
   n_neurons: 29
@@ -148,12 +195,12 @@ ctc_cost: !name:speechbrain.nnet.losses.ctc_loss
   blank_index: 0
 
 modules:
-  extractor: *id003
-  encoder_wrapper: *id004
-  enc: *id005
-  ctc_lin: *id006
-model: !new:torch.nn.ModuleList
-- [*id005, *id006]
+  normalize: *id008
+  pt_model: *id009
+  back_end_ffn: *id010
+  ctc_lin: *id011
+model: &id012 !new:torch.nn.ModuleList
+- [*id010, *id011]
 model_opt_class: !name:torch.optim.AdamW
   lr: 0.0003
   weight_decay: 0.001
@@ -162,39 +209,39 @@ wav2vec_opt_class: !name:torch.optim.AdamW
   lr: 0.00005
   weight_decay: 0.001
 
-lr_annealing_model: &id007 !new:speechbrain.nnet.schedulers.NewBobScheduler
+lr_annealing_model: &id013 !new:speechbrain.nnet.schedulers.NewBobScheduler
   initial_value: 0.0003
   improvement_threshold: 0.0025
   annealing_factor: 0.5
   patient: 0
 
-lr_annealing_wav2vec: &id008 !new:speechbrain.nnet.schedulers.NewBobScheduler
+lr_annealing_wav2vec: &id014 !new:speechbrain.nnet.schedulers.NewBobScheduler
   initial_value: 0.00005
   improvement_threshold: 0.0025
   annealing_factor: 0.7
   patient: 0
 
 checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
-  checkpoints_dir: results/ft/ft_wav2vec2_libri_100/1000/save
+  checkpoints_dir: results/ft/ft_bestrq_libri_100/5010/save
   recoverables:
-    extractor: *id003
-    encoder: *id002
-    scheduler_model: *id007
-    scheduler_wav2vec: *id008
-    counter: *id009
+    model: *id012
+    pt_model: *id009
+    normalize: *id008
+    scheduler_model: *id013
+    scheduler_wav2vec: *id014
+    counter: *id015
 pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
-  collect_in: results/ft/ft_wav2vec2_libri_100/1000/save
+  collect_in: results/ft/ft_bestrq_libri_100/5010/save
   loadables:
-    extractor: *id003
-    encoder_wrapper: *id004
+    pt_model: *id009
+    normalize: *id008
   paths:
-    extractor: 
-      /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-06+08-46-56+00/latent_extractor.ckpt
-    encoder_wrapper: 
-      /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-06+08-46-56+00/latent_encoder.ckpt
+    pt_model: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide/model.ckpt
+    normalize: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide/normalizer.ckpt
+
 
 train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
-  save_file: results/ft/ft_wav2vec2_libri_100/1000/train_log.txt
+  save_file: results/ft/ft_bestrq_libri_100/5010/train_log.txt
 
 error_rate_computer: !name:speechbrain.utils.metric_stats.ErrorRateStats
 

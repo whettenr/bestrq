@@ -1,0 +1,259 @@
+2023-12-08 14:43:46,286 - speechbrain.core - INFO - Beginning experiment!
+2023-12-08 14:43:46,289 - speechbrain.core - INFO - Experiment folder: results/ft/ft_bestrq_libri_100/5010
+2023-12-08 14:43:47,819 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==23.1.0
+black==19.10b0
+certifi==2023.11.17
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+cmake==3.27.7
+distlib==0.3.7
+entrypoints==0.3
+filelock==3.13.1
+flake8==3.7.9
+fsspec==2023.10.0
+huggingface-hub==0.19.4
+HyperPyYAML==1.2.2
+hypothesis==6.91.0
+identify==2.5.32
+idna==3.6
+iniconfig==2.0.0
+Jinja2==3.1.2
+joblib==1.3.2
+kenlm==0.2.0
+lit==17.0.6
+MarkupSafe==2.1.3
+mccabe==0.6.1
+mpmath==1.3.0
+networkx==3.2.1
+nodeenv==1.8.0
+numpy==1.26.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu11==10.9.0.58
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu11==10.2.10.91
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu11==2.14.3
+nvidia-nccl-cu12==2.18.1
+nvidia-nvjitlink-cu12==12.3.101
+nvidia-nvtx-cu11==11.7.91
+nvidia-nvtx-cu12==12.1.105
+packaging==23.2
+pandas==2.1.3
+pathspec==0.11.2
+platformdirs==4.0.0
+pluggy==1.3.0
+pre-commit==3.5.0
+pycodestyle==2.5.0
+pyctcdecode==0.5.0
+pyflakes==2.1.1
+pygtrie==2.5.0
+pytest==7.4.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+regex==2023.10.3
+requests==2.31.0
+ruamel.yaml==0.18.5
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.1
+scipy==1.11.4
+sentencepiece==0.1.99
+six==1.16.0
+sortedcontainers==2.4.0
+-e /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain
+sympy==1.12
+tokenizers==0.15.0
+toml==0.10.2
+torch==2.0.1
+torchaudio==2.0.2
+tqdm==4.66.1
+transformers==4.35.2
+triton==2.0.0
+typed-ast==1.5.5
+typing_extensions==4.8.0
+tzdata==2023.3
+urllib3==2.1.0
+virtualenv==20.24.7
+yamllint==1.23.0
+
+ERROR: Error [Errno 2] No such file or directory: 'git' while executing command git config --get-regexp 'remote\..*\.url'
+WARNING: cannot determine version of editable source in /gpfsdswork/projects/rech/nkp/uaj64gk/bestrqexp/speechbrain (git command not found in path)
+
+2023-12-08 14:43:48,347 - speechbrain.dataio.encoder - DEBUG - Would load categorical encoding from results/ft/ft_bestrq_libri_100/5010/save/label_encoder.txt, but file doesn't exist yet.
+2023-12-08 14:43:49,178 - speechbrain.dataio.encoder - INFO - Moving label 'T' from index 0, because '<blank>' was put at its place.
+2023-12-08 14:44:03,561 - speechbrain.dataio.encoder - INFO - Load called, but CTCTextEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2023-12-08 14:44:03,561 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/ft/ft_bestrq_libri_100/5010/save/label_encoder.txt
+2023-12-08 14:44:03,561 - speechbrain.core - INFO - Info: auto_mix_prec arg from hparam file is used
+2023-12-08 14:44:03,562 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2023-12-08 14:44:05,892 - speechbrain.core - INFO - 147.6M trainable parameters in ASR
+2023-12-08 14:44:05,893 - speechbrain.utils.parameter_transfer - DEBUG - Collecting files (or symlinks) for pretraining in results/ft/ft_bestrq_libri_100/5010/save.
+2023-12-08 14:44:20,806 - speechbrain.pretrained.fetching - INFO - Destination model.ckpt: local file in /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide/model.ckpt.
+2023-12-08 14:44:20,827 - speechbrain.utils.parameter_transfer - INFO - Set local path in self.paths[pt_model] = results/ft/ft_bestrq_libri_100/5010/save/pt_model.ckpt
+2023-12-08 14:44:33,136 - speechbrain.pretrained.fetching - INFO - Destination normalizer.ckpt: local file in /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqwide/normalizer.ckpt.
+2023-12-08 14:44:33,163 - speechbrain.utils.parameter_transfer - INFO - Set local path in self.paths[normalize] = results/ft/ft_bestrq_libri_100/5010/save/normalize.ckpt
+2023-12-08 14:44:33,163 - speechbrain.utils.parameter_transfer - INFO - Loading pretrained files for: pt_model, normalize
+2023-12-08 14:44:33,163 - speechbrain.utils.parameter_transfer - INFO - Redirecting (loading from local path): results/ft/ft_bestrq_libri_100/5010/save/pt_model.ckpt -> results/ft/ft_bestrq_libri_100/5010/save/pt_model.ckpt
+2023-12-08 14:44:33,163 - speechbrain.utils.parameter_transfer - INFO - Redirecting (loading from local path): results/ft/ft_bestrq_libri_100/5010/save/normalize.ckpt -> results/ft/ft_bestrq_libri_100/5010/save/normalize.ckpt
+2023-12-08 14:44:36,286 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2023-12-08 14:44:36,287 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2023-12-08 15:06:27,883 - speechbrain.utils.train_logger - INFO - epoch: 1, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 7.17e-01 - valid loss: 3.81e-01, valid CER: 9.07, valid WER: 30.94
+2023-12-08 15:06:40,095 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+15-06-27+00
+2023-12-08 15:06:40,101 - speechbrain.utils.epoch_loop - INFO - Going into epoch 2
+2023-12-08 15:28:01,355 - speechbrain.utils.train_logger - INFO - epoch: 2, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 3.66e-01 - valid loss: 2.80e-01, valid CER: 7.03, valid WER: 23.86
+2023-12-08 15:28:07,286 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+15-28-01+00
+2023-12-08 15:28:07,340 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+15-06-27+00
+2023-12-08 15:28:07,340 - speechbrain.utils.epoch_loop - INFO - Going into epoch 3
+2023-12-08 15:49:34,236 - speechbrain.utils.train_logger - INFO - epoch: 3, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 2.95e-01 - valid loss: 2.43e-01, valid CER: 6.07, valid WER: 20.78
+2023-12-08 15:49:50,949 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+15-49-34+00
+2023-12-08 15:49:50,972 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+15-28-01+00
+2023-12-08 15:49:50,972 - speechbrain.utils.epoch_loop - INFO - Going into epoch 4
+2023-12-08 16:11:17,663 - speechbrain.utils.train_logger - INFO - epoch: 4, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 2.54e-01 - valid loss: 2.30e-01, valid CER: 5.53, valid WER: 18.93
+2023-12-08 16:12:25,159 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+16-11-17+00
+2023-12-08 16:12:25,199 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+15-49-34+00
+2023-12-08 16:12:25,200 - speechbrain.utils.epoch_loop - INFO - Going into epoch 5
+2023-12-08 16:33:57,060 - speechbrain.utils.train_logger - INFO - epoch: 5, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 2.29e-01 - valid loss: 2.16e-01, valid CER: 5.17, valid WER: 17.45
+2023-12-08 16:34:23,733 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+16-33-57+00
+2023-12-08 16:34:23,780 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+16-11-17+00
+2023-12-08 16:34:23,781 - speechbrain.utils.epoch_loop - INFO - Going into epoch 6
+2023-12-08 16:55:51,294 - speechbrain.utils.train_logger - INFO - epoch: 6, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 2.06e-01 - valid loss: 2.05e-01, valid CER: 4.90, valid WER: 16.61
+2023-12-08 16:56:41,384 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+16-55-51+00
+2023-12-08 16:56:41,465 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+16-33-57+00
+2023-12-08 16:56:41,465 - speechbrain.utils.epoch_loop - INFO - Going into epoch 7
+2023-12-08 17:18:08,694 - speechbrain.utils.train_logger - INFO - epoch: 7, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 1.91e-01 - valid loss: 1.96e-01, valid CER: 4.63, valid WER: 15.60
+2023-12-08 17:18:10,658 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+17-18-08+00
+2023-12-08 17:18:10,708 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+16-55-51+00
+2023-12-08 17:18:10,708 - speechbrain.utils.epoch_loop - INFO - Going into epoch 8
+2023-12-08 17:39:38,535 - speechbrain.utils.train_logger - INFO - epoch: 8, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 1.76e-01 - valid loss: 1.92e-01, valid CER: 4.47, valid WER: 14.96
+2023-12-08 17:41:04,632 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+17-39-38+00
+2023-12-08 17:41:04,732 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+17-18-08+00
+2023-12-08 17:41:04,732 - speechbrain.utils.epoch_loop - INFO - Going into epoch 9
+2023-12-08 18:02:30,457 - speechbrain.utils.train_logger - INFO - epoch: 9, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 1.65e-01 - valid loss: 1.86e-01, valid CER: 4.31, valid WER: 14.49
+2023-12-08 18:02:32,789 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+18-02-30+00
+2023-12-08 18:02:32,831 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+17-39-38+00
+2023-12-08 18:02:32,831 - speechbrain.utils.epoch_loop - INFO - Going into epoch 10
+2023-12-08 18:24:02,388 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.0003 to 0.00015
+2023-12-08 18:24:02,388 - speechbrain.nnet.schedulers - INFO - Changing lr from 5e-05 to 3.5e-05
+2023-12-08 18:24:02,389 - speechbrain.utils.train_logger - INFO - epoch: 10, lr_model: 3.00e-04, lr_wav2vec: 5.00e-05 - train loss: 1.54e-01 - valid loss: 1.87e-01, valid CER: 4.26, valid WER: 14.45
+2023-12-08 18:25:09,856 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+18-24-02+00
+2023-12-08 18:25:09,913 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+18-02-30+00
+2023-12-08 18:25:09,913 - speechbrain.utils.epoch_loop - INFO - Going into epoch 11
+2023-12-08 18:46:33,047 - speechbrain.utils.train_logger - INFO - epoch: 11, lr_model: 1.50e-04, lr_wav2vec: 3.50e-05 - train loss: 1.36e-01 - valid loss: 1.80e-01, valid CER: 4.03, valid WER: 13.46
+2023-12-08 18:47:48,775 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+18-46-33+00
+2023-12-08 18:47:48,839 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+18-24-02+00
+2023-12-08 18:47:48,839 - speechbrain.utils.epoch_loop - INFO - Going into epoch 12
+2023-12-08 19:09:17,789 - speechbrain.utils.train_logger - INFO - epoch: 12, lr_model: 1.50e-04, lr_wav2vec: 3.50e-05 - train loss: 1.30e-01 - valid loss: 1.77e-01, valid CER: 3.92, valid WER: 13.07
+2023-12-08 19:10:46,009 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+19-09-17+00
+2023-12-08 19:10:46,092 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+18-46-33+00
+2023-12-08 19:10:46,093 - speechbrain.utils.epoch_loop - INFO - Going into epoch 13
+2023-12-08 19:32:15,079 - speechbrain.utils.train_logger - INFO - epoch: 13, lr_model: 1.50e-04, lr_wav2vec: 3.50e-05 - train loss: 1.23e-01 - valid loss: 1.75e-01, valid CER: 3.88, valid WER: 13.03
+2023-12-08 19:32:41,232 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+19-32-15+00
+2023-12-08 19:32:41,290 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+19-09-17+00
+2023-12-08 19:32:41,290 - speechbrain.utils.epoch_loop - INFO - Going into epoch 14
+2023-12-08 19:54:08,303 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.00015 to 7.5e-05
+2023-12-08 19:54:08,303 - speechbrain.nnet.schedulers - INFO - Changing lr from 3.5e-05 to 2.4e-05
+2023-12-08 19:54:08,303 - speechbrain.utils.train_logger - INFO - epoch: 14, lr_model: 1.50e-04, lr_wav2vec: 3.50e-05 - train loss: 1.18e-01 - valid loss: 1.77e-01, valid CER: 3.89, valid WER: 12.91
+2023-12-08 19:55:33,360 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+19-54-08+00
+2023-12-08 19:55:33,417 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+19-32-15+00
+2023-12-08 19:55:33,417 - speechbrain.utils.epoch_loop - INFO - Going into epoch 15
+2023-12-08 20:16:58,177 - speechbrain.utils.train_logger - INFO - epoch: 15, lr_model: 7.50e-05, lr_wav2vec: 2.45e-05 - train loss: 1.07e-01 - valid loss: 1.72e-01, valid CER: 3.74, valid WER: 12.35
+2023-12-08 20:18:13,350 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+20-16-58+00
+2023-12-08 20:18:13,402 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+19-54-08+00
+2023-12-08 20:18:13,403 - speechbrain.utils.epoch_loop - INFO - Going into epoch 16
+2023-12-08 20:39:40,522 - speechbrain.utils.train_logger - INFO - epoch: 16, lr_model: 7.50e-05, lr_wav2vec: 2.45e-05 - train loss: 1.03e-01 - valid loss: 1.69e-01, valid CER: 3.68, valid WER: 12.12
+2023-12-08 20:40:30,313 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+20-39-40+00
+2023-12-08 20:40:30,390 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+20-16-58+00
+2023-12-08 20:40:30,391 - speechbrain.utils.epoch_loop - INFO - Going into epoch 17
+2023-12-08 21:01:56,912 - speechbrain.nnet.schedulers - INFO - Changing lr from 7.5e-05 to 3.7e-05
+2023-12-08 21:01:56,913 - speechbrain.nnet.schedulers - INFO - Changing lr from 2.4e-05 to 1.7e-05
+2023-12-08 21:01:56,913 - speechbrain.utils.train_logger - INFO - epoch: 17, lr_model: 7.50e-05, lr_wav2vec: 2.45e-05 - train loss: 1.00e-01 - valid loss: 1.72e-01, valid CER: 3.62, valid WER: 12.02
+2023-12-08 21:02:38,699 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+21-01-56+00
+2023-12-08 21:02:38,766 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+20-39-40+00
+2023-12-08 21:02:38,766 - speechbrain.utils.epoch_loop - INFO - Going into epoch 18
+2023-12-08 21:24:10,795 - speechbrain.nnet.schedulers - INFO - Changing lr from 3.7e-05 to 1.9e-05
+2023-12-08 21:24:10,818 - speechbrain.nnet.schedulers - INFO - Changing lr from 1.7e-05 to 1.2e-05
+2023-12-08 21:24:10,818 - speechbrain.utils.train_logger - INFO - epoch: 18, lr_model: 3.75e-05, lr_wav2vec: 1.71e-05 - train loss: 9.33e-02 - valid loss: 1.73e-01, valid CER: 3.59, valid WER: 11.85
+2023-12-08 21:24:22,350 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+21-24-10+00
+2023-12-08 21:24:22,417 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+21-01-56+00
+2023-12-08 21:24:22,417 - speechbrain.utils.epoch_loop - INFO - Going into epoch 19
+2023-12-08 21:45:50,465 - speechbrain.utils.train_logger - INFO - epoch: 19, lr_model: 1.87e-05, lr_wav2vec: 1.20e-05 - train loss: 8.97e-02 - valid loss: 1.70e-01, valid CER: 3.55, valid WER: 11.75
+2023-12-08 21:46:10,214 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+21-45-50+00
+2023-12-08 21:46:10,281 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+21-24-10+00
+2023-12-08 21:46:10,281 - speechbrain.utils.epoch_loop - INFO - Going into epoch 20
+2023-12-08 22:07:40,473 - speechbrain.nnet.schedulers - INFO - Changing lr from 1.9e-05 to 9.4e-06
+2023-12-08 22:07:40,473 - speechbrain.nnet.schedulers - INFO - Changing lr from 1.2e-05 to 8.4e-06
+2023-12-08 22:07:40,473 - speechbrain.utils.train_logger - INFO - epoch: 20, lr_model: 1.87e-05, lr_wav2vec: 1.20e-05 - train loss: 8.68e-02 - valid loss: 1.70e-01, valid CER: 3.56, valid WER: 11.69
+2023-12-08 22:07:57,736 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+22-07-40+00
+2023-12-08 22:07:57,801 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+21-45-50+00
+2023-12-08 22:07:57,801 - speechbrain.utils.epoch_loop - INFO - Going into epoch 21
+2023-12-08 22:29:28,371 - speechbrain.utils.train_logger - INFO - epoch: 21, lr_model: 9.37e-06, lr_wav2vec: 8.40e-06 - train loss: 8.49e-02 - valid loss: 1.69e-01, valid CER: 3.51, valid WER: 11.56
+2023-12-08 22:30:10,887 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+22-29-28+00
+2023-12-08 22:30:10,979 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+22-07-40+00
+2023-12-08 22:30:10,980 - speechbrain.utils.epoch_loop - INFO - Going into epoch 22
+2023-12-08 22:51:39,600 - speechbrain.nnet.schedulers - INFO - Changing lr from 9.4e-06 to 4.7e-06
+2023-12-08 22:51:39,616 - speechbrain.nnet.schedulers - INFO - Changing lr from 8.4e-06 to 5.9e-06
+2023-12-08 22:51:39,617 - speechbrain.utils.train_logger - INFO - epoch: 22, lr_model: 9.37e-06, lr_wav2vec: 8.40e-06 - train loss: 8.33e-02 - valid loss: 1.72e-01, valid CER: 3.48, valid WER: 11.47
+2023-12-08 22:52:06,727 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+22-51-39+00
+2023-12-08 22:52:06,799 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+22-29-28+00
+2023-12-08 22:52:06,799 - speechbrain.utils.epoch_loop - INFO - Going into epoch 23
+2023-12-08 23:13:36,568 - speechbrain.utils.train_logger - INFO - epoch: 23, lr_model: 4.69e-06, lr_wav2vec: 5.88e-06 - train loss: 8.09e-02 - valid loss: 1.70e-01, valid CER: 3.47, valid WER: 11.46
+2023-12-08 23:14:24,738 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+23-13-36+00
+2023-12-08 23:14:24,844 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+22-51-39+00
+2023-12-08 23:14:24,845 - speechbrain.utils.epoch_loop - INFO - Going into epoch 24
+2023-12-08 23:35:57,511 - speechbrain.nnet.schedulers - INFO - Changing lr from 4.7e-06 to 2.3e-06
+2023-12-08 23:35:57,531 - speechbrain.nnet.schedulers - INFO - Changing lr from 5.9e-06 to 4.1e-06
+2023-12-08 23:35:57,531 - speechbrain.utils.train_logger - INFO - epoch: 24, lr_model: 4.69e-06, lr_wav2vec: 5.88e-06 - train loss: 8.01e-02 - valid loss: 1.71e-01, valid CER: 3.47, valid WER: 11.41
+2023-12-08 23:36:08,465 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+23-35-57+00
+2023-12-08 23:36:08,541 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+23-13-36+00
+2023-12-08 23:36:08,542 - speechbrain.utils.epoch_loop - INFO - Going into epoch 25
+2023-12-08 23:57:38,331 - speechbrain.utils.train_logger - INFO - epoch: 25, lr_model: 2.34e-06, lr_wav2vec: 4.12e-06 - train loss: 7.88e-02 - valid loss: 1.70e-01, valid CER: 3.45, valid WER: 11.36
+2023-12-08 23:57:52,483 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+23-57-38+00
+2023-12-08 23:57:52,560 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+23-35-57+00
+2023-12-08 23:57:52,560 - speechbrain.utils.epoch_loop - INFO - Going into epoch 26
+2023-12-09 00:19:22,925 - speechbrain.nnet.schedulers - INFO - Changing lr from 2.3e-06 to 1.2e-06
+2023-12-09 00:19:22,925 - speechbrain.nnet.schedulers - INFO - Changing lr from 4.1e-06 to 2.9e-06
+2023-12-09 00:19:22,926 - speechbrain.utils.train_logger - INFO - epoch: 26, lr_model: 2.34e-06, lr_wav2vec: 4.12e-06 - train loss: 7.88e-02 - valid loss: 1.71e-01, valid CER: 3.47, valid WER: 11.42
+2023-12-09 00:19:32,008 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+00-19-22+00
+2023-12-09 00:19:32,071 - speechbrain.utils.epoch_loop - INFO - Going into epoch 27
+2023-12-09 00:41:02,476 - speechbrain.nnet.schedulers - INFO - Changing lr from 1.2e-06 to 5.9e-07
+2023-12-09 00:41:02,489 - speechbrain.nnet.schedulers - INFO - Changing lr from 2.9e-06 to 2e-06
+2023-12-09 00:41:02,489 - speechbrain.utils.train_logger - INFO - epoch: 27, lr_model: 1.17e-06, lr_wav2vec: 2.88e-06 - train loss: 7.78e-02 - valid loss: 1.72e-01, valid CER: 3.46, valid WER: 11.38
+2023-12-09 00:41:37,787 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+00-41-02+00
+2023-12-09 00:41:37,901 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+00-19-22+00
+2023-12-09 00:41:37,901 - speechbrain.utils.epoch_loop - INFO - Going into epoch 28
+2023-12-09 01:03:16,176 - speechbrain.nnet.schedulers - INFO - Changing lr from 5.9e-07 to 2.9e-07
+2023-12-09 01:03:16,191 - speechbrain.nnet.schedulers - INFO - Changing lr from 2e-06 to 1.4e-06
+2023-12-09 01:03:16,191 - speechbrain.utils.train_logger - INFO - epoch: 28, lr_model: 5.86e-07, lr_wav2vec: 2.02e-06 - train loss: 7.65e-02 - valid loss: 1.73e-01, valid CER: 3.45, valid WER: 11.36
+2023-12-09 01:04:14,706 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+01-03-16+00
+2023-12-09 01:04:14,833 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+00-41-02+00
+2023-12-09 01:04:14,849 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-08+23-57-38+00
+2023-12-09 01:04:14,849 - speechbrain.utils.epoch_loop - INFO - Going into epoch 29
+2023-12-09 01:25:44,088 - speechbrain.utils.train_logger - INFO - epoch: 29, lr_model: 2.93e-07, lr_wav2vec: 1.41e-06 - train loss: 7.71e-02 - valid loss: 1.72e-01, valid CER: 3.44, valid WER: 11.32
+2023-12-09 01:25:59,604 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+01-25-44+00
+2023-12-09 01:25:59,688 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+01-03-16+00
+2023-12-09 01:25:59,688 - speechbrain.utils.epoch_loop - INFO - Going into epoch 30
+2023-12-09 01:47:33,325 - speechbrain.nnet.schedulers - INFO - Changing lr from 2.9e-07 to 1.5e-07
+2023-12-09 01:47:33,325 - speechbrain.nnet.schedulers - INFO - Changing lr from 1.4e-06 to 9.9e-07
+2023-12-09 01:47:33,345 - speechbrain.utils.train_logger - INFO - epoch: 30, lr_model: 2.93e-07, lr_wav2vec: 1.41e-06 - train loss: 7.60e-02 - valid loss: 1.72e-01, valid CER: 3.43, valid WER: 11.25
+2023-12-09 01:48:07,417 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+01-47-33+00
+2023-12-09 01:48:07,505 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+01-25-44+00
+2023-12-09 01:48:07,506 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+01-47-33+00
+2023-12-09 01:48:08,323 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
+2023-12-09 01:49:03,486 - speechbrain.utils.train_logger - INFO - Epoch loaded: 30 - test loss: 1.81e-01, test CER: 3.46, test WER: 11.48
+2023-12-09 01:49:09,869 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/ft/ft_bestrq_libri_100/5010/save/CKPT+2023-12-09+01-47-33+00
+2023-12-09 01:49:10,760 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
+2023-12-09 01:50:04,466 - speechbrain.utils.train_logger - INFO - Epoch loaded: 30 - test loss: 5.23e-01, test CER: 9.53, test WER: 25.35

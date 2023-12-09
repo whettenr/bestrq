@@ -1,4 +1,4 @@
-# Generated 2023-12-08 from:
+# Generated 2023-12-09 from:
 # /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/finetune/w2v2/train_sb_wav2vec.yaml
 # yamllint disable
 # ################################
@@ -8,12 +8,12 @@
 # ################################
 
 # Seed needs to be set at top of yaml, before objects with parameters are made
-seed: 1000
-__set_seed: !apply:torch.manual_seed [1000]
-output_folder: results/ft/ft_wav2vec2_libri_100/1000
-output_wer_folder: results/ft/ft_wav2vec2_libri_100/1000/
-save_folder: results/ft/ft_wav2vec2_libri_100/1000/save
-train_log: results/ft/ft_wav2vec2_libri_100/1000/train_log.txt
+seed: 1010
+__set_seed: !apply:torch.manual_seed [1010]
+output_folder: results/ft/ft_wav2vec2_libri_100/1010
+output_wer_folder: results/ft/ft_wav2vec2_libri_100/1010/
+save_folder: results/ft/ft_wav2vec2_libri_100/1010/save
+train_log: results/ft/ft_wav2vec2_libri_100/1010/train_log.txt
 
 # Path of the SpeechBrain checkpoints containing the pretrained wav2vec2 model
 # It can be a local path or a HuggingFace hub containing the model
@@ -80,7 +80,7 @@ output_neurons: 29  # BPE size, index(blank/eos/bos) = 0
 
 # Decoding parameters
 blank_index: 0
-use_language_modelling: true
+use_language_modelling: false
 ngram_lm_path: /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
 
 #
@@ -175,15 +175,15 @@ lr_annealing_wav2vec: &id008 !new:speechbrain.nnet.schedulers.NewBobScheduler
   patient: 0
 
 checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
-  checkpoints_dir: results/ft/ft_wav2vec2_libri_100/1000/save
+  checkpoints_dir: results/ft/ft_wav2vec2_libri_100/1010/save
   recoverables:
     extractor: *id003
-    encoder: *id002
+    encoder_wrapper: *id004
     scheduler_model: *id007
     scheduler_wav2vec: *id008
     counter: *id009
 pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
-  collect_in: results/ft/ft_wav2vec2_libri_100/1000/save
+  collect_in: results/ft/ft_wav2vec2_libri_100/1010/save
   loadables:
     extractor: *id003
     encoder_wrapper: *id004
@@ -194,7 +194,7 @@ pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
       /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/w2v2/CKPT+2023-12-06+08-46-56+00/latent_encoder.ckpt
 
 train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
-  save_file: results/ft/ft_wav2vec2_libri_100/1000/train_log.txt
+  save_file: results/ft/ft_wav2vec2_libri_100/1010/train_log.txt
 
 error_rate_computer: !name:speechbrain.utils.metric_stats.ErrorRateStats
 

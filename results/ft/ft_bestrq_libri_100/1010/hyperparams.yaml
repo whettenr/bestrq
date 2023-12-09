@@ -1,4 +1,4 @@
-# Generated 2023-12-08 from:
+# Generated 2023-12-09 from:
 # /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/finetune/brq/finetune_bestrq.yaml
 # yamllint disable
 # ################################
@@ -8,12 +8,12 @@
 # ################################
 
 # Seed needs to be set at top of yaml, before objects with parameters are made
-seed: 1000
-__set_seed: !apply:torch.manual_seed [1000]
-output_folder: results/ft/ft_bestrq_libri_100/1000
-output_wer_folder: results/ft/ft_bestrq_libri_100/1000/
-save_folder: results/ft/ft_bestrq_libri_100/1000/save
-train_log: results/ft/ft_bestrq_libri_100/1000/train_log.txt
+seed: 1010
+__set_seed: !apply:torch.manual_seed [1010]
+output_folder: results/ft/ft_bestrq_libri_100/1010
+output_wer_folder: results/ft/ft_bestrq_libri_100/1010/
+save_folder: results/ft/ft_bestrq_libri_100/1010/save
+train_log: results/ft/ft_bestrq_libri_100/1010/train_log.txt
 
 
 pt_model_hub: /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqb/CKPT+2023-12-05+22-58-16+00
@@ -222,14 +222,16 @@ lr_annealing_wav2vec: &id014 !new:speechbrain.nnet.schedulers.NewBobScheduler
   patient: 0
 
 checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
-  checkpoints_dir: results/ft/ft_bestrq_libri_100/1000/save
+  checkpoints_dir: results/ft/ft_bestrq_libri_100/1010/save
   recoverables:
     model: *id012
+    pt_model: *id009
+    normalize: *id008
     scheduler_model: *id013
     scheduler_wav2vec: *id014
     counter: *id015
 pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
-  collect_in: results/ft/ft_bestrq_libri_100/1000/save
+  collect_in: results/ft/ft_bestrq_libri_100/1010/save
   loadables:
     pt_model: *id009
     normalize: *id008
@@ -241,7 +243,7 @@ pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
 
 
 train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
-  save_file: results/ft/ft_bestrq_libri_100/1000/train_log.txt
+  save_file: results/ft/ft_bestrq_libri_100/1010/train_log.txt
 
 error_rate_computer: !name:speechbrain.utils.metric_stats.ErrorRateStats
 

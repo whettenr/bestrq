@@ -30,3 +30,5 @@ epoch: 29, lr_model: 1.17e-06, lr_wav2vec: 2.88e-06 - train loss: 8.91e-02 - val
 epoch: 30, lr_model: 5.86e-07, lr_wav2vec: 2.02e-06 - train loss: 8.82e-02 - valid loss: 1.79e-01, valid CER: 3.67, valid WER: 12.03
 Epoch loaded: 30 - test loss: 1.94e-01, test CER: 3.68, test WER: 12.39
 Epoch loaded: 30 - test loss: 5.48e-01, test CER: 10.13, test WER: 26.98
+Epoch loaded: 30 - test loss: 5.38, test CER: 72.93, test WER: 99.88
+Epoch loaded: 30 - test loss: 6.23, test CER: 75.29, test WER: 99.94

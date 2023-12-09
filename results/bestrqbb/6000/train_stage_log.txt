@@ -1,0 +1,1 @@
+epoch: 1, steps: 1032, lr: 3.30e-05 - train loss: 6.49 - valid loss: 5.60, valid accuracy: 9.78e-02

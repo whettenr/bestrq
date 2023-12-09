@@ -1,9 +1,8 @@
 #!/bin/bash
-
-#SBATCH --job-name=brbb   # nom du job
-#SBATCH --account=nkp@v100
-#SBATCH -C v100
-#SBATCH --partition=gpu_p2
+  
+#SBATCH --job-name=a1bb   # nom du job
+#SBATCH --account=nkp@a100
+#SBATCH -C a100
 #SBATCH --gres=gpu:8
 #SBATCH --cpus-per-task=16
 #SBATCH --exclusive
@@ -15,4 +14,4 @@ conda activate bestrqenv
 
 cd /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq
 
-python -m torch.distributed.run --nproc_per_node=8 --rdzv_backend c10d --rdzv-endpoint=localhost:0 train.py hparams/best_rq_bb.yaml --find_unused_parameters
+python -m torch.distributed.run --nproc_per_node=8 --rdzv_backend c10d --rdzv-endpoint=localhost:0 train.py hparams/best_rq_bb.yaml --find_unused_parameters --bfloat16_mix_prec --seed 6000

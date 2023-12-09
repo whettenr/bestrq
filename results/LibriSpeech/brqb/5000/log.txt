@@ -593,3 +593,244 @@ WARNING: cannot determine version of editable source in /gpfsdswork/projects/rec
 2023-12-07 21:09:45,544 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brqb/5000/save/CKPT+2023-12-07+21-07-36+00/tokenizer.ckpt
 2023-12-07 21:09:45,545 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
 2023-12-07 21:10:53,131 - speechbrain.utils.train_logger - INFO - Epoch loaded: 20 - test loss: 8.80e-01, test CER: 12.01, test WER: 33.13
+2023-12-08 12:30:32,592 - speechbrain.core - INFO - Beginning experiment!
+2023-12-08 12:30:32,608 - speechbrain.core - INFO - Experiment folder: results/LibriSpeech/brqb/5000
+2023-12-08 12:30:38,365 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==23.1.0
+black==19.10b0
+certifi==2023.11.17
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+cmake==3.27.7
+distlib==0.3.7
+entrypoints==0.3
+filelock==3.13.1
+flake8==3.7.9
+fsspec==2023.10.0
+huggingface-hub==0.19.4
+HyperPyYAML==1.2.2
+hypothesis==6.91.0
+identify==2.5.32
+idna==3.6
+iniconfig==2.0.0
+Jinja2==3.1.2
+joblib==1.3.2
+kenlm==0.2.0
+lit==17.0.6
+MarkupSafe==2.1.3
+mccabe==0.6.1
+mpmath==1.3.0
+networkx==3.2.1
+nodeenv==1.8.0
+numpy==1.26.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu11==10.9.0.58
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu11==10.2.10.91
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu11==2.14.3
+nvidia-nccl-cu12==2.18.1
+nvidia-nvjitlink-cu12==12.3.101
+nvidia-nvtx-cu11==11.7.91
+nvidia-nvtx-cu12==12.1.105
+packaging==23.2
+pandas==2.1.3
+pathspec==0.11.2
+platformdirs==4.0.0
+pluggy==1.3.0
+pre-commit==3.5.0
+pycodestyle==2.5.0
+pyctcdecode==0.5.0
+pyflakes==2.1.1
+pygtrie==2.5.0
+pytest==7.4.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+PyYAML==6.0.1
+regex==2023.10.3
+requests==2.31.0
+ruamel.yaml==0.18.5
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.1
+scipy==1.11.4
+sentencepiece==0.1.99
+six==1.16.0
+sortedcontainers==2.4.0
+-e git+https://github.com/whettenr/speechbrain.git@b545d914c7e1677cae6d8fe030a00f7594b78475#egg=speechbrain
+sympy==1.12
+tokenizers==0.15.0
+toml==0.10.2
+torch==2.0.1
+torchaudio==2.0.2
+tqdm==4.66.1
+transformers==4.35.2
+triton==2.0.0
+typed-ast==1.5.5
+typing_extensions==4.8.0
+tzdata==2023.3
+urllib3==2.1.0
+virtualenv==20.24.7
+yamllint==1.23.0
+
+
+2023-12-08 12:30:38,491 - speechbrain.utils.superpowers - DEBUG - 3a645a0
+
+
+2023-12-08 12:30:39,085 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brqb/5000/save/label_encoder.txt
+2023-12-08 12:30:39,085 - speechbrain.dataio.encoder - INFO - Load called, but CTCTextEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2023-12-08 12:30:39,085 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brqb/5000/save/label_encoder.txt
+2023-12-08 12:32:01,324 - pyctcdecode.decoder - WARNING - Unigrams not provided and cannot be automatically determined from LM file (only arpa format). Decoding accuracy might be reduced.
+2023-12-08 12:32:01,343 - pyctcdecode.alphabet - INFO - Alphabet determined to be of regular style.
+2023-12-08 12:32:01,344 - pyctcdecode.language_model - WARNING - No known unigrams provided, decoding results might be a lot worse.
+2023-12-08 12:32:01,344 - speechbrain.core - INFO - Info: auto_mix_prec arg from hparam file is used
+2023-12-08 12:32:01,344 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2023-12-08 12:32:09,529 - speechbrain.core - INFO - 46.3M trainable parameters in ASR
+2023-12-08 12:32:09,529 - speechbrain.utils.parameter_transfer - DEBUG - Collecting files (or symlinks) for pretraining in results/LibriSpeech/brqb/5000/save.
+2023-12-08 12:32:09,585 - speechbrain.pretrained.fetching - INFO - Fetch model.ckpt: Using existing file/symlink in results/LibriSpeech/brqb/5000/save/weighted_ssl_model.ckpt.
+2023-12-08 12:32:09,586 - speechbrain.utils.parameter_transfer - INFO - Set local path in self.paths[weighted_ssl_model] = results/LibriSpeech/brqb/5000/save/weighted_ssl_model.ckpt
+2023-12-08 12:32:09,623 - speechbrain.pretrained.fetching - INFO - Fetch normalizer.ckpt: Using existing file/symlink in results/LibriSpeech/brqb/5000/save/normalize.ckpt.
+2023-12-08 12:32:09,624 - speechbrain.utils.parameter_transfer - INFO - Set local path in self.paths[normalize] = results/LibriSpeech/brqb/5000/save/normalize.ckpt
+2023-12-08 12:32:09,624 - speechbrain.utils.parameter_transfer - INFO - Loading pretrained files for: weighted_ssl_model, normalize
+2023-12-08 12:32:09,624 - speechbrain.utils.parameter_transfer - INFO - Redirecting (loading from local path): results/LibriSpeech/brqb/5000/save/weighted_ssl_model.ckpt -> results/LibriSpeech/brqb/5000/save/weighted_ssl_model.ckpt
+2023-12-08 12:32:09,624 - speechbrain.utils.parameter_transfer - INFO - Redirecting (loading from local path): results/LibriSpeech/brqb/5000/save/normalize.ckpt -> results/LibriSpeech/brqb/5000/save/normalize.ckpt
+2023-12-08 12:32:12,547 - speechbrain.utils.checkpoints - WARNING - During parameter transfer to ModuleList(
+  (0): ConvolutionFrontEnd(
+    (convblock_0): ConvBlock(
+      (convs): Sequential(
+        (conv_0): Conv2d(
+          (conv): Conv2d(1, 128, kernel_size=(3, 3), stride=(2, 2))
+        )
+        (norm_0): LayerNorm(
+          (norm): LayerNorm((40, 128), eps=1e-05, elementwise_affine=True)
+        )
+        (act_0): LeakyReLU(negative_slope=0.01)
+        (dropout_0): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (convblock_1): ConvBlock(
+      (convs): Sequential(
+        (conv_0): Conv2d(
+          (conv): Conv2d(128, 32, kernel_size=(3, 3), stride=(2, 2))
+        )
+        (norm_0): LayerNorm(
+          (norm): LayerNorm((20, 32), eps=1e-05, elementwise_affine=True)
+        )
+        (act_0): LeakyReLU(negative_slope=0.01)
+        (dropout_0): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (1): WeightedEncoderWrapper(
+    (transformer): TransformerASR(
+      (positional_encoding): RelPosEncXL()
+      (positional_encoding_decoder): PositionalEncoding()
+      (encoder): ConformerEncoder(
+        (layers): ModuleList(
+          (0-11): 12 x ConformerEncoderLayer(
+            (mha_layer): RelPosMHAXL(
+              (dropout_att): Dropout(p=0.1, inplace=False)
+              (out_proj): Linear(in_features=768, out_features=768, bias=True)
+              (linear_pos): Linear(in_features=768, out_features=768, bias=False)
+            )
+            (convolution_module): ConvolutionModule(
+              (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (bottleneck): Sequential(
+                (0): Conv1d(768, 1536, kernel_size=(1,), stride=(1,))
+                (1): GLU(dim=1)
+              )
+              (conv): Conv1d(768, 768, kernel_size=(31,), stride=(1,), padding=(15,), groups=768)
+              (after_conv): Sequential(
+                (0): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (1): Swish(
+                  (sigmoid): Sigmoid()
+                )
+                (2): Linear(in_features=768, out_features=768, bias=True)
+                (3): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (ffn_module1): Sequential(
+              (0): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (1): PositionalwiseFeedForward(
+                (ffn): Sequential(
+                  (0): Linear(in_features=768, out_features=2048, bias=True)
+                  (1): Swish(
+                    (sigmoid): Sigmoid()
+                  )
+                  (2): Dropout(p=0.1, inplace=False)
+                  (3): Linear(in_features=2048, out_features=768, bias=True)
+                )
+              )
+              (2): Dropout(p=0.1, inplace=False)
+            )
+            (ffn_module2): Sequential(
+              (0): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (1): PositionalwiseFeedForward(
+                (ffn): Sequential(
+                  (0): Linear(in_features=768, out_features=2048, bias=True)
+                  (1): Swish(
+                    (sigmoid): Sigmoid()
+                  )
+                  (2): Dropout(p=0.1, inplace=False)
+                  (3): Linear(in_features=2048, out_features=768, bias=True)
+                )
+              )
+              (2): Dropout(p=0.1, inplace=False)
+            )
+            (norm1): LayerNorm(
+              (norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            )
+            (norm2): LayerNorm(
+              (norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            )
+            (drop): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (norm): LayerNorm(
+          (norm): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        )
+      )
+      (custom_src_module): ModuleList(
+        (layers): ModuleList(
+          (0): Linear(
+            (w): Linear(in_features=640, out_features=768, bias=True)
+          )
+          (1): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (custom_tgt_module): ModuleList(
+        (layers): ModuleList(
+          (0): NormalizedEmbedding(
+            (emb): Embedding(
+              (Embedding): Embedding(5000, 768)
+            )
+          )
+        )
+      )
+    )
+  )
+  (2): RandomProjectionQuantizer()
+  (3): Linear(
+    (w): Linear(in_features=768, out_features=8192, bias=True)
+  )
+) loading from results/LibriSpeech/brqb/5000/save/weighted_ssl_model.ckpt, the transferred parameters did not have parameters for the key: 1.weights
+2023-12-08 12:32:12,549 - speechbrain.core - INFO - Test only mode, skipping training and validation stages.
+2023-12-08 12:32:12,599 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/LibriSpeech/brqb/5000/save/CKPT+2023-12-07+21-07-36+00
+2023-12-08 12:32:15,264 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brqb/5000/save/CKPT+2023-12-07+21-07-36+00/tokenizer.ckpt
+2023-12-08 12:33:41,359 - speechbrain.utils.train_logger - INFO - Epoch loaded: 20 - test loss: 3.05e-01, test CER: 3.34, test WER: 9.67
+2023-12-08 12:33:41,472 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/LibriSpeech/brqb/5000/save/CKPT+2023-12-07+21-07-36+00
+2023-12-08 12:33:43,925 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from results/LibriSpeech/brqb/5000/save/CKPT+2023-12-07+21-07-36+00/tokenizer.ckpt
+2023-12-08 12:35:32,835 - speechbrain.utils.train_logger - INFO - Epoch loaded: 20 - test loss: 8.80e-01, test CER: 10.28, test WER: 24.16

@@ -1,0 +1,11 @@
+steps: 0, lr: 8.00e-04, avg_loss: 0.00e+00
+steps: 0, lr: 8.00e-04, avg_loss: 9.25, run_time: 1.16e-01
+steps: 500, lr: 1.60e-05, avg_loss: 7.39, run_time: 1.63e+02
+steps: 500, lr: 1.60e-05, avg_loss: 7.39, run_time: 1.35e-01
+steps: 500, lr: 1.60e-05, avg_loss: 7.39, run_time: 1.05e-01
+steps: 1000, lr: 3.20e-05, avg_loss: 6.53, run_time: 1.63e+02
+steps: 1000, lr: 3.20e-05, avg_loss: 6.53, run_time: 1.24e-01
+steps: 1000, lr: 3.20e-05, avg_loss: 6.53, run_time: 1.06e-01
+steps: 1500, lr: 4.80e-05, avg_loss: 4.87, run_time: 1.83e+02
+steps: 1500, lr: 4.80e-05, avg_loss: 4.87, run_time: 1.21e-01
+steps: 1500, lr: 4.80e-05, avg_loss: 4.87, run_time: 1.04e-01
