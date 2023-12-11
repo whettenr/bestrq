@@ -369,7 +369,8 @@ if __name__ == "__main__":
     )
 
     # Loading the labels for the LM decoding and the CTC decoder
-    if hasattr(hparams, "use_language_modelling"):
+    if "use_language_modelling" in hparams:
+
         if hparams["use_language_modelling"]:
             try:
                 from pyctcdecode import build_ctcdecoder
@@ -378,6 +379,7 @@ if __name__ == "__main__":
                 err_msg += "Install using `pip install kenlm pyctcdecode`.\n"
                 raise ImportError(err_msg)
 
+            print('using language modeling')
             ind2lab = label_encoder.ind2lab
             labels = [ind2lab[x] for x in range(len(ind2lab))]
             labels = [""] + labels[
