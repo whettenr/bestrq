@@ -6,12 +6,13 @@
 ## Table of results
 
 ### WER
-Model & Parameters & WER clean (w/lm)  & WER other (w/lm) & Training Time (h:m) & \% speed 
-Wav2Vec2 Base & 90.9M & 16.26 (10.63) & 40.17 (30.83) & 16:14 & - \\
-BEST-RQ       & 83.0M & 16.79 (10.79) & 38.09 (28.31) &  6:43 & 2.41x \\
-BRQ HyperConformer & 71.3M & 18.47 (11.59) & 41.80 (31.17) & 5:56  & 2.73x \\
-BRQ HyperBranchformer & 46.5M & 32.65 (18.33) & 58.10 (42.90) & 4:43  & 3.44x \\ 
+Model & \# Params. & WER clean (w/lm) $\downarrow$  & WER other (w/lm) $\downarrow$ & Train Time & \% speed up & ASV $\downarrow$ & IC $\uparrow$ \\
 
+\hline
+Wav2Vec2 Base         & 90.9M & 16.26 (10.63) & 40.17 (30.83) &  16:14 & - \\
+BEST-RQ               & 83.0M & 16.79 (10.79) & 38.09 (28.31) & ~~6:43 & 2.41x \\
+% BRQ HyperConf         & 71.3M & 18.47 (11.59) & 41.80 (31.17) & ~~5:56 & 2.73x \\
+% BRQ HyperBranch       & 46.5M & 32.65 (18.33) & 58.10 (42.90) & ~~4:43 & 3.44x \\
 
 ## Best-RQ HyperBase Test w/LM
 100%|██████████████████████████████████████████████████████████████████████████████████████████| 655/655 [01:22<00:00,  7.99it/s]
