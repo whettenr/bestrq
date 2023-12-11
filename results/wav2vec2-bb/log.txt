@@ -1452,3 +1452,217 @@ WARNING: cannot determine version of editable source in /gpfsdswork/projects/rec
 2023-12-09 09:26:12,730 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
 2023-12-09 09:26:13,470 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
 2023-12-09 09:41:07,333 - speechbrain.utils.train_logger - INFO - loss: 9.77e+03, accuracy: 4.62e-01, num_masked: 4700, ratio_masked: 6.40e-01, diversity_loss: 3.78e-01, prob_perplex: 3.98e+02, code_perplex: 3.91e+02, num_vars: 640, temp: 1.80, backprop_loss: 9.94e+03, total_loss: 9.94e+03, steps: 21000, lr: 3.50e-04, avg_loss: 1.04e+04
+2023-12-09 10:01:43,321 - speechbrain.utils.train_logger - INFO - loss: 1.07e+04, accuracy: 3.92e-01, num_masked: 4410, ratio_masked: 6.42e-01, diversity_loss: 3.67e-01, prob_perplex: 4.05e+02, code_perplex: 3.99e+02, num_vars: 640, temp: 1.80, backprop_loss: 1.08e+04, total_loss: 1.08e+04, steps: 21500, lr: 3.58e-04, avg_loss: 1.04e+04, run_time: 1.24e+03
+2023-12-09 10:09:55,904 - speechbrain.utils.train_logger - INFO - epoch: 21, steps: 21672, lr: 3.61e-04 - train loss: 1.04e+04 - valid loss: 1.71e+03, valid accuracy: 0.5006877779960632
+2023-12-09 10:10:00,626 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+10-09-55+00
+2023-12-09 10:10:00,630 - speechbrain.utils.epoch_loop - INFO - Going into epoch 22
+2023-12-09 10:10:00,631 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 10:10:01,624 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 10:23:33,894 - speechbrain.utils.train_logger - INFO - loss: 9.13e+03, accuracy: 4.43e-01, num_masked: 4240, ratio_masked: 6.38e-01, diversity_loss: 3.56e-01, prob_perplex: 4.12e+02, code_perplex: 4.05e+02, num_vars: 640, temp: 1.79, backprop_loss: 9.28e+03, total_loss: 9.28e+03, steps: 22000, lr: 3.67e-04, avg_loss: 1.03e+04, run_time: 1.31e+03
+2023-12-09 10:44:11,526 - speechbrain.utils.train_logger - INFO - loss: 9.95e+03, accuracy: 4.31e-01, num_masked: 4410, ratio_masked: 6.46e-01, diversity_loss: 3.94e-01, prob_perplex: 3.88e+02, code_perplex: 3.79e+02, num_vars: 640, temp: 1.79, backprop_loss: 1.01e+04, total_loss: 1.01e+04, steps: 22500, lr: 3.75e-04, avg_loss: 1.03e+04, run_time: 1.24e+03
+2023-12-09 10:53:42,779 - speechbrain.utils.train_logger - INFO - epoch: 22, steps: 22704, lr: 3.78e-04 - train loss: 1.03e+04 - valid loss: 1.71e+03, valid accuracy: 0.5029563903808594
+2023-12-09 10:53:44,003 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+10-53-42+00
+2023-12-09 10:53:44,521 - speechbrain.utils.epoch_loop - INFO - Going into epoch 23
+2023-12-09 10:53:44,522 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 10:53:45,427 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 11:05:59,605 - speechbrain.utils.train_logger - INFO - loss: 1.03e+04, accuracy: 4.36e-01, num_masked: 4590, ratio_masked: 6.44e-01, diversity_loss: 3.85e-01, prob_perplex: 3.94e+02, code_perplex: 3.84e+02, num_vars: 640, temp: 1.78, backprop_loss: 1.05e+04, total_loss: 1.05e+04, steps: 23000, lr: 3.83e-04, avg_loss: 1.02e+04, run_time: 1.31e+03
+2023-12-09 11:26:34,597 - speechbrain.utils.train_logger - INFO - loss: 1.01e+04, accuracy: 4.30e-01, num_masked: 4590, ratio_masked: 6.46e-01, diversity_loss: 3.95e-01, prob_perplex: 3.88e+02, code_perplex: 3.80e+02, num_vars: 640, temp: 1.78, backprop_loss: 1.03e+04, total_loss: 1.03e+04, steps: 23500, lr: 3.92e-04, avg_loss: 1.02e+04, run_time: 1.23e+03
+2023-12-09 11:37:24,591 - speechbrain.utils.train_logger - INFO - epoch: 23, steps: 23736, lr: 3.96e-04 - train loss: 1.02e+04 - valid loss: 1.70e+03, valid accuracy: 0.507034182548523
+2023-12-09 11:37:25,823 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+11-37-24+00
+2023-12-09 11:37:26,373 - speechbrain.utils.epoch_loop - INFO - Going into epoch 24
+2023-12-09 11:37:26,374 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 11:37:27,234 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 11:48:22,401 - speechbrain.utils.train_logger - INFO - loss: 9.32e+03, accuracy: 4.46e-01, num_masked: 4410, ratio_masked: 6.42e-01, diversity_loss: 3.60e-01, prob_perplex: 4.10e+02, code_perplex: 4.02e+02, num_vars: 640, temp: 1.77, backprop_loss: 9.48e+03, total_loss: 9.48e+03, steps: 24000, lr: 4.00e-04, avg_loss: 1.01e+04, run_time: 1.31e+03
+2023-12-09 12:08:59,426 - speechbrain.utils.train_logger - INFO - loss: 1.01e+04, accuracy: 4.59e-01, num_masked: 4730, ratio_masked: 6.41e-01, diversity_loss: 3.70e-01, prob_perplex: 4.03e+02, code_perplex: 3.97e+02, num_vars: 640, temp: 1.77, backprop_loss: 1.02e+04, total_loss: 1.02e+04, steps: 24500, lr: 4.08e-04, avg_loss: 1.01e+04, run_time: 1.24e+03
+2023-12-09 12:21:08,951 - speechbrain.utils.train_logger - INFO - epoch: 24, steps: 24768, lr: 4.13e-04 - train loss: 1.00e+04 - valid loss: 1.66e+03, valid accuracy: 0.518433690071106
+2023-12-09 12:21:10,079 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+12-21-08+00
+2023-12-09 12:21:10,781 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+02-35-41+00
+2023-12-09 12:21:10,781 - speechbrain.utils.epoch_loop - INFO - Going into epoch 25
+2023-12-09 12:21:10,783 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 12:21:11,625 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 12:30:46,572 - speechbrain.utils.train_logger - INFO - loss: 9.47e+03, accuracy: 4.63e-01, num_masked: 4500, ratio_masked: 6.31e-01, diversity_loss: 3.69e-01, prob_perplex: 4.04e+02, code_perplex: 3.96e+02, num_vars: 640, temp: 1.77, backprop_loss: 9.64e+03, total_loss: 9.64e+03, steps: 25000, lr: 4.17e-04, avg_loss: 1.00e+04, run_time: 1.31e+03
+2023-12-09 12:51:24,704 - speechbrain.utils.train_logger - INFO - loss: 9.10e+03, accuracy: 4.82e-01, num_masked: 4500, ratio_masked: 6.49e-01, diversity_loss: 3.68e-01, prob_perplex: 4.05e+02, code_perplex: 3.98e+02, num_vars: 640, temp: 1.76, backprop_loss: 9.27e+03, total_loss: 9.27e+03, steps: 25500, lr: 4.25e-04, avg_loss: 9.98e+03, run_time: 1.24e+03
+2023-12-09 13:04:53,307 - speechbrain.utils.train_logger - INFO - epoch: 25, steps: 25800, lr: 4.30e-04 - train loss: 9.97e+03 - valid loss: 1.65e+03, valid accuracy: 0.5175066590309143
+2023-12-09 13:05:32,542 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+13-04-53+00
+2023-12-09 13:05:32,646 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+03-19-11+00
+2023-12-09 13:05:32,646 - speechbrain.utils.epoch_loop - INFO - Going into epoch 26
+2023-12-09 13:05:32,647 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 13:05:33,491 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 13:13:49,864 - speechbrain.utils.train_logger - INFO - loss: 8.78e+03, accuracy: 4.88e-01, num_masked: 4410, ratio_masked: 6.43e-01, diversity_loss: 3.71e-01, prob_perplex: 4.03e+02, code_perplex: 3.94e+02, num_vars: 640, temp: 1.76, backprop_loss: 8.95e+03, total_loss: 8.95e+03, steps: 26000, lr: 4.33e-04, avg_loss: 9.93e+03, run_time: 1.35e+03
+2023-12-09 13:34:27,221 - speechbrain.utils.train_logger - INFO - loss: 9.48e+03, accuracy: 4.46e-01, num_masked: 4410, ratio_masked: 6.45e-01, diversity_loss: 3.62e-01, prob_perplex: 4.09e+02, code_perplex: 4.00e+02, num_vars: 640, temp: 1.75, backprop_loss: 9.64e+03, total_loss: 9.64e+03, steps: 26500, lr: 4.42e-04, avg_loss: 9.89e+03, run_time: 1.24e+03
+2023-12-09 13:49:16,405 - speechbrain.utils.train_logger - INFO - epoch: 26, steps: 26832, lr: 4.47e-04 - train loss: 9.88e+03 - valid loss: 1.61e+03, valid accuracy: 0.5297413468360901
+2023-12-09 13:49:17,493 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+13-49-16+00
+2023-12-09 13:49:18,237 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+10-09-55+00
+2023-12-09 13:49:18,237 - speechbrain.utils.epoch_loop - INFO - Going into epoch 27
+2023-12-09 13:49:18,238 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 13:49:19,025 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 13:56:16,827 - speechbrain.utils.train_logger - INFO - loss: 9.72e+03, accuracy: 4.37e-01, num_masked: 4410, ratio_masked: 6.44e-01, diversity_loss: 3.82e-01, prob_perplex: 3.95e+02, code_perplex: 3.85e+02, num_vars: 640, temp: 1.75, backprop_loss: 9.88e+03, total_loss: 9.88e+03, steps: 27000, lr: 4.50e-04, avg_loss: 9.82e+03, run_time: 1.31e+03
+2023-12-09 14:16:53,979 - speechbrain.utils.train_logger - INFO - loss: 1.03e+04, accuracy: 4.37e-01, num_masked: 4700, ratio_masked: 6.40e-01, diversity_loss: 3.39e-01, prob_perplex: 4.23e+02, code_perplex: 4.18e+02, num_vars: 640, temp: 1.74, backprop_loss: 1.05e+04, total_loss: 1.05e+04, steps: 27500, lr: 4.58e-04, avg_loss: 9.80e+03, run_time: 1.24e+03
+2023-12-09 14:32:59,039 - speechbrain.utils.train_logger - INFO - epoch: 27, steps: 27864, lr: 4.64e-04 - train loss: 9.80e+03 - valid loss: 1.61e+03, valid accuracy: 0.5307101011276245
+2023-12-09 14:33:00,118 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+14-32-59+00
+2023-12-09 14:33:00,555 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+10-53-42+00
+2023-12-09 14:33:00,556 - speechbrain.utils.epoch_loop - INFO - Going into epoch 28
+2023-12-09 14:33:00,557 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 14:33:01,395 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 14:38:47,341 - speechbrain.utils.train_logger - INFO - loss: 9.44e+03, accuracy: 4.56e-01, num_masked: 4510, ratio_masked: 6.34e-01, diversity_loss: 3.53e-01, prob_perplex: 4.14e+02, code_perplex: 4.06e+02, num_vars: 640, temp: 1.74, backprop_loss: 9.60e+03, total_loss: 9.60e+03, steps: 28000, lr: 4.67e-04, avg_loss: 9.71e+03, run_time: 1.31e+03
+2023-12-09 14:59:24,806 - speechbrain.utils.train_logger - INFO - loss: 9.45e+03, accuracy: 4.65e-01, num_masked: 4500, ratio_masked: 6.39e-01, diversity_loss: 3.64e-01, prob_perplex: 4.07e+02, code_perplex: 3.99e+02, num_vars: 640, temp: 1.73, backprop_loss: 9.61e+03, total_loss: 9.61e+03, steps: 28500, lr: 4.75e-04, avg_loss: 9.72e+03, run_time: 1.24e+03
+2023-12-09 15:16:51,830 - speechbrain.utils.train_logger - INFO - epoch: 28, steps: 28896, lr: 4.82e-04 - train loss: 9.72e+03 - valid loss: 1.64e+03, valid accuracy: 0.5231669545173645
+2023-12-09 15:17:40,509 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+15-16-51+00
+2023-12-09 15:17:40,587 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+11-37-24+00
+2023-12-09 15:17:40,588 - speechbrain.utils.epoch_loop - INFO - Going into epoch 29
+2023-12-09 15:17:40,589 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 15:17:41,381 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 15:21:59,114 - speechbrain.utils.train_logger - INFO - loss: 9.96e+03, accuracy: 4.38e-01, num_masked: 4500, ratio_masked: 6.43e-01, diversity_loss: 3.69e-01, prob_perplex: 4.04e+02, code_perplex: 3.94e+02, num_vars: 640, temp: 1.73, backprop_loss: 1.01e+04, total_loss: 1.01e+04, steps: 29000, lr: 4.83e-04, avg_loss: 9.66e+03, run_time: 1.35e+03
+2023-12-09 15:42:36,179 - speechbrain.utils.train_logger - INFO - loss: 9.37e+03, accuracy: 4.51e-01, num_masked: 4410, ratio_masked: 6.41e-01, diversity_loss: 3.65e-01, prob_perplex: 4.07e+02, code_perplex: 3.96e+02, num_vars: 640, temp: 1.73, backprop_loss: 9.53e+03, total_loss: 9.53e+03, steps: 29500, lr: 4.92e-04, avg_loss: 9.67e+03, run_time: 1.24e+03
+2023-12-09 16:01:22,007 - speechbrain.utils.train_logger - INFO - epoch: 29, steps: 29928, lr: 4.99e-04 - train loss: 9.65e+03 - valid loss: 1.60e+03, valid accuracy: 0.5330967903137207
+2023-12-09 16:01:23,831 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+16-01-22+00
+2023-12-09 16:01:23,906 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+12-21-08+00
+2023-12-09 16:01:23,924 - speechbrain.utils.epoch_loop - INFO - Going into epoch 30
+2023-12-09 16:01:23,925 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 16:01:24,686 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 16:04:24,216 - speechbrain.utils.train_logger - INFO - loss: 8.85e+03, accuracy: 4.85e-01, num_masked: 4410, ratio_masked: 6.43e-01, diversity_loss: 3.55e-01, prob_perplex: 4.13e+02, code_perplex: 4.05e+02, num_vars: 640, temp: 1.72, backprop_loss: 9.00e+03, total_loss: 9.00e+03, steps: 30000, lr: 4.20e-04, avg_loss: 9.56e+03, run_time: 1.31e+03
+2023-12-09 16:25:01,947 - speechbrain.utils.train_logger - INFO - loss: 8.70e+03, accuracy: 4.84e-01, num_masked: 4410, ratio_masked: 6.40e-01, diversity_loss: 3.58e-01, prob_perplex: 4.11e+02, code_perplex: 4.04e+02, num_vars: 640, temp: 1.72, backprop_loss: 8.85e+03, total_loss: 8.85e+03, steps: 30500, lr: 4.19e-04, avg_loss: 9.55e+03, run_time: 1.24e+03
+2023-12-09 16:46:07,741 - speechbrain.utils.train_logger - INFO - epoch: 30, steps: 30960, lr: 4.18e-04 - train loss: 9.51e+03 - valid loss: 1.56e+03, valid accuracy: 0.5454800724983215
+2023-12-09 16:46:48,486 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+16-46-07+00
+2023-12-09 16:46:48,567 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+13-04-53+00
+2023-12-09 16:46:48,568 - speechbrain.utils.epoch_loop - INFO - Going into epoch 31
+2023-12-09 16:46:48,569 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 16:46:49,449 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 16:48:29,465 - speechbrain.utils.train_logger - INFO - loss: 8.79e+03, accuracy: 5.05e-01, num_masked: 4590, ratio_masked: 6.44e-01, diversity_loss: 3.47e-01, prob_perplex: 4.18e+02, code_perplex: 4.10e+02, num_vars: 640, temp: 1.71, backprop_loss: 8.95e+03, total_loss: 8.95e+03, steps: 31000, lr: 4.18e-04, avg_loss: 9.42e+03, run_time: 1.41e+03
+2023-12-09 17:09:05,931 - speechbrain.utils.train_logger - INFO - loss: 9.29e+03, accuracy: 4.82e-01, num_masked: 4600, ratio_masked: 6.55e-01, diversity_loss: 3.38e-01, prob_perplex: 4.24e+02, code_perplex: 4.17e+02, num_vars: 640, temp: 1.71, backprop_loss: 9.45e+03, total_loss: 9.45e+03, steps: 31500, lr: 4.17e-04, avg_loss: 9.44e+03, run_time: 1.24e+03
+2023-12-09 17:30:29,070 - speechbrain.utils.train_logger - INFO - epoch: 31, steps: 31992, lr: 4.16e-04 - train loss: 9.41e+03 - valid loss: 1.53e+03, valid accuracy: 0.5523933172225952
+2023-12-09 17:30:30,261 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+17-30-29+00
+2023-12-09 17:30:30,836 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+13-49-16+00
+2023-12-09 17:30:30,837 - speechbrain.utils.epoch_loop - INFO - Going into epoch 32
+2023-12-09 17:30:30,838 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 17:30:31,828 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 17:30:52,827 - speechbrain.utils.train_logger - INFO - loss: 9.88e+03, accuracy: 4.53e-01, num_masked: 4500, ratio_masked: 6.20e-01, diversity_loss: 3.33e-01, prob_perplex: 4.27e+02, code_perplex: 4.20e+02, num_vars: 640, temp: 1.70, backprop_loss: 1.00e+04, total_loss: 1.00e+04, steps: 32000, lr: 4.16e-04, avg_loss: 9.37e+03, run_time: 1.31e+03
+2023-12-09 17:51:30,234 - speechbrain.utils.train_logger - INFO - loss: 1.04e+04, accuracy: 4.52e-01, num_masked: 4760, ratio_masked: 6.46e-01, diversity_loss: 3.33e-01, prob_perplex: 4.27e+02, code_perplex: 4.20e+02, num_vars: 640, temp: 1.70, backprop_loss: 1.05e+04, total_loss: 1.05e+04, steps: 32500, lr: 4.15e-04, avg_loss: 9.39e+03, run_time: 1.24e+03
+2023-12-09 18:12:06,900 - speechbrain.utils.train_logger - INFO - loss: 9.36e+03, accuracy: 4.73e-01, num_masked: 4590, ratio_masked: 6.43e-01, diversity_loss: 3.51e-01, prob_perplex: 4.15e+02, code_perplex: 4.07e+02, num_vars: 640, temp: 1.70, backprop_loss: 9.52e+03, total_loss: 9.52e+03, steps: 33000, lr: 4.14e-04, avg_loss: 9.36e+03, run_time: 1.24e+03
+2023-12-09 18:14:12,991 - speechbrain.utils.train_logger - INFO - epoch: 32, steps: 33024, lr: 4.14e-04 - train loss: 9.36e+03 - valid loss: 1.53e+03, valid accuracy: 0.5518187284469604
+2023-12-09 18:14:58,914 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+18-14-12+00
+2023-12-09 18:14:59,006 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+14-32-59+00
+2023-12-09 18:14:59,006 - speechbrain.utils.epoch_loop - INFO - Going into epoch 33
+2023-12-09 18:14:59,007 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 18:14:59,979 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 18:34:38,276 - speechbrain.utils.train_logger - INFO - loss: 9.62e+03, accuracy: 4.52e-01, num_masked: 4560, ratio_masked: 6.40e-01, diversity_loss: 3.49e-01, prob_perplex: 4.17e+02, code_perplex: 4.09e+02, num_vars: 640, temp: 1.69, backprop_loss: 9.78e+03, total_loss: 9.78e+03, steps: 33500, lr: 4.13e-04, avg_loss: 9.31e+03, run_time: 1.35e+03
+2023-12-09 18:55:15,208 - speechbrain.utils.train_logger - INFO - loss: 9.22e+03, accuracy: 4.95e-01, num_masked: 4680, ratio_masked: 6.52e-01, diversity_loss: 3.55e-01, prob_perplex: 4.13e+02, code_perplex: 4.05e+02, num_vars: 640, temp: 1.69, backprop_loss: 9.39e+03, total_loss: 9.39e+03, steps: 34000, lr: 4.12e-04, avg_loss: 9.32e+03, run_time: 1.24e+03
+2023-12-09 18:58:40,354 - speechbrain.utils.train_logger - INFO - epoch: 33, steps: 34056, lr: 4.12e-04 - train loss: 9.31e+03 - valid loss: 1.51e+03, valid accuracy: 0.5574503540992737
+2023-12-09 18:59:41,003 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+18-58-40+00
+2023-12-09 18:59:41,094 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+15-16-51+00
+2023-12-09 18:59:41,094 - speechbrain.utils.epoch_loop - INFO - Going into epoch 34
+2023-12-09 18:59:41,096 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 18:59:41,918 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 19:18:06,960 - speechbrain.utils.train_logger - INFO - loss: 8.51e+03, accuracy: 5.31e-01, num_masked: 4700, ratio_masked: 6.40e-01, diversity_loss: 3.36e-01, prob_perplex: 4.25e+02, code_perplex: 4.18e+02, num_vars: 640, temp: 1.68, backprop_loss: 8.66e+03, total_loss: 8.66e+03, steps: 34500, lr: 4.11e-04, avg_loss: 9.30e+03, run_time: 1.37e+03
+2023-12-09 19:38:44,084 - speechbrain.utils.train_logger - INFO - loss: 9.52e+03, accuracy: 4.73e-01, num_masked: 4700, ratio_masked: 6.40e-01, diversity_loss: 3.60e-01, prob_perplex: 4.09e+02, code_perplex: 4.01e+02, num_vars: 640, temp: 1.68, backprop_loss: 9.68e+03, total_loss: 9.68e+03, steps: 35000, lr: 4.10e-04, avg_loss: 9.28e+03, run_time: 1.24e+03
+2023-12-09 19:43:28,645 - speechbrain.utils.train_logger - INFO - epoch: 34, steps: 35088, lr: 4.10e-04 - train loss: 9.27e+03 - valid loss: 1.50e+03, valid accuracy: 0.5606652498245239
+2023-12-09 19:43:30,871 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+19-43-28+00
+2023-12-09 19:43:30,971 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+16-01-22+00
+2023-12-09 19:43:30,972 - speechbrain.utils.epoch_loop - INFO - Going into epoch 35
+2023-12-09 19:43:30,973 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 19:43:31,814 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 20:00:32,546 - speechbrain.utils.train_logger - INFO - loss: 8.72e+03, accuracy: 4.83e-01, num_masked: 4410, ratio_masked: 6.41e-01, diversity_loss: 3.50e-01, prob_perplex: 4.16e+02, code_perplex: 4.09e+02, num_vars: 640, temp: 1.67, backprop_loss: 8.88e+03, total_loss: 8.88e+03, steps: 35500, lr: 4.09e-04, avg_loss: 9.20e+03, run_time: 1.31e+03
+2023-12-09 20:21:08,612 - speechbrain.utils.train_logger - INFO - loss: 8.05e+03, accuracy: 5.31e-01, num_masked: 4410, ratio_masked: 6.40e-01, diversity_loss: 3.36e-01, prob_perplex: 4.25e+02, code_perplex: 4.17e+02, num_vars: 640, temp: 1.67, backprop_loss: 8.20e+03, total_loss: 8.20e+03, steps: 36000, lr: 4.08e-04, avg_loss: 9.18e+03, run_time: 1.24e+03
+2023-12-09 20:27:11,530 - speechbrain.utils.train_logger - INFO - epoch: 35, steps: 36120, lr: 4.08e-04 - train loss: 9.18e+03 - valid loss: 1.50e+03, valid accuracy: 0.5601680278778076
+2023-12-09 20:27:13,040 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+20-27-11+00
+2023-12-09 20:27:13,450 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+16-46-07+00
+2023-12-09 20:27:13,450 - speechbrain.utils.epoch_loop - INFO - Going into epoch 36
+2023-12-09 20:27:13,451 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 20:27:14,238 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 20:42:54,791 - speechbrain.utils.train_logger - INFO - loss: 9.46e+03, accuracy: 4.76e-01, num_masked: 4590, ratio_masked: 6.43e-01, diversity_loss: 3.43e-01, prob_perplex: 4.20e+02, code_perplex: 4.14e+02, num_vars: 640, temp: 1.67, backprop_loss: 9.62e+03, total_loss: 9.62e+03, steps: 36500, lr: 4.07e-04, avg_loss: 9.16e+03, run_time: 1.31e+03
+2023-12-09 21:03:32,248 - speechbrain.utils.train_logger - INFO - loss: 8.02e+03, accuracy: 5.40e-01, num_masked: 4590, ratio_masked: 6.41e-01, diversity_loss: 3.50e-01, prob_perplex: 4.16e+02, code_perplex: 4.10e+02, num_vars: 640, temp: 1.66, backprop_loss: 8.18e+03, total_loss: 8.18e+03, steps: 37000, lr: 4.07e-04, avg_loss: 9.16e+03, run_time: 1.24e+03
+2023-12-09 21:10:53,981 - speechbrain.utils.train_logger - INFO - epoch: 36, steps: 37152, lr: 4.06e-04 - train loss: 9.15e+03 - valid loss: 1.48e+03, valid accuracy: 0.5656757950782776
+2023-12-09 21:10:55,212 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+21-10-53+00
+2023-12-09 21:10:55,988 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+17-30-29+00
+2023-12-09 21:10:55,989 - speechbrain.utils.epoch_loop - INFO - Going into epoch 37
+2023-12-09 21:10:55,990 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 21:10:56,747 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 21:25:18,077 - speechbrain.utils.train_logger - INFO - loss: 8.83e+03, accuracy: 5.10e-01, num_masked: 4590, ratio_masked: 6.44e-01, diversity_loss: 3.36e-01, prob_perplex: 4.25e+02, code_perplex: 4.17e+02, num_vars: 640, temp: 1.66, backprop_loss: 8.99e+03, total_loss: 8.99e+03, steps: 37500, lr: 4.06e-04, avg_loss: 9.10e+03, run_time: 1.31e+03
+2023-12-09 21:45:54,176 - speechbrain.utils.train_logger - INFO - loss: 8.83e+03, accuracy: 5.04e-01, num_masked: 4500, ratio_masked: 6.38e-01, diversity_loss: 3.54e-01, prob_perplex: 4.13e+02, code_perplex: 4.07e+02, num_vars: 640, temp: 1.65, backprop_loss: 8.99e+03, total_loss: 8.99e+03, steps: 38000, lr: 4.05e-04, avg_loss: 9.12e+03, run_time: 1.24e+03
+2023-12-09 21:54:36,125 - speechbrain.utils.train_logger - INFO - epoch: 37, steps: 38184, lr: 4.04e-04 - train loss: 9.12e+03 - valid loss: 1.48e+03, valid accuracy: 0.5664849281311035
+2023-12-09 21:54:37,183 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+21-54-36+00
+2023-12-09 21:54:38,188 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+18-14-12+00
+2023-12-09 21:54:38,206 - speechbrain.utils.epoch_loop - INFO - Going into epoch 38
+2023-12-09 21:54:38,207 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 21:54:38,959 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 22:07:42,730 - speechbrain.utils.train_logger - INFO - loss: 8.48e+03, accuracy: 5.25e-01, num_masked: 4590, ratio_masked: 6.44e-01, diversity_loss: 3.45e-01, prob_perplex: 4.19e+02, code_perplex: 4.11e+02, num_vars: 640, temp: 1.65, backprop_loss: 8.64e+03, total_loss: 8.64e+03, steps: 38500, lr: 4.04e-04, avg_loss: 9.10e+03, run_time: 1.31e+03
+2023-12-09 22:28:21,028 - speechbrain.utils.train_logger - INFO - loss: 9.50e+03, accuracy: 4.77e-01, num_masked: 4680, ratio_masked: 6.55e-01, diversity_loss: 3.51e-01, prob_perplex: 4.16e+02, code_perplex: 4.08e+02, num_vars: 640, temp: 1.65, backprop_loss: 9.67e+03, total_loss: 9.67e+03, steps: 39000, lr: 4.03e-04, avg_loss: 9.06e+03, run_time: 1.24e+03
+2023-12-09 22:38:22,192 - speechbrain.utils.train_logger - INFO - epoch: 38, steps: 39216, lr: 4.02e-04 - train loss: 9.05e+03 - valid loss: 1.46e+03, valid accuracy: 0.5694761872291565
+2023-12-09 22:38:23,345 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+22-38-22+00
+2023-12-09 22:38:24,254 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+18-58-40+00
+2023-12-09 22:38:24,254 - speechbrain.utils.epoch_loop - INFO - Going into epoch 39
+2023-12-09 22:38:24,255 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 22:38:24,999 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 22:50:09,765 - speechbrain.utils.train_logger - INFO - loss: 8.72e+03, accuracy: 4.99e-01, num_masked: 4500, ratio_masked: 6.41e-01, diversity_loss: 3.60e-01, prob_perplex: 4.09e+02, code_perplex: 4.01e+02, num_vars: 640, temp: 1.64, backprop_loss: 8.88e+03, total_loss: 8.88e+03, steps: 39500, lr: 4.02e-04, avg_loss: 9.04e+03, run_time: 1.31e+03
+2023-12-09 23:10:45,655 - speechbrain.utils.train_logger - INFO - loss: 9.42e+03, accuracy: 4.79e-01, num_masked: 4600, ratio_masked: 6.54e-01, diversity_loss: 3.47e-01, prob_perplex: 4.18e+02, code_perplex: 4.11e+02, num_vars: 640, temp: 1.64, backprop_loss: 9.58e+03, total_loss: 9.58e+03, steps: 40000, lr: 4.01e-04, avg_loss: 9.02e+03, run_time: 1.24e+03
+2023-12-09 23:22:05,251 - speechbrain.utils.train_logger - INFO - epoch: 39, steps: 40248, lr: 4.00e-04 - train loss: 9.02e+03 - valid loss: 1.46e+03, valid accuracy: 0.5709752440452576
+2023-12-09 23:22:06,291 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+23-22-05+00
+2023-12-09 23:22:07,258 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+19-43-28+00
+2023-12-09 23:22:07,259 - speechbrain.utils.epoch_loop - INFO - Going into epoch 40
+2023-12-09 23:22:07,260 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 23:22:08,013 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-09 23:32:32,392 - speechbrain.utils.train_logger - INFO - loss: 9.72e+03, accuracy: 4.63e-01, num_masked: 4680, ratio_masked: 6.39e-01, diversity_loss: 3.43e-01, prob_perplex: 4.20e+02, code_perplex: 4.13e+02, num_vars: 640, temp: 1.63, backprop_loss: 9.88e+03, total_loss: 9.88e+03, steps: 40500, lr: 4.00e-04, avg_loss: 8.98e+03, run_time: 1.31e+03
+2023-12-09 23:53:09,430 - speechbrain.utils.train_logger - INFO - loss: 8.94e+03, accuracy: 4.83e-01, num_masked: 4480, ratio_masked: 6.31e-01, diversity_loss: 3.33e-01, prob_perplex: 4.27e+02, code_perplex: 4.20e+02, num_vars: 640, temp: 1.63, backprop_loss: 9.09e+03, total_loss: 9.09e+03, steps: 41000, lr: 3.99e-04, avg_loss: 8.98e+03, run_time: 1.24e+03
+2023-12-10 00:05:47,766 - speechbrain.utils.train_logger - INFO - epoch: 40, steps: 41280, lr: 3.98e-04 - train loss: 8.98e+03 - valid loss: 1.46e+03, valid accuracy: 0.5692022442817688
+2023-12-10 00:05:48,811 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+00-05-47+00
+2023-12-10 00:05:49,739 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+20-27-11+00
+2023-12-10 00:05:49,740 - speechbrain.utils.epoch_loop - INFO - Going into epoch 41
+2023-12-10 00:05:49,741 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 00:05:50,499 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 00:14:56,908 - speechbrain.utils.train_logger - INFO - loss: 8.32e+03, accuracy: 5.29e-01, num_masked: 4560, ratio_masked: 6.43e-01, diversity_loss: 3.34e-01, prob_perplex: 4.26e+02, code_perplex: 4.20e+02, num_vars: 640, temp: 1.63, backprop_loss: 8.47e+03, total_loss: 8.47e+03, steps: 41500, lr: 3.98e-04, avg_loss: 8.92e+03, run_time: 1.31e+03
+2023-12-10 00:35:33,623 - speechbrain.utils.train_logger - INFO - loss: 9.31e+03, accuracy: 5.00e-01, num_masked: 4680, ratio_masked: 6.38e-01, diversity_loss: 3.31e-01, prob_perplex: 4.28e+02, code_perplex: 4.22e+02, num_vars: 640, temp: 1.62, backprop_loss: 9.46e+03, total_loss: 9.46e+03, steps: 42000, lr: 3.97e-04, avg_loss: 8.93e+03, run_time: 1.24e+03
+2023-12-10 00:49:31,625 - speechbrain.utils.train_logger - INFO - epoch: 41, steps: 42312, lr: 3.96e-04 - train loss: 8.92e+03 - valid loss: 1.45e+03, valid accuracy: 0.5713870525360107
+2023-12-10 00:49:32,735 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+00-49-31+00
+2023-12-10 00:49:33,598 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+21-10-53+00
+2023-12-10 00:49:33,598 - speechbrain.utils.epoch_loop - INFO - Going into epoch 42
+2023-12-10 00:49:33,599 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 00:49:34,344 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 00:57:20,419 - speechbrain.utils.train_logger - INFO - loss: 8.69e+03, accuracy: 4.83e-01, num_masked: 4410, ratio_masked: 6.43e-01, diversity_loss: 3.65e-01, prob_perplex: 4.06e+02, code_perplex: 3.99e+02, num_vars: 640, temp: 1.62, backprop_loss: 8.85e+03, total_loss: 8.85e+03, steps: 42500, lr: 3.96e-04, avg_loss: 8.91e+03, run_time: 1.31e+03
+2023-12-10 01:17:57,235 - speechbrain.utils.train_logger - INFO - loss: 8.85e+03, accuracy: 5.04e-01, num_masked: 4700, ratio_masked: 6.43e-01, diversity_loss: 3.49e-01, prob_perplex: 4.16e+02, code_perplex: 4.07e+02, num_vars: 640, temp: 1.61, backprop_loss: 9.02e+03, total_loss: 9.02e+03, steps: 43000, lr: 3.95e-04, avg_loss: 8.91e+03, run_time: 1.24e+03
+2023-12-10 01:33:13,902 - speechbrain.utils.train_logger - INFO - epoch: 42, steps: 43344, lr: 3.94e-04 - train loss: 8.91e+03 - valid loss: 1.44e+03, valid accuracy: 0.5774747729301453
+2023-12-10 01:33:14,996 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+01-33-13+00
+2023-12-10 01:33:15,852 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+21-54-36+00
+2023-12-10 01:33:15,852 - speechbrain.utils.epoch_loop - INFO - Going into epoch 43
+2023-12-10 01:33:15,853 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 01:33:16,596 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 01:39:43,714 - speechbrain.utils.train_logger - INFO - loss: 9.50e+03, accuracy: 4.95e-01, num_masked: 4840, ratio_masked: 6.53e-01, diversity_loss: 3.80e-01, prob_perplex: 3.97e+02, code_perplex: 3.89e+02, num_vars: 640, temp: 1.61, backprop_loss: 9.68e+03, total_loss: 9.68e+03, steps: 43500, lr: 3.94e-04, avg_loss: 8.85e+03, run_time: 1.31e+03
+2023-12-10 02:00:18,738 - speechbrain.utils.train_logger - INFO - loss: 8.64e+03, accuracy: 4.93e-01, num_masked: 4410, ratio_masked: 6.41e-01, diversity_loss: 3.37e-01, prob_perplex: 4.24e+02, code_perplex: 4.17e+02, num_vars: 640, temp: 1.61, backprop_loss: 8.78e+03, total_loss: 8.78e+03, steps: 44000, lr: 3.93e-04, avg_loss: 8.89e+03, run_time: 1.24e+03
+2023-12-10 02:16:54,277 - speechbrain.utils.train_logger - INFO - epoch: 43, steps: 44376, lr: 3.92e-04 - train loss: 8.87e+03 - valid loss: 1.44e+03, valid accuracy: 0.5772039890289307
+2023-12-10 02:16:55,388 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+02-16-54+00
+2023-12-10 02:16:56,160 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+22-38-22+00
+2023-12-10 02:16:56,161 - speechbrain.utils.epoch_loop - INFO - Going into epoch 44
+2023-12-10 02:16:56,162 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 02:16:56,915 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 02:22:05,156 - speechbrain.utils.train_logger - INFO - loss: 7.88e+03, accuracy: 5.43e-01, num_masked: 4410, ratio_masked: 6.40e-01, diversity_loss: 3.99e-01, prob_perplex: 3.85e+02, code_perplex: 3.69e+02, num_vars: 640, temp: 1.60, backprop_loss: 8.06e+03, total_loss: 8.06e+03, steps: 44500, lr: 3.92e-04, avg_loss: 8.80e+03, run_time: 1.31e+03
+2023-12-10 02:42:41,780 - speechbrain.utils.train_logger - INFO - loss: 8.91e+03, accuracy: 4.91e-01, num_masked: 4510, ratio_masked: 6.37e-01, diversity_loss: 3.61e-01, prob_perplex: 4.09e+02, code_perplex: 3.99e+02, num_vars: 640, temp: 1.60, backprop_loss: 9.07e+03, total_loss: 9.07e+03, steps: 45000, lr: 3.91e-04, avg_loss: 8.83e+03, run_time: 1.24e+03
+2023-12-10 03:00:37,293 - speechbrain.utils.train_logger - INFO - epoch: 44, steps: 45408, lr: 3.90e-04 - train loss: 8.82e+03 - valid loss: 1.41e+03, valid accuracy: 0.5856547355651855
+2023-12-10 03:00:38,438 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+03-00-37+00
+2023-12-10 03:00:39,166 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-09+23-22-05+00
+2023-12-10 03:00:39,166 - speechbrain.utils.epoch_loop - INFO - Going into epoch 45
+2023-12-10 03:00:39,167 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 03:00:39,912 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 03:04:29,299 - speechbrain.utils.train_logger - INFO - loss: 8.64e+03, accuracy: 5.18e-01, num_masked: 4620, ratio_masked: 6.40e-01, diversity_loss: 3.43e-01, prob_perplex: 4.20e+02, code_perplex: 4.14e+02, num_vars: 640, temp: 1.59, backprop_loss: 8.80e+03, total_loss: 8.80e+03, steps: 45500, lr: 3.90e-04, avg_loss: 8.85e+03, run_time: 1.31e+03
+2023-12-10 03:25:06,179 - speechbrain.utils.train_logger - INFO - loss: 8.46e+03, accuracy: 5.30e-01, num_masked: 4700, ratio_masked: 6.42e-01, diversity_loss: 3.44e-01, prob_perplex: 4.20e+02, code_perplex: 4.13e+02, num_vars: 640, temp: 1.59, backprop_loss: 8.63e+03, total_loss: 8.63e+03, steps: 46000, lr: 3.89e-04, avg_loss: 8.79e+03, run_time: 1.24e+03
+2023-12-10 03:44:21,532 - speechbrain.utils.train_logger - INFO - epoch: 45, steps: 46440, lr: 3.88e-04 - train loss: 8.79e+03 - valid loss: 1.41e+03, valid accuracy: 0.5848395228385925
+2023-12-10 03:44:22,573 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+03-44-21+00
+2023-12-10 03:44:23,336 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+00-05-47+00
+2023-12-10 03:44:23,336 - speechbrain.utils.epoch_loop - INFO - Going into epoch 46
+2023-12-10 03:44:23,337 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 03:44:24,191 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 03:46:54,289 - speechbrain.utils.train_logger - INFO - loss: 8.11e+03, accuracy: 5.20e-01, num_masked: 4500, ratio_masked: 6.27e-01, diversity_loss: 3.37e-01, prob_perplex: 4.24e+02, code_perplex: 4.18e+02, num_vars: 640, temp: 1.59, backprop_loss: 8.26e+03, total_loss: 8.26e+03, steps: 46500, lr: 3.88e-04, avg_loss: 8.74e+03, run_time: 1.31e+03
+2023-12-10 04:07:30,838 - speechbrain.utils.train_logger - INFO - loss: 8.25e+03, accuracy: 5.36e-01, num_masked: 4700, ratio_masked: 6.41e-01, diversity_loss: 3.41e-01, prob_perplex: 4.21e+02, code_perplex: 4.10e+02, num_vars: 640, temp: 1.58, backprop_loss: 8.41e+03, total_loss: 8.41e+03, steps: 47000, lr: 3.87e-04, avg_loss: 8.77e+03, run_time: 1.24e+03
+2023-12-10 04:28:03,375 - speechbrain.utils.train_logger - INFO - epoch: 46, steps: 47472, lr: 3.87e-04 - train loss: 8.75e+03 - valid loss: 1.41e+03, valid accuracy: 0.5837655663490295
+2023-12-10 04:28:04,443 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+04-28-03+00
+2023-12-10 04:28:05,271 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+00-49-31+00
+2023-12-10 04:28:05,271 - speechbrain.utils.epoch_loop - INFO - Going into epoch 47
+2023-12-10 04:28:05,273 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 04:28:06,065 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 04:29:17,375 - speechbrain.utils.train_logger - INFO - loss: 8.51e+03, accuracy: 5.24e-01, num_masked: 4510, ratio_masked: 6.34e-01, diversity_loss: 3.44e-01, prob_perplex: 4.20e+02, code_perplex: 4.12e+02, num_vars: 640, temp: 1.58, backprop_loss: 8.66e+03, total_loss: 8.66e+03, steps: 47500, lr: 3.86e-04, avg_loss: 8.71e+03, run_time: 1.31e+03
+2023-12-10 04:49:52,251 - speechbrain.utils.train_logger - INFO - loss: 8.43e+03, accuracy: 4.95e-01, num_masked: 4410, ratio_masked: 6.42e-01, diversity_loss: 3.59e-01, prob_perplex: 4.10e+02, code_perplex: 4.02e+02, num_vars: 640, temp: 1.57, backprop_loss: 8.59e+03, total_loss: 8.59e+03, steps: 48000, lr: 3.86e-04, avg_loss: 8.74e+03, run_time: 1.23e+03
+2023-12-10 05:10:28,444 - speechbrain.utils.train_logger - INFO - loss: 7.87e+03, accuracy: 5.48e-01, num_masked: 4410, ratio_masked: 6.41e-01, diversity_loss: 3.42e-01, prob_perplex: 4.21e+02, code_perplex: 4.13e+02, num_vars: 640, temp: 1.57, backprop_loss: 8.03e+03, total_loss: 8.03e+03, steps: 48500, lr: 3.85e-04, avg_loss: 8.73e+03, run_time: 1.24e+03
+2023-12-10 05:11:45,156 - speechbrain.utils.train_logger - INFO - epoch: 47, steps: 48504, lr: 3.85e-04 - train loss: 8.73e+03 - valid loss: 1.41e+03, valid accuracy: 0.5868180990219116
+2023-12-10 05:11:46,177 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+05-11-45+00
+2023-12-10 05:11:46,959 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/wav2vec2-bb/save/CKPT+2023-12-10+01-33-13+00
+2023-12-10 05:11:46,959 - speechbrain.utils.epoch_loop - INFO - Going into epoch 48
+2023-12-10 05:11:46,960 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
+2023-12-10 05:11:47,967 - speechbrain.dataio.sampler - INFO - DynamicBatchSampler: Generating dynamic batches
