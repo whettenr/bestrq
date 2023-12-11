@@ -38,7 +38,7 @@ max_grad_norm: 1.
 
 # The training will either stops at number_of_epochs or optimizer_step_limit
 # I.e. the first that is reached.
-number_of_epochs: 90
+number_of_epochs: 194
 optimizer_step_limit: 250000
 grad_accumulation_factor: 3
 

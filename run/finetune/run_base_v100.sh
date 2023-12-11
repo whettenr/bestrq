@@ -17,7 +17,7 @@ cd /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq
 python /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/finetune/brq/finetune_bestrq.py /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/finetune/brq/finetune_bestrq.yaml \
     --data_folder /gpfsscratch/rech/nkp/uaj64gk/corpus/LibriSpeech/ \
     --pt_model_hub /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqb/CKPT+2023-12-05+22-58-16+00 \
+    --test_only --use_language_modelling True --ngram_lm_path /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
     --use_language_modelling False --ngram_lm_path /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
-    # --test_only --use_language_modelling True --ngram_lm_path /gpfswork/rech/nkp/uaj64gk/bestrqexp/4-gram.arpa.gz
 
     # 100K --ssl_hub /gpfswork/rech/nkp/uaj64gk/bestrqexp/jz/brqb/CKPT+2023-12-01+16-31-50+00 \
