@@ -377,7 +377,8 @@ if __name__ == "__main__":
     )
 
     # Loading the labels for the LM decoding and the CTC decoder
-    if hasattr(hparams, "use_language_modelling"):
+    if "use_language_modelling" in hparams:
+
         if hparams["use_language_modelling"]:
             try:
                 from pyctcdecode import build_ctcdecoder
