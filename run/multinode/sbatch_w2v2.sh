@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=wmn   # nom du job
-#SBATCH --nodes=8
+#SBATCH --nodes=3
 #SBATCH --account=nkp@a100
 #SBATCH -C a100
 # SBATCH --partition=gpu_p4
