@@ -12,5 +12,5 @@
 #SBATCH --output=log/w2v2_%j.log  # log file
 
 
-cd /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/run/multinode
+cd /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/run/multinode/v100
 srun run_w2v2.sh
