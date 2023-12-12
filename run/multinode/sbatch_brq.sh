@@ -13,4 +13,4 @@
 
 
 cd /gpfswork/rech/nkp/uaj64gk/bestrqexp/bestrq/run/multinode
-srun run_w2v2.sh
+srun run_brq.sh
