@@ -5,7 +5,7 @@
 #SBATCH --constraint v100-32g
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
-#SBATCH --time=16:00:00          # temps d'exécution maximum demande (HH:MM:SS) 
+#SBATCH --time=20:00:00          # temps d'exécution maximum demande (HH:MM:SS) 
 #SBATCH --output=log/brqds_%j.log  # log file
 
 module load pytorch-gpu/py3/2.0.1
