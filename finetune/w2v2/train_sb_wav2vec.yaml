@@ -173,6 +173,7 @@ lr_annealing_wav2vec: !new:speechbrain.nnet.schedulers.NewBobScheduler
 checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
    checkpoints_dir: !ref <save_folder>
    recoverables:
+      model: !ref <model>
       extractor: !ref <extractor>
       encoder_wrapper: !ref <encoder_wrapper>
       scheduler_model: !ref <lr_annealing_model>
