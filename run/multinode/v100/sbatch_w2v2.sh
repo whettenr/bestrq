@@ -2,13 +2,13 @@
 
 #SBATCH --job-name=wmn   # nom du job
 #SBATCH --nodes=4
-#SBATCH --account=nkp@a100
+#SBATCH --account=nkp@v100
 #SBATCH -C v100-32g
 # SBATCH --partition=gpu_p4
 #SBATCH --gres=gpu:4
 #SBATCH --cpus-per-task=10
 #SBATCH --exclusive
-#SBATCH --time=100:00:00          # temps d'exécution maximum demande (HH:MM:SS) 
+#SBATCH --time=20:00:00          # temps d'exécution maximum demande (HH:MM:SS) 
 #SBATCH --output=log/w2v2_%j.log  # log file
 
 
